@@ -1,0 +1,322 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+\noindent MAT 108 write here your section Spring 2018\hfill Problem Set \#\\
+Sammy Wanjohi Kiboi. (MM/DD)
+
+\hrulefill
+
+\section{Euler's and Improved Euler Method}
+\begin{problem}
+Use the Newton's interpolation method to solve \(e\power{x\power{2}}-x\power{3}+3x-4 = 0\) \\ with \(x\index{o}=0\) and \(h = 0.01\) 
+\end{problem}
+\begin{solution}
+Newton's interpolation method is a numerical technique used to find approximate solutions to equations. In this case, you want to find an approximate solution to the equation
+
+Here's how you can apply Newton's interpolation method
+
+\([I_4 = \frac{\pi}{24} \left[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + f(x_4)\right]\)
+
+\end{solution} 
+
+\begin{problem}
+Example 1 \\
+Use the improved Euler method with h=0.1
+to find approximate values of the solution of the initial value problem
+\newline
+\begin{equation} 
+\label{eq:3.2.5}
+y'+2y=x^3e^{-2x},\quad y(0)=1
+\end{equation} at x=0.1,0.2,0.3
+\end{problem}
+\begin{solution}
+we rewrite the equation as y'=-2y+x^3e^{-2x},\quad y(0)=1, \\ this is the form of f(x,y)=-2y+x^3e^{-2x},\quad x_0=0,\quad \mbox {and}\quad y_0=1.
+
+\begin{eqnarray*} 
+k_{10} & = & f(x_0,y_0)
+= f(0,1)=-2,\\
+k_{20} & = & f(x_1,y_0+hk_{10})=f(.1,1+(.1)(-2))\\
+&=& f(.1,.8)=-2(.8)+(.1)^3e^{-.2}=-1.599181269,\\
+y_1&=&y_0+\frac{h}{2}(k_{10}+k_{20}),\\
+
+
+
+&=&1+(.05)(-2-1.599181269)=.820040937,\\
+k_{11} & = & f(x_1,y_1)
+= f(.1,.820040937)= -2(.820040937)+(.1)^3e^{-.2}=-1.639263142,\\
+k_{21} & = & f(x_2,y_1+hk_{11})=f(.2,.820040937+.1(-1.639263142)),\\
+&=&
+f(.2,.656114622)=-2(.656114622)+(.2)^3e^{-.4}=-1.306866684,\\
+y_2&=&y_1+\frac{h}{2}(k_{11}+k_{21}),\\
+&=&.820040937+(.05)(-1.639263142-1.306866684)=.672734445,\\
+k_{12} & = & f(x_2,y_2)
+= f(.2,.672734445)= -2(.672734445)+(.2)^3e^{-.4}=-1.340106330,\\
+k_{22} & = & f(x_3,y_2+hk_{12})=f(.3,.672734445+.1(-1.340106330)),\\
+&=&
+f(.3,.538723812)=-2(.538723812)+(.3)^3e^{-.6}=-1.062629710,\\
+y_3&=&y_2+\frac{h}{2}(k_{12}+k_{22})\\
+&=&.672734445+(.05)(-1.340106330-1.062629710)=.552597643.
+\end{eqnarray*}
+
+\end{solution}
+
+\begin{problem}
+The table below shows results of using the improved Euler method with step sizes h=0.1
+and h=0.05
+to find approximate values of the solution of the initial value problem
+y'+2y=x^3e^{-2x},\quad y(0)=1 \\ at x=0,0.1,0.2,0.3,…,1.0
+. For comparison, it also shows the corresponding approximate values obtained with Euler’s method in example:3.1.2, and the values of the exact solution y=\frac {e^{-2x}}{4}(x^4+4). \newline
+\end{problem}
+\\
+\begin{solution}
+\begin {array}{|c|c|c|c|c|c|} \hline &\text {Euler} &\text {Euler} &\text {Improved} &\text {Improved}& \text {Exact}\\ & & &\text {Euler}&\text {Euler}& \\ x&h=0.1&h=0.05&h=0.1&h=0.05& \\ \hline 0.0 & 1.000000000& 1.000000000& 1.000000000 &1.000000000 & 1.000000000 \\ 0.1 & 0.800000000& 0.810005655& 0.820040937 &0.819050572 & 0.818751221 \\ 0.2 & 0.640081873& 0.656266437& 0.672734445 &0.671086455 & 0.670588174 \\ 0.3 & 0.512601754& 0.532290981& 0.552597643 &0.550543878 & 0.549922980 \\ 0.4 & 0.411563195& 0.432887056& 0.455160637 &0.452890616 & 0.452204669 \\ 0.5 & 0.332126261& 0.353785015& 0.376681251 &0.374335747 & 0.373627557 \\ 0.6 & 0.270299502& 0.291404256& 0.313970920 &0.311652239 & 0.310952904 \\ 0.7 & 0.222745397& 0.242707257& 0.264287611 &0.262067624 & 0.261398947 \\ 0.8 & 0.186654593& 0.205105754& 0.225267702 &0.223194281 & 0.222570721 \\ 0.9 & 0.159660776& 0.176396883& 0.194879501 &0.192981757 & 0.192412038 \\ 1.0 & 0.139778910& 0.154715925& 0.171388070 &0.169680673 & 0.169169104\\ \hline \end {array}
+\end{solution}
+
+\begin{problem}
+The table below shows analogous results for the nonlinear initial value problem \\ y'=-2y^2+xy+x^2,\ y(0)=1. \newline
+\end{problem}
+
+\begin{solution}
+\begin {array}{|c|c|c|c|c|c|} \hline &\text {Euler} &\text {Euler} &\text {Improved} &\text {Improved}& \text {``Exact"}\\ & & &\text {Euler}&\text {Euler}& \\ x&h=0.1&h=0.05&h=0.1&h=0.05& \\ \hline 0.0 & 1.000000000 & 1.000000000 &1.000000000 & 1.000000000 & 1.000000000 \\ 0.1 & 0.800000000 & 0.821375000 &0.840500000 & 0.838288371 & 0.837584494 \\ 0.2 & 0.681000000 & 0.707795377 &0.733430846 & 0.730556677 & 0.729641890 \\ 0.3 & 0.605867800 & 0.633776590 &0.661600806 & 0.658552190 & 0.657580377 \\ 0.4 & 0.559628676 & 0.587454526 &0.615961841 & 0.612884493 & 0.611901791 \\ 0.5 & 0.535376972 & 0.562906169 &0.591634742 & 0.588558952 & 0.587575491 \\ 0.6 & 0.529820120 & 0.557143535 &0.586006935 & 0.582927224 & 0.581942225 \\ 0.7 & 0.541467455 & 0.568716935 &0.597712120 & 0.594618012 & 0.593629526 \\ 0.8 & 0.569732776 & 0.596951988 &0.626008824 & 0.622898279 & 0.621907458 \\ 0.9 & 0.614392311 & 0.641457729 &0.670351225 & 0.667237617 & 0.666250842 \\ 1.0 & 0.675192037 & 0.701764495 &0.730069610 & 0.726985837 & 0.726015790\\ \hline \end {array}
+\end{solution}
+\begin{problem}
+Use step sizes h=0.2
+, h=0.1
+, and h=0.05
+to find approximate values of the solution of \begin{equation} 
+\label{eq:3.2.6}
+y'-2xy=1,\quad y(0)=3
+\end{equation} at x=0,0.2,0.4,0.6,…,2.0
+by \\
+(a)
+the improved Euler method; \\
+(b)
+the improved Euler semilinear method.
+\newline
+\end{problem}
+\begin{solution}
+Rewriting as \begin{equation}
+    y'=1+2xy,\quad y(0)=3
+\end{equation} \\
+and applying the improved Euler method with \begin{equation}
+    f(x,y)=1+2xy
+\end{equation}yields the results shown in the table. \newline
+\begin {array}{|c|c|c|c|c|} \hline x& h=0.2& h=0.1& h=0.05& \text {``Exact''}\\ \hline 0.0 & 3.000000000 & 3.000000000 & 3.000000000 & 3.000000000 \\ 0.2 & 3.328000000 & 3.328182400 & 3.327973600 & 3.327851973 \\ 0.4 & 3.964659200 & 3.966340117 & 3.966216690 & 3.966059348 \\ 0.6 & 5.057712497 & 5.065700515 & 5.066848381 & 5.067039535 \\ 0.8 & 6.900088156 & 6.928648973 & 6.934862367 & 6.936700945 \\ 1.0 & 10.065725534 & 10.154872547 & 10.177430736 & 10.184923955 \\ 1.2 & 15.708954420 & 15.970033261 & 16.041904862 & 16.067111677 \\ 1.4 & 26.244894192 & 26.991620960 & 27.210001715 & 27.289392347 \\ 1.6 & 46.958915746 & 49.096125524 & 49.754131060 & 50.000377775 \\ 1.8 & 89.982312641 & 96.200506218 & 98.210577385 & 98.982969504 \\ 2.0 & 184.563776288 & 203.151922739 & 209.464744495 & 211.954462214 \\ \hline \end {array} \newline
+since y_1=e^{x^2}  is a solution of the complementary equation y'-2xy=0 we can apply the improved Euler semilinear method to (6), with \newline
+
+y=ue^{x^2}\quad \mbox {and}\quad u'=e^{-x^2},\quad u(0)=3.and y=ue^{x^2}\quad \mbox {and}\quad u'=e^{-x^2},\quad u(0)=3. \\ 
+
+The results listed in the table below are clearly better than those obtained by the improved Euler method.
+
+\begin {array}{|c|c|c|c|c|} \hline x& h=0.2& h=0.1& h=0.05& \text {``Exact''}\\ \hline 0.0 & 3.000000000 & 3.000000000 & 3.000000000 & 3.000000000 \\ 0.2 & 3.326513400 & 3.327518315 & 3.327768620 & 3.327851973 \\ 0.4 & 3.963383070 & 3.965392084 & 3.965892644 & 3.966059348 \\ 0.6 & 5.063027290 & 5.066038774 & 5.066789487 & 5.067039535 \\ 0.8 & 6.931355329 & 6.935366847 & 6.936367564 & 6.936700945 \\ 1.0 & 10.178248417 & 10.183256733 & 10.184507253 & 10.184923955 \\ 1.2 & 16.059110511 & 16.065111599 & 16.066611672 & 16.067111677 \\ 1.4 & 27.280070674 & 27.287059732 & 27.288809058 & 27.289392347 \\ 1.6 & 49.989741531 & 49.997712997 & 49.999711226 & 50.000377775 \\ 1.8 & 98.971025420 & 98.979972988 & 98.982219722 & 98.982969504 \\ 2.0 & 211.941217796 &211.951134436 & 211.953629228 & 211.954462214 \\ \hline \end {array}
+
+\end{solution}
+
+\begin{problem}
+Suppose \begin{equation}
+    y' = y - t^2 + 1
+\end{equation} with y(0) = 0.5 over the interval from t = 0 to t = 2
+in steps of h = 0.2. Using the Improved Euler Method, the solution at each step will be updated using the average of the slope at the beginning (as computed by the Euler Method) and the recalculated slope using the predicted outcome.
+\end{problem}
+\begin{solution}
+The formula for the Improved Euler Method hinges on the principle of averaging the slopes of the tangent lines at the beginning and end of the step-size interval. It can be represented as: \\ \begin{equation}
+    y_{n+1} = y_n + h \times \frac{{f(x_n, y_n) + f(x_{n+1}, y^{*}_{n+1})}}{2}
+\end{equation}  \\Where: \begin{equation}
+    y_{n+1}
+\end{equation} is the new (corrected) approximation,\newline \begin{equation}
+    y_n
+\end{equation} is the current approximation,\newline h is the step size\newline \begin{equation}
+    f(x_n, y_n) + f(x_{n+1}, y^{*}_{n+1})
+\end{equation} is the average slope at \begin{equation}
+    x = x_n
+\end{equation} and \begin{equation}
+    x = x_{n+1}
+\end{equation} (note that \begin{equation}
+    y^{*}_{n+1}
+\end{equation} is an intermediate prediction using the Euler Method).\newline Step 1: Compute \( y^{*}_{n+1} = y_{n} + h \times f(x_{n}, y_{n}) \) (Apply Euler Method).
+Step 2: Compute \( y_{n+1} = y_{n} + \frac{h}{2} (f(x_{n}, y_{n}) + f(x_{n+1}, y^{*}_{n+1})) \) (Average the slopes).
+Step 3: Repeat the above steps for all intervals.
+\end{solution}
+
+\section{Rectangular Rule}
+\begin{center}
+    Rectangular/Midpoint Rule \\
+\end{center}
+Assume that \(f(x)\) is continuous on \([a,b]\) and \(Δx=\dfrac{b−a}{n}\) \(M_n=\sum_{i=1}^nf(m_i)Δx.\) Then \\ \(\displaystyle \lim_{n→∞}M_n=∫^b_af(x)\,dx.\) 
+
+\begin{problem}
+    Use the midpoint rule to estimate \(\displaystyle ∫^1_0x^2\,dx\) using four subintervals. Compare the result with the actual value of this integral.
+\end{problem}
+\begin{solution}
+    Each subinterval has length  \(Δx=\dfrac{1−0}{4}=\dfrac{1}{4}.\) \\ Therefore, the subintervals consist of \(\left[0,\tfrac{1}{4}\right],\,\left[\tfrac{1}{4},\tfrac{1}{2}\right],\,\left[\tfrac{1}{2},\tfrac{3}{4}\right],\, \text{and}\, \left[\tfrac{3}{4},1\right].\nonumber\) \\ The midpoints of these subintervals are \(\left\{\frac{1}{8},\,\frac{3}{8},\,\frac{5}{8},\, \frac{7}{8}\right\}.\) \\ Thus \(M_4=\frac{1}{4}\cdot f\left(\frac{1}{8}\right)+\frac{1}{4}\cdot f\left(\frac{3}{8}\right)+\frac{1}{4}\cdot f\left(\frac{5}{8}\right)+\frac{1}{4}\cdot f\left(\frac{7}{8}\right)=\frac{1}{4}⋅\frac{1}{64}+\frac{1}{4}⋅\frac{9}{64}+\frac{1}{4}⋅\frac{25}{64}+\frac{1}{4}⋅\frac{21}{64}=\frac{21}{64}.\) \\ Since  \(∫^1_0x^2\,dx=\frac{1}{3},\nonumber\)
+\end{solution}
+\begin{problem}
+    Use \(M_6\) to estimate the length of the curve  \(y=\frac{1}{2}x^2\) on \([1,4]\)
+\end{problem}
+\begin{solution}
+    The length of \(y=\frac{1}{2}x^2\) is \newline \(s = ∫^4_1\sqrt{1+\left(\frac{dy}{dx}\right)^2}\,dx.\nonumber\) \\ Since \(\dfrac{dy}{dx}=x\) this integral becomes \(\displaystyle ∫^4_1\sqrt{1+x^2}\,dx.\) \\ If \([1,4]\) is divided into six subintervals, then each subinterval has length  \(Δx=\dfrac{4−1}{6}=\dfrac{1}{2}\) and the midpoints of the subintervals are \(\left\{\frac{5}{4},\frac{7}{4},\frac{9}{4},\frac{11}{4},\frac{13}{4},\frac{15}{4}\right\}\) If we set \(f(x)=\sqrt{1+x^2}\) Then \\ \begin{equation}
+        \(M_6=\tfrac{1}{2}\cdot f\left(\frac{5}{4}\right)+\tfrac{1}{2}\cdot f\left(\frac{7}{4}\right)+\frac{1}{2}\cdot f\left(\frac{9}{4}\right)+\frac{1}{2}\cdot f\left(\frac{11}{4}\right)+\frac{1}{2}\cdot f\left(\frac{13}{4}\right)+\frac{1}{2}\cdot f\left(\frac{15}{4}\right)\) 
+    \end{equation}\newline \begin{equation}
+        \(≈\frac{1}{2}(1.6008+2.0156+2.4622+2.9262+3.4004+3.8810)=8.1431\)
+    \end{equation}
+\end{solution}
+\begin{problem}
+    Use the midpoint rule with \(n=2\) to estimate \(\displaystyle ∫^2_1\frac{1}{x}\,dx.\) 
+\end{problem}
+\begin{solution}
+    Hint \(Δx=\frac{1}{2}, \quad m_1=\frac{5}{4},\quad \text{and} \quad m_2=\frac{7}{4}.\)
+    Solution is \(\dfrac{24}{35}\)
+\end{solution}
+\section{Trapezoidal Rule }
+\begin{center}
+    Assume that \(f(x)\) is continuous over \([a,b]\) Let \(n\) be a positive integer and \(Δx=\dfrac{b−a}{n}\)  Let \([a,b]\) be divided into \(n\) subintervals, each of length \(Δx\)  with endpoints at \(P=\{x_0,x_1,x_2…,x_n\}.\) \newline If we set \begin{equation}
+        \(T_n=\frac{Δx}{2}\big(f(x_0)+2\, f(x_1)+2\, f(x_2)+⋯+2\, f(x_{n−1})+f(x_n)\big).\)
+    \end{equation} \\ Then \begin{equation}
+        \(\displaystyle \lim_{n→+∞}T_n=∫^b_af(x)\,dx.\)
+    \end{equation} 
+\end{center}
+\begin{problem}
+    Use the trapezoidal rule to estimate \(\displaystyle ∫^1_0x^2\,dx\) using four subintervals.
+\end{problem}
+\begin{solution}
+    The endpoints of the subintervals consist of elements of the set \begin{equation}
+        \(P=\left\{0,\frac{1}{4},\, \frac{1}{2},\, \frac{3}{4},1\right\}\)  
+    \end{equation} and \(Δx=\frac{1−0}{4}=\frac{1}{4}.\) Thus \begin{equation}
+        \(\begin{align*} ∫^1_0x^2dx&≈\frac{1}{2}⋅\frac{1}{4}\big(f(0)+2\, f\left(\tfrac{1}{4}\right)+2\, f\left(\tfrac{1}{2}\right)+2\, f\left(\tfrac{3}{4}\right)+f(1)\big) \\[5pt] 
+&=\tfrac{1}{8}\big(0+2⋅\tfrac{1}{16}+2⋅\tfrac{1}{4}+2⋅\tfrac{9}{16}+1\big) \\[5pt] &=\frac{11}{32} \end{align*}\)
+    \end{equation}
+    
+\end{solution}
+\begin{problem}
+    Use the trapezoidal rule with \(n=2\) to estimate \(\displaystyle ∫^2_1\frac{1}{x}\,dx.\)
+\end{problem}
+\begin{solution}
+    Set \(Δx=\dfrac{1}{2}.\) The endpoints of the subintervals are the elements of the set \(P=\left\{1,\frac{3}{2},2\right\}.\) \\ Answer \(\dfrac{17}{24}\)
+\end{solution}
+\section{Simpson's Rule}
+\begin{center}
+    Assume that \(f(x)\) is continuous over \([a,b]\). Let \(n\) be a positive even integer and \(Δx=\dfrac{b−a}{n}\). Let \([a,b]\) be divided into subintervals, each of length \(Δx\) with endpoints at \(P=\{x_0,x_1,x_2,…,x_n\}.\) Set \begin{equation}
+        \(S_n=\frac{Δx}{3}\big(f(x_0)+4\,f(x_1)+2\,f(x_2)+4\,f(x_3)+2\,f(x_4)+⋯+2\,f(x_{n−2})+4\,f(x_{n−1})+f(x_n)\big).\)
+    \end{equation}  Then \begin{equation}
+        \(\lim_{n→+∞}S_n=∫^b_af(x)\,dx.\nonumber\)
+    \end{equation}
+\end{center}
+\begin{problem}
+    Use \(S_2\) to approximate \(\displaystyle ∫^1_0x^3\,dx\) 
+\end{problem}
+\begin{solution}
+    Since \([0,1]\) is divided into two intervals, each subinterval has length \(Δx=\frac{1−0}{2}=\frac{1}{2}\)  The endpoints of these subintervals are \(\left\{0,\frac{1}{2},1\right\}\)  If we set  \(f(x)=x^3,\) then \begin{equation}
+        \(S_4=\frac{1}{3}⋅\frac{1}{2}(f(0)+4\,f(\frac{1}{2})+f(1))=\frac{1}{6}(0+4⋅\frac{1}{8}+1)=\frac{1}{4}.\nonumber\)
+    \end{equation}
+\end{solution}
+
+\begin{problem}
+    Use \(S_6\) to estimate the length of the curve \(y=\frac{1}{2}x^2\) over \([1,4].\)
+\end{problem}
+\begin{solution}
+    The length of \(y=\frac{1}{2}x^2\) is \(\displaystyle ∫^4_1\sqrt{1+x^2}\,dx\). If we divide \([1,4]\)  into six subintervals, then each subinterval has length \(Δx=\frac{4−1}{6}=\frac{1}{2}\)  and the endpoints of the subintervals are  \(\left\{1,\frac{3}{2},2,\frac{5}{2},3,\frac{7}{2},4\right\}.\)  Setting \(f(x)=\sqrt{1+x^2}\) 
+    \begin{equation}
+        \(S_6=\frac{1}{3}⋅\frac{1}{2}(f(1)+4f(\frac{3}{2})+2f(2)+4f(\frac{5}{2})+2f(3)+4f(\frac{7}{2})+f(4)).\nonumber\)
+    \end{equation}
+    Subtituting we get \begin{equation}
+        \(S_6=\frac{1}{6}(1.4142+4⋅1.80278+2⋅2.23607+4⋅2.69258+2⋅3.16228+4⋅3.64005+4.12311)≈8.14594\,\text{units}.\)
+    \end{equation} 
+\end{solution}
+\begin{problem}
+    Use \(S_2\) to estimate \(\displaystyle ∫^2_1\frac{1}{x}\,dx.\)
+\end{problem}
+\begin{solution}
+    \(S_2=(\frac{1}{3}Δx(f(x_0)+4f(x_1)+f(x_2))\) \\ =\(\frac{25}{36}\)
+\end{solution}
+\section{Summary}
+Midpoint rule
+\begin{equation}
+    \(\displaystyle M_n=\sum^n_{i=1}f(m_i)Δx\)
+\end{equation}
+Trapezoidal rule
+\begin{equation}
+    \(T_n=\frac{Δx}{2}(f(x_0)+2\,f(x_1)+2\,f(x_2)+⋯+2\,f(x_{n−1})+f(x_n))\)
+\end{equation}
+Simpson's Rule
+\begin{equation}
+\(S_n=\frac{Δx}{3}(f(x_0)+4\,f(x_1)+2\,f(x_2)+4\,f(x_3)+2\,f(x_4)+4\,f(x_5)+⋯+2\,f(x_{n−2})+4\,f(x_{n−1})+f(x_n))\)    
+\end{equation}
+\section{Taylor's Method}
+Taylor Series method
+\begin{equation}
+    \(h=x-x_0\)
+\end{equation}
+\newline
+\begin{equation}
+    \(y_1 = y_0 + hy_0' + h^2/(2!) y_0'' + h^3/(3!) y_0''' + h^4/(4!) y_0'''' + ...\)
+\end{equation}
+\begin{problem}
+    Find \(y(0.2)\) for \(y'=x^2y-1\) \(y(0) = 1\) with step length 0.1 using Taylors method
+\end{problem}
+\begin{solution}
+    Given \(y'=x^2y-1, y(0)=1, h=0.1, y(0.2)=?\) where \(x_0=0,y_0=1,h=0.1\) \\ Differentiating we get \newline
+    \(y'=x^2y-1\) \newline
+    \(y''=2xy+x^2y'\) \newline
+    \(y'''=2y+4xy'+x^2y''\) \newline
+    \(y''''=6y'+6xy''+x^2y'''\) \newline
+    Substituting we get 
+    \(y_0'=x_0^2y_0-1=-1\) \newline
+    \(y_0''=2x_0y_0+x_0^2y_0'=0\) \newline
+    \(y_0'''=2y_0+4x_0y_0'+x_0^2y_0''=2\) \newline
+    \(y_0''''=6y_0'+6x_0y_0''+x_0^2y_0'''=-6\) \newline    
+    Putting these values in Taylor's Series, we have
+    \(y_1 = y_0 + hy_0' + h^2/(2!) y_0'' + h^3/(3!) y_0''' + h^4/(4!) y_0'''' + ...\) \newline
+    \(=1+0.1*(-1)+(0.1)^2/(2!)*(0)+(0.1)^3/(3!)*(2)+(0.1)^4/(4!)*(-6)+...\) \newline
+    \(=1-0.1+0+0.00033+0+...\) \newline
+    \(=0.90031\) \newline
+    \(:.y(0.1)=0.90031\) \newline
+    \hfill \break
+    Again taking \((x_1,y_1)\) in place of \((x_0,y_0)\)  and repeat the process
+    Now substituting, we get
+    \(y_1'=x_1^2y_1-1=-0.991\) \newline
+    \(y_1''=2x_1y_1+x_1^2y_1'=0.17015\) \newline
+    \(y_1'''=2y_1+4x_1y_1'+x_1^2y_1''=1.40592\) \newline
+    \(y_1''''=6y_1'+6x_1y_1''+x_1^2y_1'''=-5.82983\) \newline
+    Putting these values in Taylor's Series, we have
+    \(y_2 = y_1 + hy_1' + h^2/(2!) y_1'' + h^3/(3!) y_1''' + h^4/(4!) y_1'''' + ...\) \newline
+    \(=0.90031+0.1*(-0.991)+(0.1)^2/(2!)*(0.17015)+(0.1)^3/(3!)*(1.40592)+(0.1)^4/(4!)*(-5.82983)+...\) \newline
+    \(=0.90031-0.0991+0.00085+0.00023+0+...\) \newline
+    \(=0.80227\) \newline
+    \(:.y(0.2)=0.80227\) \newline
+\end{solution}
+\begin{problem}
+    Find \(y(0.)\) for \(y'=-2x-y\) \(y(0)=-1\) with step size 0.1 using Taylors Series method
+\end{problem}
+\begin{solution}
+    Given \(y'=-2x-y, y(0)=-1, h=0.1, y(0.5)=?\) \newline
+    Here \(x_0=0,y_0=-1,h=0.1\) \newline
+    Differentiating successfully we get \newline
+    \(y'=-2x-y\) \newline
+    \(y''=-2-y'\) \newline
+    \(y'''=-y''\) \newline
+    \(y''''=-y'''\) \newline
+    Now Subtituting we get 
+    \(y_0'=-2x_0-y_0=1\) \newline
+    \(y_0''=-2-y_0'=-3\) \newline
+    \newline
+    \newline
+\end{solution}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%Continue with this pattern if there are more%%%%%%%
+%%%%%%%%%%%%%%%%%homework problems%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
