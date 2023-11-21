@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[all]{xy}
+
+
+\usepackage{amsmath,amsthm,amssymb,color,latexsym}
+\usepackage{geometry}        
+\geometry{letterpaper}    
+\usepackage{graphicx}
+
+\newtheorem{problem}{Problem}
+
+\newenvironment{solution}[1][\it{Solution}]{\textbf{#1. } }{$\square$}
+
+
+\begin{document}
+
+\noindent RadioBiology \hfill Problem Set \#\\
+Sammy Wanjohi Kiboi. (MM/DD)
+
+\hrulefill
+
+\section{Cavity Theory}
+\begin{problem}
+A boundary region between carbon and aluminium is traversed by a fluence of 4.10x10^11 electrons/cm^2 with an energy of 12.5 MeV. Ignoring delta electrons and scattering, what is the absorbed dose DC in the carbon adjacent to the boundary and what is the ratio DAl/DC?
+\begin{solution}
+The absorbed dose (D) is given by the following formula: D = (Φ * E) / ρ where Φ is the fluence (electrons/cm²), E is the energy of the electrons (MeV), and ρ is the mass density of the material (g/cm³). For carbon, the mass density is ρ = 2.267 g/cm³.
+
+\newline
+\begin{problem}
+1. A small air-filled cavity ion chamber has copper walls with thickness equal to the maximum electron range. The cavity volume is 0.1 cm3, the air density is 0.001293 g/cm3, and a given -ray exposure generates a charge (either sign) of 7.00x10-10 C.
+(a) What is the average absorbed dose in the cavity?
+(b) Apply B-G theory to estimate the absorbed dose in the adjacent copper wall, assuming amean energy <T>=0.43MeV for the cavity-crossing electrons.
+(c) Suppose <T> is 34% in error and should have the value 0.65 MeV. Redo part (b). What was the resulting percentage error in DCu?
+
+\begin{solution}
+(a)0.1839 Gy
+(b) 0.1397 Gy
+(c) 0.1399 Gy
+Hello, I am going to explain this but will not do the problem for you due to the policies of the website that would prevent you from learning the material yourself because the best way to learn this is to manipulate everything yourself. With that being said, let's get down to it.
+
+For part a, we are simply trying to find the dose in air of the ion chamber using bragg-gray cavity theory. To complete this part we can simply use Eq. 10.7 from Chapter 10 in your book to do so. This equation gives you the dose in the air cavity of an ion chamber assuming it is a bragg-gray cavity, Dg (note Dg is my designation for absorbed dose in a gas, which in our case is air). Thus, to solve this we need the following items:
+
+Charge: represented by Q
+Mass of the gas (air) that produces charge Q: represented by m
+mean energy spent per unit charge: represented by (W/e)
+
+We are given the fact that Q = 7.00 x 10^-10 C, and we know the mean energy spent per unit charge, (W/e), since it is a constant and has a value of 33.97 J/C. Thus, all we need to figure out is the mass of the air that fills the cavity.
+
+To find the mass of the air cavity all you need is the relation that says:
+
+density = mass/volume
+
+Since we know the volume and density we can solve to find the mass using the relation above.
+Thus:
+
+mass = density*volume = (0.001293 g/cm^3)*(0.1 cm^3) = 1.293 x 10^-4 g
+
+\section{Link}
+Link https://kgut.ac.ir/useruploads/1538682823834pmw.pdf
