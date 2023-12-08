@@ -1,0 +1,537 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you give
+% someone the link to this page, they can edit at the same
+% time. See the help menu above for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Math 453 HW 1}
+\documentclass[addpoints]{exam}
+
+\usepackage{amsmath,enumitem,wrapfig}
+\usepackage{tikz}
+
+\newcommand{\StudentName}{Heejin Mun}
+\newcommand{\AssignmentName}{HW 1}
+
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{Math 453}{\StudentName}{\AssignmentName}
+\runningheader{Math 453}{\StudentName}{\AssignmentName}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+
+\printanswers
+
+\begin{document}
+
+
+Organize your work and show any work that you want credit for. Use full sentences where possible.
+
+\begin{questions}
+
+\question \textbf{M1}
+\begin{parts}
+\part
+Consider the arithmetic computation below.
+\begin{align}
+3+4[5-12]-6(3) +(4+0)
+&= 3+4[5-12]-6(3) +4\\
+&= 4[5-12]-6(3) +4+3\\
+&= 20-48-18 +4+3 \\
+&=-39.\notag
+\end{align}
+For each of the steps (1), (2), and (3) identify which of the Axioms of Integer Arithmetic are used in the simplification step.
+
+\begin{solution}
+$3+4[5-12]-6(3) +4$....(1) additive identity\\
+$4[5-12]-6(3) +4+3$ ....(2) commutativity of addition\\ 
+$20-48-18 +4+3$ ....(3) distributive\\
+
+\end{solution}
+
+\part Create and simplify an expression that uses associativity of addition, multiplicative identity, and the distributive law.
+
+\begin{solution}\\
+ (1) Associativity of addition\\ 
+     =a + (b + c) = (a + b) + c\\
+ (2) Multiplication identity\\ 
+     1*a =a\\
+ (3) Distributive law\\
+ 	 a (b + c) = ab + ac\\
+ Example) \\
+ $3 + 4(6 + 4) + (7(3) + 5(1))$\\
+ = $(3 + 4(6 + 4)) + 7(3) + 5(1)$ ...used (1)\\
+ = $(3 + (24 + 14)) + 7(3) + 5(1)$ ....used (3)\\
+ = $(3 + 24 + 14) + 21 + 5$ .... used (2)\\
+ = $67$ \\
+\end{solution}
+
+\end{parts}
+
+
+
+\question \textbf{M2}
+For each statement below determine whether each statement is correct for integers $a$, $b$, and $c$. If the statement is correct, then prove it. If the statement is incorrect, then modify it so that it is correct. Be sure to state which Order Axiom(s) you have applied.
+\begin{parts}
+\part If $a<b$, then $c\cdot a< c\cdot b$.\\
+\begin{solution}
+incorrect.\\
+If $a<b$, then $c\cdot a< c\cdot b$ when $c>0$
+\end{solution}
+
+
+\part If $a<b$, then $a+c<b+c$.
+\begin{solution}
+Correct\\
+If $a<b$, then we can assume that $a + r= b$, where r is in Z\\
+Hence, $a + c + r = b + c$, when c is in Z\\
+Therefore, then $a+c<b+c$.
+\end{solution}
+
+\part If $a<b$, $b<c$, and $c<d$, then $a<d$.
+
+\begin{solution}
+Correct\\
+with the same way part (b)\\
+Since  If $a<b$, then If $a+r=b$, when r is in Z\\
+and  $b<c$, so it follows that $b+r=c$, it is also same with $a+r+r=b+r=c$\\
+also, if $c<d$, then $c+r=d$, it is same with $a+r+r+r=b+r+r=c+r=d$\\
+Therefore, $a+3r=d$\\
+Hence, $a<d$
+
+\end{solution}
+
+\part If $a\not > b$ and $a\not< b$, then $a=b$.
+
+\begin{solution}
+Given that $a\not > b$ and $a\not< b$\\
+For $a\not > b$ \\
+then, it can be either $a < b$ or $a=b$, but $a < b$ is a contradiction by given $a\not< b$.\\
+For $a\not< b$,\\
+then,  it can be either $a > b$ or $a=b$, but $a > b$ is a contradiction by given $a\not> b$.\\
+Therefore, $a=b$.
+\end{solution}
+\end{parts}
+
+
+\question \textbf{M3}
+\begin{parts}
+\part
+Find the flaw in the following argument.
+\begin{quote}
+To solve $x(x+4)=x(2x-8)$ we divide both sides by $x$ (or apply Theorem 1.11) to get $x+4=2x-8$. Subtract $(x-8)$ from both sides to obtain $12=x$, so the solution is $x=12$. 
+\end{quote}
+\begin{solution}
+x could be 0, so we can't divide both sides by x.
+\end{solution}
+
+\part 
+Find the flaw in the following argument.
+\begin{quote}
+To solve $x(x-4)=12$ we factor the left-hand side and set the factors equal to zero $x=0$ and $x-4=0$ and conclude that $x=0,4$.  
+\end{quote}
+\begin{solution}
+$x(x-4)=12$ should be $x^2-4x-12=0$ by distributive law\\
+then, $(x-6)(x+2)=0$
+Therefore, $x=6, -2$
+\end{solution}
+\end{parts}
+
+\question \textbf{M4}
+\begin{parts}
+\part Work Exercise 1 from Investigation 1 (uniqueness of additive inverses).
+\begin{solution}
+If some integer a has two additive inverses, which are b and c, then we can write $a+b=0$ and $a+c=0$.\\
+Then, $a+b=a+c=0$.\\
+Since a is integer, we can say $b=c$
+\end{solution}
+
+
+\part Work Exercise 2 from Investigation 1 (additive cancellation).
+\begin{solution}
+Given that $a+b=a+c$, where a, b, and c are in integers Z.\\
+$(-a)=(-a)$ ...(-a) exists by additive inverse.\\
+Now, we can add $(-a)$ from both sides,\\
+Then, $(a+(-a))+b=(a+(-a))+c$, by associative law,\\
+$0+b=0+c$\\
+Therefore, $b=c$ by additive identity.
+\end{solution}
+\part ﻿
+
+TECHNICAL UNIVERSITY OF KENYA
+FACULTY OF APPLIED SCIENCES AND TECHNOLOGY SCHOOL OF PHYSICS AND EARTH SCIENCES
+DEPARTMENT OF TECHNICAL AND APPLIED PHYSICS
+MASTER OF SCIENCE IN MEDICAL PHYSICS (M Sc. Medical Physics)
+YEAR: (1) SEMESTER: (ONE)
+FEBRUARY 2023 EXAMINATIONS SERIES
+PAPER:
+RADIATION PHYSICS
+TIME:
+UNIT CODE: (SPTV 7112)
+3 HOURS INSTRUCTIONS
+You should have the following for this examination:
+Answer booklet
+Scientific calculator
+This paper contains FIVE questions.
+Attempt question ONE and any other TWO questions.
+Question ONE carries 30 marks, all other questions carry 20marks
+1u931.5 MeV
+lev | c2
+88
+228Ra = 226.025403 u
+Atomic Rest Masses
+222Rn = 222.017571 u He = 4.002603 u
+86
+18F = 18.000938 u ==
+==
+180= 17.999160 u
+Nuclear Rest Masses
+228Ra = 210496.3482
+86
+222Rn 206764.0985
+moc =
+3727.3791
+Nuclear Binding Energies
+226
+Ra
+= 1731.610
+222 864
+Rn= 1708. 185
+He = 28.296
+137Cs = 136.907084 u
+137 Ba= 136.905821 u
+0| Page
+\begin{solution}
+    
+\end{solution}
+\end{parts}
+\begin{parts}
+\part ﻿
+
+QUESTION 3 (20 MARKS)
+3.1. Briefly describe the areas where Ionizing radiation is used. [8 marks]
+3.2 Electron Capture and B are competing processes. Write down conditions that are required for one process to proceed over the other process. [4 marks]
+3.2.
+Discuss any two ways or mechanisms by which photons can interact with matter that play a very important role in therapeutic as well as in diagnostic medical physics. [8 marks]
+QUESTION 4 (20 MARKS)
+4.1. Explain the following terms.
+4.2.
+4.3.
+4.4.
+(a) the linear attenuation coefficient and Mass attenuation coefficient [2 marks] (b) First half-value layer HVL,, the second half-value layer HVL2 [2 marks]
+Derive the functional relationship shown below between the activity of a radioactive substance and time. Explain the terms. [7 marks]
+A = Age-At
+Draw a typical curve for the radioactive substance as given by the expression in Question 4.2. Briefly explain how you will determine the 2. [6 marks]
+The half-life of strontium-90, (Sr), is 28.8 years. Calculate the (a) decay constant and (b) the initial activity of 1.00g of the material. [3 marks]
+QUESTION 5 (20 MARKS)
+5.1.
+5.2.
+5.3
+Describe the term stopping power of a material. [2 marks]
+Explain the following quantities that are used for the purpose of quantifying radiation. (a) Activity A,
+(b) Kerma (K),
+and (c) Dose (H) [6 marks]
+Write down factors that are considered to choose a radiation beam and dose prescription in treatment of disease with radiation. [4 marks]
+5.4 (a) The Bragg curve below shows a plot of the variation of ionization density as a function of distance travelled by an alpha (∞) particle in air. Explain that form of the curve shown below. [6 marks]
+(b) What is the practical application of the enhanced ionization in the Bragg peak? [2 marks]
+0.0
+10
+2.0 Distance travelled (cm)
+30
+2 | Page
+\end{parts}
+
+\begin{parts}
+    \part ﻿
+
+QUESTION 1 (30 MARKS)
+1.1.
+Explain the following terms
+(a)
+(b)
+(c)
+Compton or recoil electrons, Beta particles and Pair Production electrons [3 marks] Synchrotron radiation and Annihilation quanta
+Remote afterloading technique and Neutron activation
+[2 marks]
+[2 marks]
+1.2. (a) Write a nuclear equation when cesium-137 decays into barium-137. [3 marks] (b) Calculate the decay energy Q- for the B- decay of cesium-137 into barium-137. [5mks] (c) When Fluorodeoxyglucose (FDG) is labelled with radionuclide fluorine-18 it can be injected intravenously into a patient for use in positron emission tomography (PET) functional imaging. What are some of the uses of the FDG PET? [4 marks]
+1.3. Which physical quantities are conserved during a nuclear transformation? [5 marks] Briefly explain directly ionizing radiation and indirectly ionizing radiation. Give examples for each. [6 marks]
+1.4
+2.1.
+2.2.
+QUESTION 2 (20 MARKS)
+[4 marks]
+Write down the most important characteristics of radionuclides used in external beam radiotherapy.
+88
+The figure below shows an energy level diagram for 228Ra (radium) decaying through a-decay into 222Ra (radon).
+86
+Relative mass-energy (MeV)
+228Ra
+4.78
+a decay (5.4%)
+Ex2
+a decay (94.6%)
+Ex1
+0.18
+0
+y decay Eye
+222 86
+Rn
+(a)
+(b)
+(c)
+Explain the decay scheme shown above as it ends at the ground state. [5 marks] Calculate the decay energy (Q) for the x decay of 228Ra (radium). [5 marks] Calculate the kinetic energy Ex1 of the x- particle.
+88
+[3 marks]
+(d)
+Explain why modern brachytherapy is now carried out with other radionuclides (e.g., iridium-192, cesium-137, iodine-125, etc.) instead of the radium-226 which was very popular in the past century?
+[3 marks]
+1| Page
+NT
+﻿
+
+3.1
+3.2.
+3.3.
+QUESTION 3 (20 MARKS)
+Electron Capture and B+ are competing processes. Write down conditions that are required for one process to proceed over the other process.
+[4] Discuss any two ways or mechanisms by which photons can interact with matter that play a very important role in therapeutic as well as in diagnostic medical physics. [8] An X-ray photon beam of photon energy 15 eV is allowed to fall on a metal surface. If the threshold frequency for the metal is 1.2 x 1015 Hz, then find the maximum kinetic energy gained by a photoelectron, the maximum speed of a photoelectron, and the stopping potential corresponding to the maximum kinetic energy.
+[8]
+QUESTION 4 (10 MARKS)
+4.1.
+Explain the following terms.
+(a) the linear attenuation coefficient and Mass attenuation coefficient
+[2]
+(b) First half-value layer HVL1, the second half-value layer HVL2 and tenth value layer [3]
+4.2.
+Derive the functional relationship shown below between the activity of a radioactive substance and time. Explain the terms.
+[7]
+A =
+Age-At
+4.3.
+Draw a typical curve for the radioactive substance as given by the expression in Question 4.2. Briefly explain how you will determine the 2.
+[6]
+4.4.
+If a 0.2-cm thickness of material transmits 25% of a monoenergetic beam of photons, calculate the half-value layer (HVL) of the beam for that material.
+[2]
+QUESTION 5 (20 MARKS)
+5.1.
+Describe the term stopping power of a material.
+[2]
+5.2.
+(b) Kerma (K),
+Explain the following quantities that are used for the purpose of quantifying radiation. (a) Activity A, and (c) Equivalent Dose (H)
+[6]
+5.3
+Write down factors that are considered to choose a radiation beam and dose prescription in treatment of disease with radiation
+[4]
+↓
+5.4
+Draw and explain the Bragg curve. What is the importance of the enhanced ionization in the Bragg peak?
+[8]
+\end{parts}
+
+\begin{parts}
+    \part ﻿
+
+QUESTION 1 (30 MARKS)
+Photoelectrons, Thermions and Megavoltage electrons
+1.1.
+Explain the following terms
+(a)
+(b)
+(c)
+Characteristic (fluorescence) x-rays and Bremsstrahlung x-rays Remote afterloading technique and Neutron activation
+1.2. (a) Write a nuclear equation when fluorine-18 decays into oxygen-18.
+B+22
++66
+[3]
+[2]
+[2]
+[3]
+[5]
+(b) Calculate the decay energy Q+¿¿ for the B+ decay of fluorine-18 into oxygen-18. (c) When Fluorodeoxyglucose (FDG) is labelled with radionuclide fluorine-18 it can be injected intravenously into a patient for use in positron emission tomography (PET) functional imaging. What are some of the uses of the FDG PET?
+4.1.
+[4]
+1.3.
+The half-life of strontium-90, ¿, is 28.8 years. Calculate the (a) decay constant and (b) the [5] initial activity of 1.00g of the material.
+ERSI
+DEAR
+[6]
+1.4.
+Briefly describe the areas where Ionizing radiation is used.
+AND
+QUESTION 2 (20 MARKS)
+DICAL F
+2.1.
+Which physical quantities are conserved during a nuclear transformation?
+[5]
+PHYS
+2.2.
+The figure below shows an energy level diagram for 228Ra (radium) decaying through a-decay into 22Ra (radon).
+226, 88
+Relative mass-energy (MeV)
+228Ra
+4.78
+a decay (5.4%) Ex2
+a decay (94.6%) Ex1
+0.18
+y decay Ey
+0
+222Rn
+86
+и
+(a)
+Explain the decay scheme shown above as it ends at the ground state.
+[5]
+(b)
+Calculate the decay energy (Q.) for the
+decay of 228Ra (radium).
+T
+[5]
+requer
+(c)
+Calculate the kinetic energy E.1 of the
+- particle.
+[3]
+(d)
+Explain why modern brachytherapy is now carried out with other radionuclides (e.g., iridium-192, cesium-137, iodine-125, etc.) instead of the radium-226 which was very popular in the past century?
+[2]
+QUESTION 3 (20 MARKS)
+3.1.
+Write down the possible outcomes when an X-ray beam or gamma radiation passes through an object.
+[3]
+1.01uF)
+3.2.
+Discuss any two ways or mechanisms by which photons can interact with matter that play a very important role in therapeutic as well as in diagnostic medical physics.
+[8]
+3.3.
+An X-ray photon beam of photon energy 10 eV is allowed to fall on a metal surface. If the threshold frequency for the metal is 1.5 × 1015 Hz, then find the maximum kinetic energy gained by a photoelectron, the maximum speed of a photoelectron, and the stopping potential corresponding to the maximum kinetic energy.
+[9]
+1 | Page
+﻿
+
+QUESTION 3 (20 MARKS)
+3.1. Briefly describe the areas where Ionizing radiation is used. [8 marks]
+3.2
+3.2.
+Electron Capture and B+ are competing processes. Write down conditions that are required for one process to proceed over the other process. [4 marks]
+Discuss any two ways or mechanisms by which photons can interact with matter that play a very important role in therapeutic as well as in diagnostic medical physics. [8 marks]
+QUESTION 4 (20 MARKS)
+4.1. Explain the following terms.
+4.2.
+4.3.
+4.4.
+(a) the linear attenuation coefficient and Mass attenuation coefficient [2 marks]
+(b) First half-value layer HVL1, the second half-value layer HVL2 [2 marks]
+Derive the functional relationship shown below between the activity of a radioactive substance and time. Explain the terms. [7 marks]
+-λt
+A = Age-
+Draw a typical curve for the radioactive substance as given by the expression in Question 4.2. Briefly explain how you will determine the 2. [6 marks]
+90
+The half-life of strontium-90, (38Sr), is 28.8 years. Calculate the (a) decay constant and (b) the initial activity of 1.00g of the material. [3 marks]
+QUESTION 5 (20 MARKS)
+5.1.
+Describe the term stopping power of a material. [2 marks]
+5.2.
+5.3
+Explain the following quantities that are used for the purpose of quantifying radiation. (a) Activity A,
+(b) Kerma (K),
+and (c) Dose (H) [6 marks]
+Write down factors that are considered to choose a radiation beam and dose prescription in treatment of disease with radiation. [4 marks]
+5.4 (a) The Bragg curve below shows a plot of the variation of ionization density as a function of distance travelled by an alpha (x) particle in air. Explain that form of the curve shown below. [6 marks]
+(b) What is the practical application of the enhanced ionization in the Bragg peak? [2 marks]
+lonization density
+0.0
+1.0
+2.0
+3.0
+Distance travelled (cm)
+2 | Page
+﻿
+
+4.1.
+QUESTION 4 (10 MARKS)
+Explain the following terms.
+(a) the linear attenuation coefficient and Mass attenuation coefficient
+[2]
+(b) First half-value layer HVL1, the second half-value layer HVL2 and tenth value layer [3]
+4.2.
+Derive the functional relationship shown below between the thickness of an absorber and intensity of a photon beam attenuated by the absorber. Explain the terms.
+[7]
+I(x) = I。ex
+4.3.
+μα
+Draw a typical attenuation curve for a mono-energetic photon beam with incident intensity lo against absorber thickness x, as given by the expression in Question 4.2. [4]
+4.4. If a 0.2-cm thickness of material transmits 25% of a monoenergetic beam of photons, calculate the half-value layer (HVL) of the beam for that material.
+[4]
+QUESTION 5 (20 MARKS)
+J
+5.1. Describe the term stopping power of a material.
+[2]
+5.2.
+Explain the following quantities that are used for the purpose of quantifying radiation. (a) Exposure X, (b) Kerma (K),
+and (c) Dose (D)
+[6]
+5.3.
+Write down the most important characteristics of radionuclides used in external beam radiotherapy.
+[4]
+山
+5.4 (a) The Bragg curve below shows a plot of the variation of ionization density as a function of distance travelled by an alpha (x) particle in air. Explain that form of the curve shown below.
+(b) What is the practical application of the enhanced ionization in the Bragg peak?
+[6]
+[2]
+Ionization density
+0.0
+1.0
+2.0
+3.0
+Distance travelled (cm)
+2 | Page
+
+﻿
+
+4.1.
+QUESTION 4 (10 MARKS)
+Explain the following terms.
+(a) the linear attenuation coefficient and Mass attenuation coefficient
+[2]
+(b) First half-value layer HVL1, the second half-value layer HVL2 and tenth value layer [3]
+4.2.
+Derive the functional relationship shown below between the thickness of an absorber and intensity of a photon beam attenuated by the absorber. Explain the terms.
+[7]
+I(x) = I。ex
+4.3.
+μα
+Draw a typical attenuation curve for a mono-energetic photon beam with incident intensity lo against absorber thickness x, as given by the expression in Question 4.2. [4]
+4.4. If a 0.2-cm thickness of material transmits 25% of a monoenergetic beam of photons, calculate the half-value layer (HVL) of the beam for that material.
+[4]
+QUESTION 5 (20 MARKS)
+J
+5.1. Describe the term stopping power of a material.
+[2]
+5.2.
+Explain the following quantities that are used for the purpose of quantifying radiation. (a) Exposure X, (b) Kerma (K),
+and (c) Dose (D)
+[6]
+5.3.
+Write down the most important characteristics of radionuclides used in external beam radiotherapy.
+[4]
+山
+5.4 (a) The Bragg curve below shows a plot of the variation of ionization density as a function of distance travelled by an alpha (x) particle in air. Explain that form of the curve shown below.
+(b) What is the practical application of the enhanced ionization in the Bragg peak?
+[6]
+[2]
+Ionization density
+0.0
+1.0
+2.0
+3.0
+Distance travelled (cm)
+2 | Page
+\end{parts}
+\end{questions}
+\end{document}
