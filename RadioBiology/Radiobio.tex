@@ -1,258 +1,381 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Welcome to Overleaf --- just edit your LaTeX on the left,
+% and we'll compile it for you on the right. If you give
+% someone the link to this page, they can edit at the same
+% time. See the help menu above for more info. Enjoy!
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Math 453 HW 1}
+\documentclass[addpoints]{exam}
 
-\documentclass{assignment}
-\usepackage[pdftex]{graphicx} % FIGURAS
-\usepackage{xcolor}
-\definecolor{LightGray}{gray}{0.95}
-\usepackage{fancyvrb, minted} % CÓDIGO
-\usepackage[letterpaper, margin = 2.5cm]{geometry} % TAMAÑO DE PÁGINA Y MÁRGENES
-\usepackage[T1]{fontenc} % Importante para acentos automáticos y símbolos de escritura
-\usepackage[spanish, mexico]{babel} % Importante para Español
-\usepackage{amsmath, amsfonts, amssymb} % Ecuaciones, caracteres y símbolos especiales
-\usepackage{hyperref, url}  % Links y Hyperlinks en el documento
-\usepackage{fancyhdr}
+\usepackage{amsmath,enumitem,wrapfig}
+\usepackage{tikz}
 
-%-----------------------------------------ETIQUETAS--------------------------------------------
+\newcommand{\StudentName}{Radiation Physics}
+\newcommand{\AssignmentName}{HW 1}
 
-\student{Sammy Wanjohi Kiboi}                             % NOMBRE
-\semester{1.1}                                % SEMESTRE (202X A/B)
-\date{\today}                                   % Fecha (Modifica a DD/MM/AAAA)
+\pagestyle{headandfoot}
+\runningheadrule
+\firstpageheadrule
+\firstpageheader{Math 453}{\StudentName}{\AssignmentName}
+\runningheader{Math 453}{\StudentName}{\AssignmentName}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
 
-\courselabel{RadioBiology}          % CLAVE Y MATERIA
-\exercisesheet{Tarea X}{Título de la tarea}     % NÚMERO Y TÍTULO DE LA TAREA
-
-\school{Licenciatura en Física, CUCEI}          % CARERA (Física, la mejor carrera)
-\university{Universidad de Guadalajara}         % LA PODEROSÍSIMA
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-DOCUMENTO-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printanswers
 
 \begin{document}
 
-%-----------------------------------------------------------------------------------------------
-\begin{problem}
 
-\section{Section A}
-\noindent 1.1. Explain a) Linear Energy Transfer b) Oxygen Enhancement Ratio c)Radiation weighing factor d) Dose fractionation[8 marks]
-\noindent 1.2. Explain the Target theory [3 marks]
-\noindent 1.3. State the law of Bergonie and Tribondeau. [4 marks]
-\noindent 1.4. Explain radiation dóse-response relationships. [6 marks]
-\noindent 1.5. Distinguish between in vitro and in vivo? [3 marks]
-\noindent 1.6. What type of interaction with tissue results in a hit? [3 marks]
+Organize your work and show any work that you want credit for. Use full sentences where possible.
 
-\subsection{Question 2}
-\noindent 2.1 Give examples of three agents that enhance the effects of radiation and three radioprotective agents.[6 marks]
-\noindent 
-2.2. Under fully oxygenated conditions, \begin{equation}90%
-\end{equation} of human cells in culture will be killed by 1.5 Gy X-rays. If
-cells are made anoxic, the dose required for \begin{equation}
-    90%
-\end{equation} lethality is 4 Gy. What is the OER (Oxygen enhancement ratio)?[4marks]
-\noindent 
-2.3. Describe the physical factors and biologic factors that affect radiation response.[10 marks]
-\subsection*{Question 3}
-\noindent 3.1.  What is the difference between catabolism and anabolism?[2 marks]
-\noindent 3.2. Discuss three effects of in vitro irradiation of macromolecules.[8 marks]
-\noindent 3.3. Explain the effects of radiation on the DNA.[4 marks]
-\noindent 3.4. Write down the chemical reactions involved in the radiolysis of water.[6 marks]
-\subsection*{Question 4 (20 marks)} 
+\begin{questions}
+    \question \textbf{QUESTION 1 (30 MARKS)}
+    \begin{parts}
+        \part 
+        1.1.
+        Explain the following terms
+        (a) Compton or recoil electrons, Beta particles and Pair Production electrons [3 marks] 
+        (b) Synchrotron radiation and Annihilation quanta [2 marks]
+        (c) Remote afterloading technique and Neutron activation [2 marks]
+        \begin{solution}
+        A Compton/Recoil electron refers to an electron that is ejected from an atom during the Compton scattering process. Compton scattering is a phenomenon in quantum physics where a photon (usually an X-ray or gamma-ray photon) collides with an electron, and as a result of the collision, the photon loses energy, and the electron is ejected from its orbit around an atomic nucleus.
+        
+A beta particle, also known as a beta ray or beta radiation, is a high-energy, high-speed electron or positron emitted by the radioactive decay of an atomic nucleus during the process of beta decay.A beta electron refers to an electron that is emitted during a type of radioactive decay known as beta decay. Beta decay involves the transformation of a neutron into a proton or a proton into a neutron within an atomic nucleus, accompanied by the emission of a beta particle.
+        Synchrotron radiation refers to electromagnetic radiation emitted by charged
+particles following a curved trajectory in free space under the influence of a
+magnetic field.
+Annihilation quanta refers to the high-energy photons (gamma rays) that are produced when a particle and its antiparticle collide and annihilate each other. During the annihilation process, the total energy and momentum of the initial pair are conserved and distributed among the resulting particles. 
+Photons resulting from positron–electron annihilation is the annhiliation quanta. 
+The remote afterloading technique is a method used in brachytherapy, a form of radiation therapy, where the radioactive sources are placed within or near the treatment area.
+        \end{solution}
+        \part 
+        1.2. (a) Write a nuclear equation when cesium-137 decays into barium-137. [3 marks] 
+        (b) Calculate the decay energy Q- for the B- decay of cesium-137 into barium-137. [5mks] 
+        (c) When Fluorodeoxyglucose (FDG) is labelled with radionuclide fluorine-18 it can be injected intravenously into a patient for use in positron emission tomography (PET) functional imaging. What are some of the uses of the FDG PET? [4 marks]
+        \begin{solution}
+            
+        \end{solution}
+        \part 1.4. Briefly explain directly ionizing radiation and indirectly ionizing radiation. Give examples for each. [6 marks]
+       \begin{solution}
+        
+       \end{solution}
+       \part 1.3. Write down the most important characteristics of radionuclides used in external beam radiotherapy. [5 marks]
 
-\noindent 4.1. Describe the effects of in vivo irradiation.[6 marks]
-\noindent 4.2. Describe the principles of target theory. [4 marks]
-\noindent 4.3. Discuss the kinetics of cell survival after irradiation.[10 marks]
-\subsection{Solution}
-\subsection*{Question 5 20 marks}
-\noindent 5.1. Explain the following terms (a) Latent period (b) \begin{equation}
-    LD_{50/60}
-\end{equation}[4 marks]
-
-\noindent 5.2. Describe the following Acute Radiation Lethality (Gastrointestinal death (GI) under the following:
-(Approximate Dose; Gy, Mean Survival Time; Days, and the Clinical Signs and Symptoms) [10 marks]
-\noindent 5.3. Explain the prodromomal period and the Latent period that lead to acute radiation lethality. [6 marks]
-
-\noindent 5.4. Define direct effect and indirect effect and identify the importance of each. [6 marks]
-\subsection{solution}
-
-\begin{equation}\label{eq:TeoremaFundamental}
-    \int_a^b f(t)dt = F(a)-F(b).
-\end{equation}
-\subsection{Primera parte}
-
-\noindent A los profesores\footnote{Como a Jack el destripador} les encanta dividir un problema en varias partes.
-\section*{Question 1 30 marks}
-\subsubsection*{Unordered Questions}
-\noindent 1.1 Explain the following terms. [8 marks]
-(a) Anabolism (b) Free radical
-(c) Radiation weighting factor (d) Dose fractionation
-\noindent 1.2. State the law of Bergonie and Tribondeau. [4 marks]
-\noindent Under fully oxygenated conditions, 90 % of human cells in culture will be killed by 1.5
-Gy x-rays. If cells are made anoxic, the dose required for 90% lethality is 4 Gy. What is
-the OER? [3 marks]
-\noindent Explain how age affect the radiosensitivity of tissue? [3 marks]
-\noindent Explain the Target theory. [3 marks]
-\noindent Explain the irradiation of macromolecules. [6 marks]
-\noindent In radiotherapy, which factors influence the selection of appropriate dose/fraction, total
-dose, and fractionation? [3 marks]
-\subsection*{QUESTION 2 (20 MARKS)}
-\noindent 2.1. Explain how ionizing radiation affect an atom within a large molecule? [4 marks]
-\noindent 2.2. Describe five types of radiation dose-response relationships. [8 marks]
-\noindent 2.3. Describe the physical factors and biologic factors that affect radiation response. [8 marks]
-\subsection{QUESTION 3 (20 MARKS)}
-\noindent 3.1 Describe the relationship between RBE and OER. [3 marks]
-\noindent 3.2. Discuss the direct and indirect effects of radiation. [3 marks]
-\noindent 3.4. Explain the effects of radiation on the deoxyribonucleic acid DNA. [8 marks]
-\noindent 3.5. Write down the chemical reactions involved in the radiolysis of water. [6 marks]
-\subsection{QUESTION 4 (20 MARKS)}
-\noindent 4.1. Describe the effects of in vivo irradiation. [6 marks]
-\noindent 4.2. Discuss the kinetics of cell survival after irradiation. [10 marks]
-\noindent 4.3. The D37 of a cellular species that follows the single-target, single-hit model is 2 Gy. What
-percentage of cells will survive 6 Gy? [4 marks]
-\subsection{Question 20 MARKS}
-\noindent 5.1 Explain the following terms. [4 marks]
-(a) Latent period
-(b) LD 50/60
-
-\noindent 5.2. Discuss the "four Rs" of radiation biology that can enhance the responses of normal and
-cancerous cells in fractionated therapy. [10 marks]
-\noindent 5.3. Describe the features of deterministic and stochastic effects of radiation exposure.
-[6 marks]
-\section{Unordered Questions}
-\noindent 
-\section{ANAZA ONE }
-\subsection{QUESTION 1 (30 MARKS)}
-\noindent Explain the following terms: [4 marks]
-(a) Free radical,
-(b) Catabolism,
-(c) Threshold dose,
-(d) Linear energy transfer,
-[4 marks]
-\noindent 1.2. Explain how age affect the radiosensitivity of tissue? [5 marks]
-\noindent 1.3. Explain the difference between these terms transcription, transfer, and translation when
-applied to molecular genetics. [6 marks]
-\noindent 1.4. Describe the physical factors and biologic factors that affect radiation response. [6 marks]
-\noindent 1.5. Under fully oxygenated conditions, 90% of human cells in culture will be killed by 1.5
-Gyt x-rays. If cells are made anoxic, the dose required for 90% lethality is 4 Gyt. What is
-the OER? [3 marks]
-\noindent 1.6. Explain the irradiation of macromolecules. [6 marks]
-\subsection{Question 2}
-\noindent 2.1 State the law of Bergonie and Tribondeau [4 marks]
-\noindent 2.2. Explain how ionizing radiation affect an atom within a large molecule? [4 marks]
-\noindent 2.3. Discuss the direct and indirect effects of radiation [4 marks]
-\noindent 2.4. Describe five types of radiation dose-response relationships. [8 marks]
-
-\subsection{QUESTION 3 (20 MARKS)}
-\noindent 3.1. Describe the relationship between RBE and OER [6 marks]
-\noindent 3.2. 
-Approximately 8 Gyt of 220 kVp x-rays is necessary to produce death in a lizard. Cobalt-
-60 gamma rays have a lower LET than 220 kVp x-rays; therefore, 9.4 Gyt is required for
-lizard lethality. What is the RBE of 60CO compared with 220 kVp? [5 marks]
-\noindent 3.3. 
-Discuss the radiation effects on the deoxyribonucleic acid (DNA). [9 marks]
-\subsection{QUESTION 4 (20 MARKS) 
-\noindent 4.1. Discuss the principles of target theory in radiobiology. [6 marks]
-\noindent 4.2. Explain cell survival curves [10 marks]
-\noindent 4.3. The D37 of a cellular species that follows the single-target, single-hit model is 1.5 Gyt.
-What percentage of cells will survive 4.5 Gyt? [4 marks]
-
-\subsection{QUESTION 5 (20 MARKS)}
-\noindent 5.1 State the clinical signs and symptoms of hematologic and Gastrointestinal syndromes as
-well as the Approximate Dose (Gyt) required for the signs to appear. [6 marks]
-\noindent 5.2 Discuss local tissue damage after high-dose irradiation. [8 marks]
-\noindent 5.3 Describe the features of deterministic and stochastic effects of radiation exposure.[6 marks]
-\noindent Discute y bosqueja la ruta o método que usarás para solucionar el problema. Vincúlalo con lo visto en clase o con algún libro, que puedes citar así: \cite{GustavoLopez}
-
-\begin{enumerate}
-    \item Si quieres
-
-    \item Puedes explicar tu solución
-
-    \item Por partes
-\end{enumerate}
-
-\noindent Recuerda los distintos tipos de ecuaciones que puedes agregar a tu documento:
-
-\begin{itemize}
-    \item Para una ecuación sencilla utilizamos el método \texttt{equation}, que encerramos con \texttt{boxed}:
-    \begin{equation}\label{eq:Sencilla}
-        \boxed{             % Así la encerramos para destacarla
-        e^{\pi i} + 1 = 0
-        }
-    \end{equation}
-
-    \item Podemos referenciar la ecuación anterior con el método \texttt{ref}: (Ec. \ref{eq:Sencilla}). Para una ecuación larga utilizamos el método \texttt{multiline}. Además, podemos agregar un asterisco (*) si no queremos numerarla:
-    \begin{multline*}
-        p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3 - 12x^2y^4 + 12xy^5 + 2y^6 - a^3b^3\\ 
-            - 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3 + 3x^6 + 14x^5y - 590x^4y^2 + 19x^3y^3
-    \end{multline*}
-
-    \item Para dividir la ecuación larga en dos líneas o más (para por ejemplo mostrar un proceso de simplificación o de operaciones) utilizamos el comando \texttt{split}:
-    \begin{equation} \label{eq1}
-        \begin{split}
-            A & = \frac{\pi r^2}{2} \\
-             & = \frac{1}{2} \pi r^2
-        \end{split}
-    \end{equation}
-
-    \item Para mostrar un \textit{sistema} de ecuaciones, utilizamos el ambiente \texttt{align}: 
-    \begin{align*} 
-        2x - 5y &=  8 \\ 
-        3x + 9y &=  -12
-    \end{align*}
-    Que también podemos aplicar a sistemas más complejos:
-    \begin{align*}
-        x&=y           &  w &=z              &  a&=b+c\\
-        2x&=-y         &  3w&=\frac{1}{2}z   &  a&=b\\
-        -4 + 5x&=2+y   &  w+2&=-1+w          &  ab&=cb
-    \end{align*}    
-
-    \item Para \textit{agrupar} ecuaciones consecutivamente sin alineamiento, utilizamos \texttt{gather}:
-    \begin{gather*} 
-        2x - 5y =  8 \\ 
-        3x^2 + 9y =  3a + c
-    \end{gather*}
-\end{itemize}
-
-\noindent Muchas veces en nuestras tareas incorporamos imágenes como a la que hacemos referencia aquí (Figura \ref{fig:yo_en_la_vida}):
-\begin{figure}[ht] % Especificamos ubicacion (h = aquí mero)
-    \centering
-    \includegraphics[width=0.5\textwidth]{Figuras/Cotorros.jpg} % Ancho especificado
-    \caption{Esquema de las relaciones entre los componentes del núcleo atómico}
-    \label{fig:yo_en_la_vida}
-\end{figure}
-
-\noindent Finalmente, recuerda utilizar el método \texttt{minted} para escribir el código que incluyas en tu tarea, y \texttt{verbatim} para el \textit{pseudo}-código\footnote{Muchas veces es mejor incluír \textit{ambos} para darte a entender con tu profesor}:
-
-\begin{minted}[frame=lines, linenos, bgcolor=LightGray]{python}
-    def funcion(argumento1, argumento2):
-        """
-        Explico que hace la funcón
-        """
-        if condicion == True:
-            alumno = graduado
-        else:
-            alumno = baja
-\end{minted}
-
-\end{problem}
-%---------------------------------------------------------------------------------------------
-% \begin{problem}
-
-% \section{Segundo Problema}
-
-% \noindent
+    \end{parts}
     
-% \end{problem}
-%---------------------------------------------------------------------------------------------
+\end{questions}
+
+\begin{questions}
+    \question \textbf{Question 2 (20 marks)}
+    \begin{parts}
+        \part 
+        2.1. Which physical quantities are conserved during a nuclear transformation? [5 marks]
+        \begin{solution}
+            
+        \end{solution}
+        \part 2.2. The figure below shows an energy level diagram for
+        (a) Explain the decay scheme shown above as it ends at the ground state. [5 marks] Calculate the decay energy (Q) for the x decay of 228Ra (radium). [5 marks] Calculate the kinetic energy Ex1 of the x- particle.
+
+        (b) Calculate the decay energy \((Q_B)\) and \((Q_EC)\) for the decay of iridium-192 [8 marks]
+        (c) Explain Briefly shy iridium-192 is more widely used in brachytherapy rather than the traditional radium or caesium. What is the half-life of iridium-192? [3 marks]
+        
+    \end{parts}
+        
+\end{questions}
+
+\begin{questions}
+    \question \textbf{Question 3 (20 marks)}
+    \part 3.1. Electron Capture and B+ are competing processes. Write down conditions that are required for one process to proceed over the other process. [4 marks]
+    \newline Electron capture is an alternative to B+ decay. Comparison of Eqs. 3.61 and 
+3.66 shows that nuclei that cannot experience B+ decay can undergo EC, since 
+a smaller mass difference is required for the latter process. Of course, EC is 
+always possible if B+ decay is decays both by B+ and EC.
+    \begin{solution}
+        
+    \end{solution}
+    \part 3.2 Discuss any two ways or mechanisms by which photons can interact with matter that play a very important role in therapeutic as well as in diagnostic medical physics. [8 marks]
+    \begin{solution}
+        
+    \end{solution}
+    \part 3.3. An X-ray photon beam of photon energy 15 eV is allowed to fall on a metal surface. If the threshold frequency for the metal is \(1.2 × 1015 Hz\) , then find the maximum kinetic energy gained by a photoelectron, the maximum speed of a photoelectron, and the stopping potential corresponding to the maximum kinetic energy.
+    [8 marks]
+    \begin{solution}
+        
+    \end{solution}        
+\end{questions}
 
 
+\begin{questions}
+    \question \textbf{QUESTION 4 (20 MARKS)}
+    \part 
+    4.1. Explain the following terms. (a) the linear attenuation coefficient and Mass attenuation coefficient [2 marks] (b) First half-value layer HVL,, the second half-value layer HVL2 [2 marks]
+    \begin{solution}
+        
+    \end{solution}
+    \part 4.2. Derive the functional relationship shown below between the activity of a radioactive substance and time. \begin{equation}
+        A = A_oe-2z
+    \end{equation}
+    \part 4.3. Draw a typical curve for the radioactive substance as given by the expression in Question 4.2. Briefly explain how you will determine the 2. [6 marks]
+    \begin{solution}
+        
+    \end{solution}
+    \part 4.4. If a 0.2-cm thickness of material transmits 25% of a monoenergetic beam of photons, calculate the half-value layer (HVL) of the beam for that material.
+    [2 marks]
+    \begin{solution}
+        
+    \end{solution}
+\end{questions}
 
-%--------------------------------------BIBLIOGRAFIA-------------------------------------------
+\begin{questions}
+    
+    \question \textbf{QUESTION 5 (20 MARKS)}
+    \part 5.1. Describe the term stopping power of a material.[2]
+    \part 5.2. Explain the following quantities that are used for the purpose of quantifying radiation. (a) Activity A, (b) Kerma (K), (c) Equivalent Dose (H)[6]
+    \begin{solution}
+        
+    \end{solution}
+    \part 5.3 Write down factors that are considered to choose a radiation beam and dose prescription in treatment of disease with radiation[4]
+    \begin{solution}
+        
+    \end{solution}
+    \part5.4 Draw and explain the Bragg curve. What is the importance of the enhanced ionization in the Bragg peak?[8]
+    \begin{solution}
+        
+    \end{solution}
+\end{questions}
 
-\newpage
+\begin{questions}
+    \question \textbf{QUESTION 1 (30 MARKS)}
+    \begin{parts}
+        \part 
+        1.1.
+        Explain the following terms
+        (a) Compton or recoil electrons, Beta particles and Pair Production electrons [3 marks] 
+        (b) Synchrotron radiation and Annihilation quanta [2 marks]
+        (c) Remote afterloading technique and Neutron activation [2 marks]
+        \begin{solution}
+        
+        \end{solution}
+        \part 
+        1.2. (a) Write a nuclear equation when cesium-137 decays into barium-137. [3 marks] 
+        (b) Calculate the decay energy Q- for the B- decay of cesium-137 into barium-137. [5mks] 
+        (c) When Fluorodeoxyglucose (FDG) is labelled with radionuclide fluorine-18 it can be injected intravenously into a patient for use in positron emission tomography (PET) functional imaging. What are some of the uses of the FDG PET? [4 marks]
+        \begin{solution}
+            
+        \end{solution}
+        \part 1.3. Which physical quantities are conserved during a nuclear transformation[5 mks]
+        \begin{solution}
+            
+        \end{solution}
+        \part 1.4. Briefly explain directly ionizing radiation and indirectly ionizing radiation. Give examples for each. [6 marks]
+       \begin{solution}
+        
+       \end{solution}
+       
+    \end{parts}
+    
+\end{questions}
 
-\nocite{*} % Agrega las referencias aunque no las hayas citado directamente
+\begin{questions}
+    \question \textbf{QUESTION 2 (20 MARKS)}
+    \begin{parts}
+        \part 2.1. Write down the most important characteristics of radionuclides used in external beam radiotherapy. [4 marks] 
+        \begin{solution}
+            
+        \end{solution}
+        \part 2.2.The figure below shows an energy level diagram for 228Ra (radium) decaying through a-decay into 22Ra (radon).
+        \begin{solution}
+            
+        \end{solution}
+        \part (a)Explain the decay scheme shown above as it ends at the ground state.[5 marks]
+        \begin{solution}
+            
+        \end{solution}
+        \part (b)Calculate the decay energy (Q.) for the decay of 228Ra (radium).[5 marks]
+        \begin{solution}
+            
+        \end{solution}
+        \part (c)Calculate the kinetic energy E.1 of the- particle.[3 marks]
+        \begin{solution}
+            
+        \end{solution}
+        \part (d) Explain why modern brachytherapy is now carried out with other radionuclides (e.g., iridium-192, cesium-137, iodine-125, etc.) instead of the radium-226 which was very popular in the past century?[3 marks]
+        \begin{solution}
+            
+        \end{solution}
+    \end{parts}
+\end{questions}
 
-\bibliographystyle{unsrt}    % ESTILO DE BIBLIOGRAFÍA (Recomendados: abbrv, ieeetr, apalike, unsrt)
-\bibliography{refs}     % REFERENCIAS EN ARCHIVO SEPARADO
 
+\begin{questions}
+    \question \textbf{Question 3 (20 marks)}
+    \begin{parts}
+        \part 3.1. Briefly describe the areas where Ionizing radiation is used. [8 marks]
+        \begin{solution}
+        
+        \end{solution}
+        \part 3.2 Electron Capture and B are competing processes. Write down conditions that are required for one process to proceed over the other process. [4 marks]
+
+        \begin{solution}
+            
+        \end{solution}
+        \part 3.3. Discuss any two ways or mechanisms by which photons can interact with matter that play a very important role in therapeutic as well as in diagnostic medical physics. [8 marks]
+        
+    \end{parts}
+    
+\end{questions}
+
+\begin{questions}
+\question    \textbf{Question 4 (20 marks)}
+\part 4.1. Explain the terms linear attenuation coefficient and mass attenuation coefficient [2 marks]
+\begin{solution}
+    
+\end{solution}
+\part 4.2. Derive the functional relationship shown below between the activity of a radioactive substance and time. Explain the terms.
+\(A = A_oe-yt\) [7 marks]
+\begin{solution}
+    
+\end{solution}
+\part 4.3. Draw a typical curve for the radioactive substance as given by the expression in 4.2. Briefly explain how you will determine the \(gamma\) [6 marks]
+\begin{solution}
+    
+\end{solution}
+\part 4.4. The half-life of strontium-90, (Sr), is 28.8 years. Calculate the (a) decay constant and (b) the initial activity of 1.00g of the material. [3 marks]
+\begin{solution}
+    
+\end{solution}
+\end{questions}
+
+\begin{questions}
+    
+    \question \textbf{QUESTION 5 (20 MARKS)}
+    \part 5.1. Describe the term stopping power of a material.[2]
+    \part 5.2. Explain the following quantities that are used for the purpose of quantifying radiation. (a) Activity A, (b) Kerma (K), (c) Equivalent Dose (H)[6]
+    \begin{solution}
+        
+    \end{solution}
+    \part 5.3 Write down factors that are considered to choose a radiation beam and dose prescription in treatment of disease with radiation[4]
+    \begin{solution}
+        
+    \end{solution}
+    \part 5.4 (a) The Bragg curve below shows a plot of the variation of ionization density as a function of distance travelled by an alpha (∞) particle in air. Explain that form of the curve shown below. [6 marks]
+    \begin{solution}
+        
+    \end{solution}
+    \part (b) What is the practical application of the enhanced ionization in the Bragg peak? [2 marks]
+    \begin{solution}
+        
+    \end{solution}
+\end{questions}
+
+\begin{questions}
+    \question \textbf{QUESTION 1 (30 MARKS)}
+\part 1.1. Explain the following terms:
+(a)Photoelectrons, Thermions and Megavoltage electrons [3 marks]
+(b)Characteristic (fluorescence) x-rays and Bremsstrahlung x-rays [2 marks]
+(c) Remote afterloading technique and Neutron activation [2 marks]
+\begin{solution}
+    
+\end{solution}
+\part 1.2. (a) Write a nuclear equation when fluorine-18 decays into oxygen-18.[3 marks]
+\begin{solution}
+    
+\end{solution}
+ \part (b) Calculate the decay energy Q+¿¿ for the B+ decay of fluorine-18 into oxygen-18. (c) When Fluorodeoxyglucose (FDG) is labelled with radionuclide fluorine-18 it can be injected intravenously into a patient for use in positron emission tomography (PET) functional imaging. What are some of the uses of the FDG PET?[5 marks]
+ \begin{solution}
+    
+ \end{solution}
+ \part The half-life of strontium-90, (Sr), is 28.8 years. Calculate the (a) decay constant and (b) the initial activity of 1.00g of the material. [5 marks]
+ \begin{solution}
+    
+ \end{solution}
+ \part Briefly describe the areas where ionizing radiation is used [6 marks]
+ \begin{solution}
+    
+ \end{solution}
+\end{questions}
+
+\begin{questions}
+    \question \textbf {QUESTION 2 (20 MARKS)}
+    \begin{parts}
+        \part 2.1.Which physical quantities are conserved during a nuclear transformation?[5 marks]
+        \begin{solution}
+            
+        \end{solution}
+        \part 2.2.
+        The figure below shows an energy level diagram for 228Ra (radium) decaying through a-decay into 22Ra (radon).
+        (a)
+        Explain the decay scheme shown above as it ends at the ground state.
+        [5]
+        \part (b) Calculate the decay energy (Q.) for the decay of 228Ra (radium).[5]
+\part (c) Calculate the kinetic energy E.1 of the- particle.[3]
+\part (d) Explain why modern brachytherapy is now carried out with other radionuclides (e.g., iridium-192, cesium-137, iodine-125, etc.) instead of the radium-226 which was very popular in the past century? [2]
+
+    \end{parts}
+
+\end{questions}
+
+\begin{questions}
+\question \textbf{QUESTION 3 (20 MARKS)}    
+\begin{parts}
+    \part 3.1. Write down the possible outcomes when an X-ray beam or gamma radiation passes through an object.[3]
+    \begin{solution}
+        
+    \end{solution}
+    \part 3.2. Discuss any two ways or mechanisms by which photons can interact with matter that play a very important role in therapeutic as well as in diagnostic medical physics.[8]
+    \begin{solution}
+        
+    \end{solution}
+    \part 3.3. An X-ray photon beam of photon energy 10 eV is allowed to fall on a metal surface. If the threshold frequency for the metal is 1.5 × 1015 Hz, then find the maximum kinetic energy gained by a photoelectron, the maximum speed of a photoelectron, and the stopping potential corresponding to the maximum kinetic energy.[8 marks]
+    \begin{solution}
+        
+    \end{solution}
+\end{parts}
+
+\end{questions}
+
+\begin{questions}
+    \question \textbf{QUESTION 4 (20 MARKS)}
+\begin{parts}
+    \part 4.1. Explain the following terms.
+    (a) the linear attenuation coefficient and Mass attenuation coefficient[2]
+    (b) First half-value layer HVL1, the second half-value layer HVL2 and tenth value layer [3]
+    \begin{solution}
+        
+    \end{solution}
+    \part 4.2. Derive the functional relationship shown below between the thickness of an absorber and intensity of a photon beam attenuated by the absorber. Explain the terms.[7]
+\(I(x)\)
+\begin{solution}
+    
+\end{solution}
+\part 4.4. If a 0.2-cm thickness of material transmits 25% of a monoenergetic beam of photons, calculate the half-value layer (HVL) of the beam for that material.
+[4]
+\begin{solution}
+    
+\end{solution}
+\end{parts}
+
+\end{questions}
+
+\begin{questions}
+    \question \textbf{QUESTION 5 (20 MARKS)}
+    \begin{parts}
+        \part 5.1. Describe the term stopping power of a material. [2 marks]        
+        \part 5.2.Explain the following quantities that are used for the purpose of quantifying radiation. (a) Activity A,
+        (b) Kerma (K),
+        and (c) Dose (H) [6 marks]
+        \part 5.3. Write down the most important characteristics of radionuclides used in external beam radiotherapy [4]
+        \part 5.4. (a)  The Bragg curve below shows a plot of the variation of ionization density as a function of distance travelled by an alpha (x) particle in air. Explain that form of the curve shown below. [6 marks]
+        (b) What is the practical application of the enhanced ionization in the Bragg peak? [2 marks]
+
+\begin{solution}
+    
+\end{solution}
+
+    \end{parts}
+\end{questions}
 
 \end{document}
 
