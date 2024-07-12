@@ -1,0 +1,691 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[margin=1in]{geometry}
+\usepackage{wrapfig}
+\usepackage[justification=centering]{caption}
+\usepackage[subnum]{cases}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\usepackage{empheq}
+
+
+\title{Physics in Radiation Oncology I\\ {\bf Homework 10}}
+\author{Jens Luebeck, Edward Rusu, Thomas Yu}
+\date{3 December 2014}
+
+
+\begin{document}
+\maketitle
+
+\section*{Question 1}
+\subsection*{}(a)Briefly explain the following terms, including the units of measurement where appropriate,
+{3 marks|
+
+(a) Absorbed dose — measure of the energy deposited in matter by ionizing radiation per unit mass
+
+(b) Equivalent dose — absorbed Dose multiplied the appropriate radiation weighting factor
+
+(c) Effective dose - multiplying the equivalent dose (HT) by a tissue weighting factor (W_T)
+
+\subsection*{}(b)List the characteristics which make a material suitable for use as a phantom, Provide examples
+of materials commonly used in clinical practice. [2 marks]
+
+\paragraph{
+Characteristics of materials suitable for use as phantoms:
+
+1. Tissue-equivalence: The material should have similar physical and chemical properties to the biological tissue it is meant to simulate, such as density, elemental composition, and water content.
+
+2. Homogeneity: The material should be homogeneous, with consistent properties throughout the phantom.
+
+3. Durability: The phantom material should be durable and able to withstand repeated use without significant changes in its properties.
+
+4. Ease of fabrication: The material should be easy to fabricate into the desired shape and size for the specific application.
+
+5. Cost-effectiveness: The phantom material should be cost-effective, especially for large-scale production or repeated use.
+
+Examples of materials commonly used in clinical practice as phantoms:
+
+1. Water-based phantoms:
+   - Water is a common and simple phantom material, as it has similar properties to soft biological tissues.
+   - Gels, such as agar or gelatin, can be used to create water-based phantoms with adjustable properties.
+
+2. Tissue-mimicking phantoms:
+   - Polyvinyl chloride (PVC) phantoms: These are made by mixing PVC, plasticizers, and other additives to mimic the properties of specific tissues.
+   - Tissue-equivalent epoxy resin phantoms: These are made by mixing epoxy resin with various powders (e.g., aluminum oxide, hydroxyapatite) to achieve tissue-equivalent properties.
+
+3. Anthropomorphic phantoms:
+   - These are more complex phantoms that closely resemble the human body or specific organ structures.
+   - Examples include the RANDO phantom (Radiological Support Devices, Inc.) and the Alderson RANDO phantom, which are used for dose measurements and imaging studies.
+
+4. 3D-printed phantoms:
+   - Advancements in 3D printing technology have enabled the creation of customized phantoms with complex geometries and tissue-equivalent properties.
+   - These phantoms can be designed to mimic specific anatomical structures or pathologies for various medical imaging and radiation therapy applications.
+}
+\subsection*{}(c)A cyclotron is a cyclic accelerator used in medicine. With the aid of a diagram briefly explain
+the working principle of a cyclotron. |S marks]
+
+\paragraph{Notes}
+\subsection*{}(d)While you are searching the Web you come across a clip on YouTube explaining about the
+LINAC and then it is mentioned that the direct beam (raw beam) is flattened. Explain what is
+meant by beam flattening? Which material is used for flattening the raw beam. You can use a
+beam profile to aid your explanation. [4 marks]
+\paragraph{
+In the context of a Linear Accelerator (LINAC), beam flattening refers to the process of homogenizing the intensity profile of the radiation beam that is emitted. This is particularly important in radiation therapy applications where a uniform dose distribution is desired across the target area.
+
+Beam flattening, in the context of a linear accelerator (LINAC) used for radiation therapy, refers to the process of modifying the intensity profile of the radiation beam to create a uniform or "flat" dose distribution across the treatment field.
+In a typical LINAC, the radiation beam produced by the accelerator has a higher intensity at the central axis and a decreasing intensity towards the edges of the beam, resulting in a non-uniform dose distribution. This non-uniformity is due to the inherent characteristics of the beam generation process and the geometry of the LINAC components.
+To achieve a uniform dose distribution across the treatment field, a beam flattening filter (also known as a flattening filter or flattering filter) is used. The beam flattening filter is a specialized device placed in the path of the radiation beam, typically near the LINAC head.
+
+Material used is usually Lead and Tungsten}
+\subsection*{}(e)Modern linear accelerators employ a “record and verify”  system.
+
+(a) Briefly give the justification for a “record and verify”  system. [3 marks}
+
+(b) Describe the use and components of “record and verify” systems. [4 marks|
+
+\paragraph{The justification for a "record and verify" system in radiology is primarily to ensure the accuracy, safety, and quality of radiotherapy treatments. Here are the key reasons why a record and verify system is important:
+
+1. Verification of treatment parameters:
+   - The record and verify system allows for the verification of critical treatment parameters, such as beam energy, field size, gantry angle, and patient positioning, before the delivery of each radiation treatment fraction.
+   - This helps to catch any discrepancies between the planned treatment and the actual delivery, reducing the risk of errors and ensuring the patient receives the intended treatment.
+
+2. Treatment quality assurance:
+   - The record and verify system maintains a comprehensive record of all treatment parameters and patient data, which can be reviewed and audited to ensure the consistency and quality of the radiation therapy process.
+   - This helps to identify any potential issues or deviations from the planned treatment and allows for the implementation of corrective actions to improve the quality of care.
+
+3. Patient safety:
+   - The record and verify system helps to minimize the risk of radiation overdose or underdose by verifying the treatment parameters before each delivery.
+   - This is particularly important in complex radiotherapy techniques, such as intensity-modulated radiation therapy (IMRT) or stereotactic body radiation therapy (SBRT), where even small deviations in the treatment parameters can have significant impacts on the patient's health.
+
+4. Regulatory compliance:
+   - Many regulatory bodies, such as the International Atomic Energy Agency (IAEA) and national radiation protection agencies, require the use of a record and verify system in radiotherapy departments to ensure compliance with safety standards and guidelines.
+   - The comprehensive documentation provided by the record and verify system can be used to demonstrate the quality and safety of the radiotherapy process to regulatory authorities.
+
+5. Continuity of care:
+   - The record and verify system provides a detailed history of the patient's treatment, which can be valuable for subsequent follow-up, treatment planning, and collaboration among healthcare professionals.
+   - This helps to ensure the continuity of care and supports the long-term management of the patient's radiotherapy treatment.
+
+
+* **Reduces human error:** R&V automates treatment parameter checks, like couch position and beam modifiers, compared to manual entry which can be prone to mistakes.
+
+* **Improves accuracy:**  By ensuring treatment matches the planned settings, R&V helps deliver the precise radiation dose to the targeted area. 
+
+* **Enhances safety:**  Fewer errors translate to safer treatment for patients.
+}
+\paragraph{((Notes))}
+\subsection*{}(f)The figure below shows the variation of percentage depth dose with depth (a) 22 MeV radiation — from LINAC (b) 8MV radiation from LINAC (c) 4MV radiation from LINAC (d)
+cobalt 60 unit (e) 200 kV — from x-ray machine (f) 120 kV from x-ray machine. Briefly explain the behaviour depicted by the graphs shown. [6 marks]
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{physc.jpg}
+    \caption{kwenda}
+    \label{fig:galaxy}
+\end{figure}
+\paragraph{Book with notes}
+
+
+\subsection*{}(g)Explain the terms activity and speific activity as used in radiation therapy. Provide the unit of measurement for each of these terms[3 marks]
+
+\paragraph{
+
+1. Activity:
+   - Definition: Activity refers to the rate of radioactive decay, or the number of radioactive disintegrations occurring per unit of time.
+   - Unit of measurement: The unit of activity is the becquerel (Bq), which represents one disintegration per second.
+   - Alternatively, the curie (Ci) is another unit of activity, where 1 Ci = 3.7 × 10^10 Bq (37 billion disintegrations per second).
+
+2. Specific activity:
+   - Definition: Specific activity is the activity per unit mass or volume of a radioactive material.
+   - It represents the concentration of radioactivity in a given substance or source.
+   - Specific activity is a useful measure when dealing with different quantities or volumes of radioactive materials.
+   - Unit of measurement: The unit of specific activity is typically Bq/g (becquerels per gram) or Bq/mL (becquerels per milliliter) for liquids.
+
+
+- Activity: Measured in becquerels (Bq) or curies (Ci), representing the rate of radioactive decay.
+- Specific activity: Measured in becquerels per gram (Bq/g) or becquerels per milliliter (Bq/mL), representing the concentration of radioactivity per unit mass or volume.
+
+These terms and their respective units are important in various applications of radiation therapy, such as:
+
+- Determining the appropriate radioactive source strength for treatment.
+- Calculating the radiation dose delivered to the patient.
+- Monitoring the activity and specific activity of radioactive materials used in diagnostic and therapeutic procedures.
+- Ensuring the safe handling and disposal of radioactive materials.
+}
+\subsection*{}(i)Difference between a cyclic and electrostatic accelerators
+\paragraph*{In a linear accelerator the particles pass once through a sequence of accelerating fields, whereas in a cyclic machine they are guided on a circular path many times through the same relatively small electric fields. In an electrostatic particle accelerator in which charged particles are accelerated to a high energy by a static high voltage potential.}
+
+\newpage
+\section{Question 2}
+
+\subsection*{}(a)A megavoltage linear accelerator is normally used in external beam radiation therapy. Draw separate schematic diagrams for each of the following, with sufficient labelling and explain:
+
+(a) how a linear accelerator produces a photon beam suitable for therapeutic use. [5 marks]
+\paragraph{Notes and Book}
+
+
+(b) the changes required in the treatment head to produce an electron beam suitable for therapeutic use. [3 marks]
+
+\paragraph*{To produce an electron beam suitable for therapeutic use from a MeV-grade linear accelerator (linac), significant modifications are required to the treatment head. Here are the key changes:
+Bending Magnet Removal:  Linacs for X-rays utilize a bending magnet to direct the high-energy electrons towards the target.  For electron beam therapy, this magnet is bypassed or removed entirely. Electrons need a straight path to travel for optimal therapeutic use.
+Electron Gun: The electron gun is responsible for producing the electron beam. For therapeutic use, a high-power electron gun with a larger anode (typically 5-10 cm in diameter) is needed to generate a high-intensity beam.
+Electron Beam Focusing: The electron beam needs to be focused to a small spot size to ensure accurate and precise treatment delivery. This requires a sophisticated focusing system, including magnetic and electric fields.
+Scattering Foil: A scattering foil is added to the electron beam path to scatter the electrons and increase their energy deposition in the tumor. The scattering foil is typically made of a thin layer of gold or tungsten.
+Collimators: Collimators are used to shape the electron beam to match the desired treatment field size and shape. The collimators must be designed to minimize beam scattering and ensure accurate treatment delivery.
+Monitor Chambers: Monitor chambers are installed to measure the beam intensity, position, and profile. These chambers are essential for monitoring and verifying the treatment delivery.
+Beam Shaping Inserts: Beam shaping inserts can be used to modify the beam profile and shape it according to the specific treatment requirements.
+Treatment Planning System: A treatment planning system is required to plan and optimize the treatment delivery. This includes modeling of the electron beam transport, dose calculations, and verification of the treatment plan.
+}
+\subsection*{}(b)What is meant by the isocentric mounting of a linear accelerator? [3 marks]
+
+\paragraph*{The isocentric mounting of a linear accelerator (linac) refers to the specific configuration and arrangement of the linac components to ensure the alignment of the radiation beam's central axis with a fixed point in space, known as the isocenter.
+
+In an isocentric linac mounting, the following key features are present:
+
+1. Gantry rotation:
+   - The gantry, which houses the linear accelerator head and the radiation source, is designed to rotate around a central axis.
+   - This rotation allows the radiation beam to be directed at the patient from various angles.
+
+2. Isocenter:
+   - The isocenter is a fixed point in space, typically located at the center of the patient's treatment volume or the region of interest.
+   - The radiation beam's central axis is aligned to pass through this isocenter, regardless of the gantry's rotation angle.
+
+3. Couch/patient positioning:
+   - The patient couch or treatment table is designed to position the patient in a way that aligns the target volume or tumor with the isocenter.
+   - This ensures that the radiation beam is consistently delivered to the intended treatment region.
+
+The key benefits of an isocentric linac mounting include:
+
+1. Precision and accuracy:
+   - The alignment of the radiation beam's central axis with the isocenter allows for precise and accurate delivery of the treatment, minimizing the risk of geographical miss.
+
+2. Flexibility in treatment planning:
+   - The ability to rotate the gantry around the isocenter provides flexibility in treatment planning, allowing the delivery of radiation from multiple angles to optimize the dose distribution.
+
+3. Consistent patient setup:
+   - The fixed isocenter position simplifies patient positioning and ensures that the target volume remains aligned with the radiation beam during the course of treatment.
+
+4. Ease of treatment delivery:
+   - The isocentric mounting allows for efficient and streamlined treatment delivery, as the radiation therapist can easily adjust the gantry angle and position the patient without the need for complex manual adjustments.
+}
+\subsection*{}(c)Briefly explain the following with respect to the linear accelerator
+
+(i) How does an electron gun work? [3 marks]
+
+\paragraph*{Electron guns are also used in medical applications to produce X-rays using a linac (linear accelerator); a high energy electron beam hits a target, stimulating emission of X-rays. Electron guns are also used in travelling wave tube amplifiers for microwave frequencies. In an electron gun, the metal plate is heated by a small filament wire connected to a low voltage. Some electrons (the conduction electrons) are free to move in the metal – they are not bound to ions in the lattice. As the lattice is heated, the electrons gain kinetic energy.}
+
+(ii) Why is a bending magnet used in a linear accelerator (LINAC)? [3 marks]
+
+\paragraph*{ To bend the electron beam produced by the accelerator tube, in the treatment direction. For each electron energy the strength of the magnetic field has to be set to a specific level.}
+
+(iii) What is a klystron? [3 marks]
+
+\paragraph*{An electron tube that generates or amplifies microwaves by velocity modulation.}
+\newpage
+\section{Question 3 }
+
+\subsection*{}(a)Draw a well labelled diagram of the major components of an orthovoltage x-ray tube. Describe
+the processes of x-ray production by this equipment for radiation therapy treatment. [8 marks]
+
+\paragraph*{Notes and Books}
+
+\subsection*{}(b)Define the term “half value layer” and explain one use of this concept on orthovoltage radiation
+therapy. [2 marks]
+
+\paragraph*{Notes and Books}
+\subsection*{}(c)What is the classification of therapy X-ray beams? [2 marks]
+
+\paragraph*{Orthovoltage X-rays(Lower energy range (typically 80-500 keV)), Megavoltage X-rays(Higher energy range (typically 4-25 MeV)), }
+
+\subsection*{}(d)Briefly describe the decay scheme for cobalt-60 (Co)? [3 marks]
+
+\paragraph*{Notes}
+
+\subsection*{}(e)With the aid of diagrams, describe the physical principles of radiation beam production a cobalt- 60 teletherapy machine. [5 marks]
+
+\paragraph*{Assignment}
+\newpage
+\section{Question 4}
+
+\subsection*{}(a)Explain the following terms. [6 marks] :
+(i) the tissue-air ratio (ii) the percentage depth dose (iii) the backscatter factor
+
+\paragraph*{Notes}
+\subsection*{}(b)What is the definition of percent depth dose (PDD) for a given field size and photon energy.
+How can you measure percentage depth dose? [6 marks]
+
+\paragraph*{Notes}
+
+\subsection*{}(c)The figure below shows three typical isodose distributions for low energy, high energy and very high energy radiation. Explain why they are quite different near the edge of the beam?[5 marks]
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{hehe.jpg}
+    \caption{drink prime}
+    \label{fig:galaxy}
+\end{figure}
+
+
+
+\subsection*{}(d)Discuss the technique you can use to determine the Tissue-Air ratios for rectangular or irregular
+fields. [3 marks]
+
+\newpage
+\section{Question 5}
+
+\subsection*{}(a)Briefly explain the basic physical principles of brachytherapy and the types of brachytherapy?
+[7 marks]
+
+\paragraph*{**Physical Principles of Brachytherapy:**
+
+Brachytherapy is a type of internal radiation therapy that uses small, sealed containers filled with radioactive materials (called seeds or sources) to deliver radiation therapy to a specific area of the body. The physical principles of brachytherapy include:
+
+1. **Radiation dose delivery**: Brachytherapy delivers radiation to a specific target area, typically with a high dose rate and precise control over the beam.
+
+2. **Source design**: Brachytherapy sources are designed to emit radiation in a specific direction, allowing for precise targeting of the treatment area.
+
+3. **Source placement**: Brachytherapy sources are typically placed inside the patient's body, often in the tumor or surrounding tissue, using various techniques such as catheterization, implantation, or injection.
+
+4. **Radiation transport**: Radiation is transported through the patient's body, interacting with surrounding tissues and organs, and depositing energy in the target area.
+
+5. **Dose calculation**: Accurate dose calculation is critical in brachytherapy, as it helps ensure that the target area receives the desired dose while minimizing exposure to surrounding healthy tissues.
+
+**Types of Brachytherapy:**
+
+1. **Interstitial brachytherapy**: In this type of brachytherapy, small radioactive seeds or sources are implanted directly into the tumor tissue using a catheter or needle.
+
+2. **Intraoperative brachytherapy**: This type of brachytherapy involves placing radioactive sources during surgical removal of a tumor.
+
+3. **Endocavitary brachytherapy**: In this type of brachytherapy, radioactive sources are placed inside natural cavities of the body, such as the esophagus or vagina.
+
+4. **Surface applicator brachytherapy**: This type of brachytherapy involves placing radioactive sources on the surface of the body, often using a mold or applicator.
+
+5. **High-dose-rate (HDR) brachytherapy**: HDR brachytherapy involves delivering high-dose radiation therapy in a short period (typically 30-60 minutes) using an external device.
+
+6. **Low-dose-rate (LDR) brachytherapy**: LDR brachytherapy involves delivering low-dose radiation therapy over an extended period (typically several days to weeks) using an implantable source.
+
+7. **Pulsed-dose-rate (PDR) brachytherapy**: PDR brachytherapy involves delivering pulsed radiation therapy with varying doses and durations.
+}
+\subsection*{}(b)For each of the following radionuclides; Iridium-192, Strontium-90 and lodine-125. [9 marks]
+
+(i) Identify the type of emissions produced, give a brief description of their energy spectrum,
+and state the half-life of each radionuclide.
+
+
+(ii) Give one clinical use for each of these radionuclides.
+
+\paragraph{Notes}
+
+\subsection*{}(c) What are the advantages and disadvantages of brachytherapy compared with external beam therapy in clinical practice from a radio-therapeutic physics viewpoint? [4 marks]
+
+\paragraph*{Notes and Books}
+
+
+\newpage
+\subsection*{a) Exceeding Supply}
+We calculate the probability that the demand rate for aquariums in a given week exceeds the supply.
+
+
+
+\subsubsection*{Step 1}
+We list our variables and assumptions below. Here, we are not given the distribution, so we assume it is a Poisson distribution.
+
+\begin{minipage}{0.5\textwidth}
+$S_n$: Supply of aquarium at week $n$. \\
+$D_n$: Demand for aquarium at week $n$.
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+If $S_{n-1} - D_{n-1} > 1$, then $S_n = S_{n-1} - D_{n-1}$. \\
+If $S_{n-1} - D_{n-1} \leq 1$, then $S_n = 3$. \\
+$Pr\{D_n = k\} = e^{-1}/k!$.
+\end{minipage}
+
+
+
+
+\subsubsection*{Step 2}
+We will model this problem as a Markov chain in steady state.
+
+
+
+
+\newpage
+\subsubsection*{Step 3}
+
+\begin{wrapfigure}[14]{r}{0.5\textwidth}
+\includegraphics[width = 0.48\textwidth]{Hw10_fig1.png}
+\caption{\label{aq:state:fig} State transition diagram.}
+\end{wrapfigure}
+
+Let $X_n = S_n$. The state space is $X_n \in \{2,3\}$. We tabulate the following transitions:
+
+\begin{tabular}{ c c l }
+$X_n =2$ & $X_{n+1}$ = 2 & if $D_n = 0$ \\
+& $X_{n+1}$ = 3 & if $D_n > 0$ \\
+$X_n = 3$ & $X_{n+1} = 2$ & if $D_n = 1$ \\
+& $X_{n+1} = 3$ & if $D_n = 0$ or $D_n > 1$
+\end{tabular}
+
+
+The distribution of the demand variable $D_n$ gives the following values
+\begin{align*}
+Pr\{D_n = 0\} & = 0.3679 \\
+Pr\{D_n = 1\} & = 0.3679 \\
+Pr\{D_n > 1\} & = 0.2642
+\end{align*}
+Thus, we have the following matrix of probabilities
+\begin{align} \label{aq:P}
+P & =
+	\begin{pmatrix}
+    p_{11} & p_{12} \\
+    p_{21} & p_{22}
+    \end{pmatrix} \notag \\
+P & =
+	\begin{pmatrix}
+    0.3679 & 0.6321 \\
+    0.3679 & 0.6321
+    \end{pmatrix}
+\end{align}
+
+
+
+
+
+\subsubsection*{Step 4}
+Since $\{X_n\}$ is an ergodic Markov chain, we can compute a unique steady state probability vector $\vec{\pi}$. We solve
+\begin{align*}
+\vec{\pi} = \vec{\pi} P
+\end{align*}
+along with $\pi_1 + \pi_2 = 1$.
+
+\begin{align*}
+\pi_1 = 0.3679\pi_1 + 0.3679\pi_2 \\
+\pi_2 = 0.6321\pi_1 + 0.6321\pi_2 \\
+\pi_1 + \pi_2 = 1
+\end{align*}
+
+The solution to this system is
+\begin{equation} \label{aq:steady}
+	\begin{aligned}
+	\pi_1 = 0.3679 \\
+	\pi_2 = 0.6321
+    \end{aligned}
+\end{equation}
+
+That is, for large $n$, it is approximately true that
+\begin{align*}
+Pr\{X_n = 2\} = 0.3679 \\
+Pr\{X_n = 3\} = 0.6321
+\end{align*}
+
+We use this information to find when the demand exceeds the supply
+\begin{align} \label{aq:ans}
+Pr\{D_n > S_n\} & = \sum_{i=2}^{3} Pr\{D_n > S_n | X_n = i\} Pr\{X_n = i\} \notag \\
+& = (0.08)(0.3679) + (0.019)(0.6321) \notag \\
+Pr\{D_n > S_n\} & = 0.0414
+\end{align}
+
+
+
+
+\subsubsection*{Step 5}
+Example 8.1 presented us with an inventory policy that the aquarium stock should only be refilled if there are no aquariums left in stock. This resulted in 10\% sales loss. By changing the inventory policy, the sales loss is reduced to 4.14\%, half of what it was before.
+
+
+
+
+
+
+
+
+
+
+\subsection*{b) Sensitivity to Demand Rate}
+
+Suppose now that $Pr\{D_n = k\} = e^{-\lambda}/k!$. We wish to perform a sensitivity analysis on $\lambda$. The distribution of the demand variable now becomes
+\begin{align*}
+Pr\{D_n = 0\} & = e^{-\lambda} \\
+Pr\{D_n = 1\} & = e^{-\lambda} \\
+Pr\{D_n > 1\} & = 1-2e^{-\lambda}
+\end{align*}
+so that the matrix \eqref{aq:P} becomes
+\begin{align} \label{aq:sense:P}
+P & =
+	\begin{pmatrix}
+    e^{-\lambda} & 1-e^{-\lambda} \\
+    e^{-\lambda} & 1-e^{-\lambda}
+    \end{pmatrix}
+\end{align}
+
+We have tabulated several important results below and Figure \eqref{aq:sens:fig} is a graphical display of the probability that demand exceeds supply given different $\lambda$'s.
+
+\begin{center}
+	\begin{tabular}{c | c | c}
+	$\lambda$ & Steady State $\vec{\pi}$ & $Pr\{D_n > S_n\}$ \\
+    \hline
+    0.75 & $(0.4724, 0.5276)$ & 4.78\% \\
+	0.9 & $(0.4066	0.5934)$ & 4.36\% \\
+    1.0 & $(0.3679, 0.6321)$ & 4.14\% \\
+    1.1 & $(0.3329, 0.6671)$ & 3.93\% \\
+    1.25 & $(0.2865, 0.7135)$ & 3.65\%
+	\end{tabular}
+\end{center}
+
+\begin{figure}[h]
+\includegraphics[width = \textwidth]{Hw10_fig2.png}
+\caption{\label{aq:sens:fig} Sensitivity of the probability of lost sales to the arrival rate.}
+\end{figure}
+
+
+
+
+
+
+
+
+\subsection*{c) Estimating $S(p,\lambda)$}
+Let $p$ denote the steady-state probability that demand exceeds supply. The sensitivity of $p$ to $\lambda$ is just the slope of the line in Figure \eqref{aq:sens:fig}. We have
+\begin{align*}
+S(p,\lambda) & = \frac{\Delta p}{\Delta \lambda} \\
+S(p,\lambda) & = \frac{-0.0113}{0.5} \\
+S(P,\lambda) & = -0.0226 \\
+\end{align*}
+
+Thus we estimate that the sensitivity of the probability of lost sales to arrival rate is
+\begin{align*}
+S(p,\lambda) = -0.0226
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{Exercise 8.5}
+
+\subsection*{a) Steady-state distribution of the market state}
+We have a Markov process with three states.
+
+$M_1 = $ Bear market \\
+$M_2 = $ Strong bull market \\
+$M_3 = $ Weak bull market
+
+Furthermore, assume the transition matrix is represented by $P$, where
+\begin{align*}
+P =
+	\begin{pmatrix}
+	0.9 & 0.02 & 0.08 \\
+    0.05 & 0.85 & 0.1 \\
+    0.05 & 0.05 & 0.9
+	\end{pmatrix}
+\end{align*}
+represents the weekly dynamics in the stock market.
+
+Since $\{M_n\}$ is an ergodic Markov chain, we can compute a unique steady state probability vector $\vec{\pi}$. We solve
+\begin{align*}
+\vec{\pi} = \vec{\pi} P
+\end{align*}
+along with $\pi_1 + \pi_2 + \pi_3= 1$, where $\pi_i$ corresponds to $M_i$.
+
+\begin{align*}
+\pi_1 = 0.90\pi_1 + 0.05\pi_2 + 0.05\pi_3 \\
+\pi_2 = 0.02\pi_1 + 0.85\pi_2 + 0.05\pi_3 \\
+\pi_3 = 0.08\pi_1 + 0.1\pi_2 + 0.90\pi_3 \\
+\pi_1 + \pi_2 + \pi_3 = 1
+\end{align*}
+
+The solution to this system is
+\begin{equation} \label{stock:steady}
+	\begin{aligned}
+	\pi_1 = 0.3333,
+	\pi_2 = 0.2,
+    \pi_3 = 0.4667
+    \end{aligned}
+\end{equation}
+
+For large $n$, it is also approximately true that
+\begin{align*}
+P\{M_1\} = 0.3333,
+P\{M_2\} = 0.2,
+P\{M_3\} = 0.4667
+\end{align*}
+
+In other words, we expect to be in a Bear market 33\% of the time, a strong bull market 20\% of the time, and a weak bull market 47\% of the time.
+
+
+
+
+
+
+
+\subsection*{b) Yield on \$10,000 investment}
+
+Suppose we invest \$10,000 in a mutual fund for ten years. Each year this fund yields a return $R(i)$ of -3\%, 28\%, and 10\% annually when the stock market is in state $M_1$, $M_2$, and $M_3$ respectively. We wish to determine our expected yield for ten years.
+
+First, we assume that the transition matrix $P$ and the returns $R$ are unchanging for 10 years. Additionally, assume that we don't touch the fund for 10 years; any money that we gain stays in the fund, and if we loose money, we don't withdraw the fund.
+
+Since there are $n = 52$ weeks in a year, we have $n$ large enough so that we can use the approximation from Equation \eqref{stock:steady}. Then, we have the following discrete dynamical system
+\begin{align*}
+Y_{n+1} = Y_n + Y_n \Bigg( \sum_{i=1}^3 Pr\{X_n = i\} R(i) \Bigg)
+\end{align*}
+where $Y_n$ is how much money we have in the firm.
+
+Since $P$ and $R$ don't change over time, the summation returns a constant 0.092667, so we can reduce this equation to
+\begin{align} \label{stock:dynamics}
+Y_{n+1} & = 1.092667 Y_n
+\end{align}
+
+We solve this system and tabulate the results below.
+\begin{center}
+	\begin{tabular}{c | c}
+    $n$ & $Y_n$ \\
+    \hline
+    0 & \$10,000 \\
+    1 & \$10,926.67 \\
+    2 & \$11,939.21\\
+    3 & \$13,045.58 \\
+    4 & \$14,254.48 \\
+    5 & \$15,575.40 \\
+    6 & \$17,018.72 \\
+    7 & \$18,595.80 \\
+    8 & \$20,319.01 \\
+    9 & \$22,201.92 \\
+    10 & \$24,259.30 \\
+    \end{tabular}
+\end{center}
+
+{\bf Therefore, after ten years we expect the fund to return \$14,259.30}.
+
+Lastly the order of the state transitions doesn't make a difference. As the weeks go on, the transitions will reach steady-state; we have sufficiently large enough $n$ that we will jump through many states in concordance with the steady state distribution.
+
+\subsection*{c) Worst-Case scenario}
+In the worst-case scenario, $R(i)$ is 40\%, 20\%, and 40\% for $M_1$, $M_2$, and $M_3$, respectively. Equation \eqref{stock:dynamics} then becomes
+\begin{align*}
+Y_{n+1} = 1.084Y_n
+\end{align*}
+
+Integrating this system returns a yield of \$12,402.31 after 10 years. This is \$1856.99 less than part (b). Because the stock market spends more time in the bear market state, the -3\% gain has a greater effect on the overall return.
+
+
+\subsection*{d) Best-Case Scenario}
+In the best-case scenario, $R(i)$ is 10\%, 70\%, and 20\% for $M_1$, $M_2$, and $M_3$, respectively. Equation \eqref{stock:dynamics} then becomes
+\begin{align*}
+Y_{n+1} = 1.213Y_n
+\end{align*}
+
+Integrating this system returns a yield of \$58,961.71 after 10 years. This is \$44,702.41 more than part (b). Because the stock market spends more time in the strong bull state, the 28\% gain has a greater effect on the overall return.
+
+
+
+\subsection*{e) Mo' Money Market, Mo' Problems}
+Consider a money market fund that returns about 8\%. This would yield the following discrete dynamical system
+\begin{align*}
+Y_{n+1} = 1.08Y_n
+\end{align*}
+Integrating over ten years with the same assumptions as above yields a return of \$11,589.25. But this is \$813.06 less than the worst-case scenario from the mutual fund. We assume that the reported worst-case distribution is actually the worst case, which is historically untrue. \underline{With our assumption}
+\underline{the mutual fund is a better investment opportunity than the money market fund.}
+
+
+
+\newpage
+\section*{Appendix}
+
+
+\subsection*{Appendix 1}
+
+\begin{verbatim}
+
+\end{verbatim}
+
+
+
+
+
+
+\subsection*{Appendix 2}
+\begin{verbatim}
+(*problem 8.5*)
+(*part A analytical solution*)
+soln = Solve[{pi[1] == 0.90*pi[1] + 0.05*pi[2] + 0.05*pi[3],
+                          
+   pi[2] == 0.02*pi[1] + 0.85*pi[2] + 0.05*pi[3],
+   		pi[3] == .08*pi[1] + .1*pi[2] + .90*pi[3],
+    pi[1] + pi[2] + pi[3] == 1}]
+    
+(*A Simulation approach for part A*)
+P = {{0.9, 0.02, 0.08}, {0.05, .85, .10}, {0.05, 0.05, 0.90}}
+pi[0] = {{1, 0, 0}}
+n = 25000; i = 0; Do[{pi[i + 1] = pi[i].P; i = i + 1;}, {n}]
+Print[pi[n]]
+
+\end{verbatim}
+
+
+
+\end{document}

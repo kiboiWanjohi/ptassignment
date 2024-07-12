@@ -1,0 +1,372 @@
+\documentclass[a4paper,twoside,11pt]{article}
+\usepackage{a4wide,graphicx,fancyhdr,clrscode,tabularx,amsmath,amssymb,color,enumitem}
+\usepackage{algo}
+
+%----------------------- Macros and Definitions --------------------------
+
+\setlength\headheight{20pt}
+\addtolength\topmargin{-10pt}
+\addtolength\footskip{20pt}
+
+\fancypagestyle{plain}{%
+\fancyhf{}
+\fancyhead[LO,RE]{\sffamily technische universiteit eindhoven}
+\fancyhead[RO,LE]{\sffamily JBI020 Foundations of Computing}
+\fancyfoot[LO,RE]{\sffamily /department of computer science}
+\fancyfoot[RO,LE]{\sffamily\bfseries\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RO,LE]{\sffamily JBI020 Foundations of Computing}
+\fancyhead[LO,RE]{\sffamily technische universiteit eindhoven}
+\fancyfoot[LO,RE]{\sffamily /department of computer science}
+\fancyfoot[RO,LE]{\sffamily\bfseries\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\Q}{{\mathbb Q}}
+
+\begin{document}
+
+\title{\vspace{-2\baselineskip} 
+Radiobioogy II
+}
+\author{Some One \qquad Student number: 123456 \\{\tt s.one@student.tue.nl}}
+
+
+\maketitle
+
+
+Note: This is by no means a full and complete introduction to latex (or maybe not an introduction at all). Its purpose is to mostly introduce some of the symbols and notation used throughout the course, if you already know some of the basics.
+
+\subsection*{Question 1}
+
+
+\paragraph{(a)}Explain the following terms. [3 marks] a
+(a) Prodromal syndrome (b) Epidemiology
+\paragraph{
+Prodromal syndrome are classic symptoms e.g. nausea, vomiting, as well as anorexia and possibly diarrhea (depending on dose), which occur from minutes to days following exposure.
+
+
+Epidemiology is study of distribution and determinants of health-related states among specified populations and the application of that study to the control of health problems.}
+\paragraph{(b)}Explain the latent period and At-risk period. [4 marks]
+Which populations are used as sources of data on the incidence of radiation-induced cancer?
+
+\paragraph{ a. Latent period is the time interval between the initial radiation exposure and the subsequent appearance of a specific radiation-induced health effect or disease.
+
+b.At-risk period is the time period following radiation exposure when the risk of developing certain radiation-induced health effects is the highest.}
+\paragraph{(c)}What are the limitations on epidemiologic studies? [7 marks]
+\paragraph
+Failure to control experimental group for further carcinogens 
+Insufficient observational periods
+Using improper control groups
+Deficient/Incorrect health records
+\paragraph{(d)}What are the effects on fertility caused by low-dose, long-term irradiation? [6 marks]
+
+\paragraph
+- Decreased sperm count and motility due to damage to the seminiferous tubules and Sertoli cells in the testes.
+- Increased incidence of sperm chromosomal abnormalities and DNA damage.
+- Reduced testosterone production by Leydig cells, leading to decreased libido and sexual function.
+
+
+- Premature ovarian failure and accelerated depletion of ovarian follicles.
+- Disruption of menstrual cycle and hormonal regulation.
+- Increased risk of miscarriage, stillbirth, and birth defects in offspring.
+
+
+- Radiation can cause mutations and chromosomal aberrations in the germ cells (sperm and oocytes).
+- This can lead to increased genetic disorders and heritable effects in the offspring.
+- The magnitude of genetic risk depends on the radiation dose and parental exposure history.
+
+
+- Fertility effects show a dose-dependent relationship, with higher radiation doses causing more severe and irreversible damage.
+- Low-dose, long-term exposures can still lead to cumulative effects on fertility over time.
+
+\paragraph{(e)}The figure below shows a mammalian dose survival curve. Supply names for the regions labelled
+(a) to (d).
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=8cm]{radiobiology 2 image .jpg}
+    \caption{shii}
+    \label{fig:galaxy}
+\end{figure}
+\paragraph{(f)}Explain the system(s) that leads to death due to acute radiation syndrome for the labelled regions. [6 marks]
+\paragraph{Based on the graph showing the relationship between radiation dose and survival time, the labeled regions correspond to different acute radiation syndromes that can lead to death:
+
+Region (a):
+This region represents doses above approximately 10 Gy, where death occurs within a few days to a couple of weeks. At these extremely high radiation doses, the primary syndrome leading to death is the Cerebrovascular/Central Nervous System (CV/CNS) Syndrome. Massive ionizing radiation causes irreparable damage to the cardiovascular and central nervous systems, leading to symptoms such as confusion, seizures, coma, and ultimately death within a short time frame.
+
+Region (b):
+This region represents doses ranging from approximately 6 Gy to 10 Gy, where death typically occurs within a few weeks. In this dose range, the Gastrointestinal (GI) Syndrome is the primary cause of death. High radiation exposure damages the gastrointestinal tract, leading to symptoms like nausea, vomiting, diarrhea, dehydration, and electrolyte imbalances. This can ultimately result in fluid and electrolyte loss, intestinal wall breakdown, sepsis, and death within a few weeks.
+
+Region (c):
+This region represents doses from approximately 2 Gy to 6 Gy, where death can occur within a few weeks to a few months. At these dose levels, the Hematopoietic Syndrome is the main contributor to mortality. Radiation exposure damages the bone marrow and hematopoietic system, leading to a decline in blood cell counts (red cells, white cells, and platelets). This can result in infections, uncontrolled bleeding, and a general inability to fight infections, potentially leading to death within weeks to months if untreated.
+}
+
+\paragraph{(g)}Write down the clinical Signs and symptoms of hematologic syndrome. [4 marks]
+
+\paragraph
+The clinical signs and symptoms of the hematologic radiation syndrome are as follows:
+
+Mild Hematologic Syndrome (2-4 Gy):
+- Fatigue and weakness
+- Headache
+- Nausea
+- Loss of appetite
+
+Moderate Hematologic Syndrome (4-6 Gy):
+- Vomiting
+- Fever
+- Increased susceptibility to infection
+- Easy bruising and bleeding
+
+Severe Hematologic Syndrome (>6 Gy):
+- Severe and uncontrolled bleeding
+- Extensive infections
+- Fever and chills
+- Overwhelming sepsis
+- Organ failure
+- Death
+
+The hematologic syndrome is caused by damage to the bone marrow and hematopoietic system, leading to a reduction in the production of all blood cell types (leukocytes, erythrocytes, and platelets).
+
+At lower doses (2-4 Gy), the effects are mostly limited to fatigue, weakness, and mild gastrointestinal symptoms. As the dose increases (4-6 Gy), the severity of symptoms increases, with bleeding, infections, and fever becoming more prominent.
+
+At very high doses (>6 Gy), the hematopoietic system is severely compromised, leading to life-threatening complications like uncontrolled bleeding, sepsis, and organ failure. Without appropriate medical intervention, the severe hematologic syndrome is often fatal.
+
+\newpage
+
+\subsection*{Question 2}
+\paragraph{(a)}Briefly describe the risk estimation models. [6 marks]
+
+\paragraph{Notes}
+\paragraph{(b)}A study of radiation-induced leukemia(cancer of blood-forming cells in bone marrow) was performed after diagnostic levels of radiation. Four hundred cases were observed in 150,000 people irradiated. The normal incidence of leukemia is 120 cases per 100,000. if the normal incidence were presumed to occur in a non-irradiated population, what is the relative risk of radiation-induced leukemia.[4 marks]
+
+\paragraph{Notes}
+
+\paragraph{(c)}Discuss the results of epidemiologic studies of populations exposed to radiation. [10 marks]
+
+\paragraph{Notes}
+
+\newpage
+\subsection*{Question 3}
+
+\paragraph{(a)}Briefly discuss the stochastic and non-stochastic effects, Give examples to accompany your explanation, You can use graphs to aid in explaining. [8 marks]
+
+\paragraph{Notes}
+
+\paragraph{(b)}Briefly describe what is meant by genetic damage. [5 marks]
+
+\paragraph{Assignment}
+
+\paragraph{(c)}It has been noted and concluded from studies that there are increased incidences of Jung cancer in uranium miners while the general population seems to have negligible incidences of lung cancer. If you agree with that conclusion give a brief explanation as to the cause of the increase of the incidences, and if you disagree give your explanation. [7 marks]
+
+\paragraph{Assignment}
+\newpage
+\subsection*{Question 4}
+
+\paragraph{(a)}What are the effects on fertility caused by low-dose, long-term irradiation? [1 mark]
+\paragraph{
+Decreased sperm count and motility due to damage to the seminiferous tubules and Sertoli cells in the testes.
+Disruption of menstrual cycle and hormonal regulation. Better answers in notes
+}
+\paragraph{(b)}You have performed an X-ray exam on a female who later determined she was pregnant at the time of the X-ray exposures. Discuss the factors that affect her embryo’s response to radiation.
+Explain the possible principal effects of irradiation to her foetus. [10 marks]
+
+\paragraph
+Better answers in notes
+
+Factors affecting embryo/fetus response:
+1. Gestational age at time of exposure - The stage of development is critical, as the embryo/fetus is most sensitive during the early stages of organogenesis.
+2. Radiation dose and dose rate - Higher doses and dose rates result in more severe effects.
+3. Radiation type - High-LET radiation like neutrons or alpha particles cause more biological damage.
+4. Individual radiosensitivity - Genetic factors and underlying health conditions can influence radiation sensitivity.
+
+Possible principal effects on the fetus:
+
+1. Developmental effects:
+   - Early pregnancy (0-2 weeks) - Possible embryonic death or malformations
+   - Organogenesis (2-8 weeks) - Increased risk of congenital anomalies
+   - Fetal period (8 weeks to birth) - Growth retardation, microcephaly, mental retardation
+
+2. Cancer induction:
+   - Increased lifetime risk of childhood cancers like leukemia and solid tumors
+
+3. Genetic effects:
+   - Radiation can induce mutations in fetal germ cells leading to heritable genetic disorders
+
+\paragraph{(c)}Discuss any three radiation-induced malignancies. [9 marks]
+
+\paragraph
+Types of Radiation-Induced Cancers:
+- Leukemia (particularly acute myeloid leukemia)
+- Solid tumors in organs like thyroid, breast, lung, stomach, colon, skin
+- Sarcomas of bone and soft tissue
+
+Mechanisms of Carcinogenesis:
+- Direct DNA damage and chromosomal abnormalities leading to genetic mutations
+- Induction of genomic instability
+- Disruption of cell signaling pathways regulating proliferation and apoptosis
+
+Dose-Response Relationship:
+- Increased cancer risk is proportional to the radiation dose received
+- No threshold - even low doses can increase lifetime attributable risk
+- Latency period is typically 5-50 years before clinical manifestation
+
+Risk Factors:
+- Younger age at exposure - children are more radiosensitive
+- Female sex - higher susceptibility for certain cancers like breast
+- Genetic predisposition and immune system status
+
+Management:
+- Early cancer detection through screening and surveillance programs
+- Minimizing exposure through radiation protection principles
+- Providing appropriate medical care and follow-up for exposed individuals
+
+\newpage
+\subsection*{Question 5}
+
+\paragraph{(a)}Briefly discuss the local tissue damage after high-dose irradiation. [9 marks]
+
+\paragraph
+High doses of ionizing radiation exposure can induce severe damage to tissues locally in the irradiation site through several mechanisms:
+
+Cell Death Pathways:
+- Dominant mode of local damage is through reproductive cell death pathways. Doses > 2 Gy trigger widespread activation of apoptosis and mitotic cell death. Loss of functional parenchymal cells.
+
+Vascular and Connective Tissue Damage:  
+- Endothelial cell apoptosis leading to microvascular collapse at site. Reduction in local blood supply leads to ischemia and hypoxia enhancing cell damage.
+- Disruption of extracellular matrix production and integrity due to damage to matrix structures.
+
+Inflammatory Effects:
+- Release of cytokines triggering inflammation cascade and cell signaling related to DNA damage, oxidative stress, cellular debris clearance. Can persist leading to tissue fibrosis.
+
+Functional Loss:
+- All the above effects combine to lead to complete loss of normal tissue function in the irradiation site, manifesting as ulceration of skin, necrosis of internal organs. May be irrecoverable based on cell lifespan. 
+
+\paragraph{(b)}What is meant by an acute radiation syndrome. Describe the syndromes. [6 marks]
+
+\paragraph
+Acute Radiation Syndrome (ARS) refers to the collection of health effects that occur within a short period of time (hours to months) following exposure to high doses of ionizing radiation over the entire body or a significant portion of it. The main syndromes associated with ARS are:
+
+1. Hematopoietic Syndrome:
+   - Caused by damage to the bone marrow and hematopoietic system
+   - Symptoms: Fatigue, weakness, infection, bleeding, and death
+   - Typically occurs with doses between 2-10 Gy
+   - Latency period: Days to weeks
+
+2. Gastrointestinal (GI) Syndrome:
+   - Caused by damage to the GI tract, including the intestines and digestive organs
+   - Symptoms: Nausea, vomiting, diarrhea, dehydration, and death
+   - Typically occurs with doses between 6-20 Gy
+   - Latency period: Days to weeks
+
+3. Cardiovascular/Central Nervous System (CV/CNS) Syndrome:
+   - Caused by damage to the cardiovascular and central nervous systems
+   - Symptoms: Confusion, incontinence, seizures, coma, and death
+   - Typically occurs with doses greater than 20 Gy
+   - Latency period: Minutes to days
+
+\paragraph{(c)}Briefly explain hematologic and cytogenetic effects. [5 marks]
+
+\paragraph
+Hematologic and Cytogenetic Effects of Ionizing Radiation:
+
+Hematologic Effects:
+- Ionizing radiation primarily affects the hematopoietic system, which is responsible for producing blood cells.
+- Radiation can damage the stem cells and progenitor cells in the bone marrow, leading to a decrease in the production of various blood cell types.
+- The severity of hematologic effects depends on the radiation dose and can be classified into the following syndromes:
+  1. Mild hematologic syndrome (2-4 Gy): Fatigue, weakness, and mild gastrointestinal symptoms.
+  2. Moderate hematologic syndrome (4-6 Gy): Increased susceptibility to infection, easy bruising and bleeding.
+  3. Severe hematologic syndrome (>6 Gy): Uncontrolled bleeding, overwhelming infections, and organ failure.
+
+Cytogenetic Effects:
+- Ionizing radiation can directly damage the DNA in cells, leading to chromosomal aberrations and genetic mutations.
+- These cytogenetic effects can be observed in various cell types, including blood lymphocytes.
+- Common cytogenetic changes include:
+  1. Chromosome breaks and rearrangements (dicentric chromosomes, rings, etc.)
+  2. Micronuclei formation
+  3. Increased frequency of chromosomal exchanges
+\paragraph{(g) What are the effects on fertility caused by low dose long-term radiation}
+\paragraph{
+Ovarian Insufficiency -  Ionizing radiation exposure can lead to ovarian insufficiency, which affects the ovaries' ability to produce eggs. This can result in reduced fertility or infertility ¹.
+
+Pubertal Arrest - Radiation exposure during childhood or adolescence may disrupt the hypothalamic-pituitary-gonadal axis, affecting normal hormonal secretion. This disruption can lead to pubertal arrest and subsequent fertility issues ¹.
+
+Uterine Damage - Radiotherapy can also damage the uterus. Childhood exposure to radiation can lead to altered uterine vascularization, decreased uterine volume, myometrial fibrosis, and endometrial atrophy. These changes can impact fertility ¹.
+
+Fertility Preservation - Given the impact of radiations on reproductive potential, fertility preservation procedures should be considered before or during anticancer treatments. Advances in reproductive biology have diversified fertility preservation options ¹.
+}
+
+\newpage
+\paragraph{(a)} 
+My solution to this exercise is a bunch of \textbf{logical symbols}:
+$\vee \wedge \Rightarrow \Leftrightarrow \neg \equiv \not\equiv \therefore$\\
+And some more: $\exists_x \forall_y$
+
+\paragraph{(b)}
+Can't forget the \emph{set operations} and so forth:
+\[ \cap \cup \setminus {}^\text{c} \mathcal{P} \mathcal{U} \in \not\in \subseteq \not\subseteq \emptyset \]
+
+\paragraph{(c)}
+Some basic mathematical notation
+\[ \R \N \Z \Q < > \leq \geq \neq x^2 \sqrt{y} \]
+
+\paragraph{(d)}
+
+Here's a math table-like environment for setting up a series of derivations.
+\begin{eqnarray*}
+  && T \\
+  &\equiv& \{ \text{rule to be proven } \Rightarrow \} \\
+  && ? \\
+  &\equiv& \{ \text{rule to be proven } \wedge \} \\
+  && F 
+\end{eqnarray*}
+
+But if you don't want to use (a lot of) math inside a table, a normal table also works:\\
+\begin{tabular}{lcr}
+left & center & right \\
+\hline
+l & c & r \\
+$x+y$ & $\equiv$ & $y + x$ \\
+\end{tabular}
+
+\begin{tabular}{rl}
+& $a \wedge b$ \\
+& $q$ \\
+\hline
+$\therefore$ & x 
+\end{tabular}
+
+\subsection*{Exercise 2}
+
+\paragraph{(a)} Regular expressions: $(a + \varepsilon)^* (a+b) ab$
+\paragraph{(a)} Useful for writing about Turing machines: $\square$
+
+\subsection*{Exercise 3}
+
+For specifying algorithms:
+
+\begin{algorithm}{\sc MyIncredibleAlgorithm}[A,v]{
+    \qinput an array $A$ of $n$ numbers and a number $v$
+    \qoutput an index $i$ such that $A[i] = 42$, or \textsc{NotFound} if no such index exists}
+    $i$ \qlet $1$ \\
+    \qwhile $i \leq n$ and $A[i] \neq 42$ \\
+     \qdo $i$ \qlet $i + v^2$ \qend \\
+    \qif $i > n$ \\
+    \qthen \qreturn \textsc{NotFound}\\
+    \qelse \qreturn $i$ \qfi\\
+    \qfor $i$ \qlet 1 to $n$ \\
+    \qdo Something useful \qend
+\end{algorithm}
+
+For analysis, you may want to know $O, \Theta, \Omega(n \log n)$ (not to be confused with $o, \omega$).
+
+\end{document}
+

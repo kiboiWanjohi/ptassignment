@@ -1,0 +1,402 @@
+\documentclass[a4paper,12pt]{article}
+\author{}
+\date{}
+\usepackage[papersize={216mm,330mm},tmargin=20mm,bmargin=20mm,lmargin=20mm,rmargin=20mm]{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,mathabx}%\for eqref
+\usepackage{lscape}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Technical University of Kenya }
+\chead{\thepage}
+\rhead{Physics and Earth Sciences}
+\lfoot{Mecânica dos Fluidos II}
+\cfoot{Análise Dimensional e semelhança}
+\rfoot{Prof G}
+
+\title{\Large \textbf{Universidade }\\ Departamento de Engenharia Mecânica \\ TM352 - Mecânica dos Fluidos II \\ \vspace{5mm} \LARGE \textbf{Physics in Nuclear Medicine} \\ \vspace{1cm} \normalsize por \\ \vspace{1cm} \Large \textit{Prof. HHHH hh}}
+
+\begin{document}
+\maketitle
+
+
+\section*{Question 1 }
+\begin{enumerate}
+\item Explain in your own words what Nuclear Medicine is about (5 Marks)
+
+Nuclear medicine is the branch of medicine that deals with the use of radioactive substances in research, diagnosis, and treatment. Its a medical specialty that uses radioactive tracers (radiopharmaceuticals) to assess bodily functions and to diagnose and treat disease. Specially designed cameras allow doctors to track the path of these radioactive tracers. Single Photon Emission Computed Tomography or SPECT and Positron Emission Tomography or PET scans are the two most common imaging modalities in nuclear medicine.
+
+\item State two methods of Radionuclide/pharmaccutical production and briefly discuss them. illustrate your answer with examples(8 marks)
+
+
+1. Nuclear Reactor Production:
+
+In this method, stable isotopes of certain elements are exposed to a high flux of neutrons in a nuclear reactor. This method utilizes nuclear reactors to bombard stable target nuclei with neutrons.  The neutron bombardment causes nuclear reactions, resulting in the formation of radioactive isotopes or radionuclides.
+
+The process involves placing a target material, usually a highly enriched stable isotope, in the reactor core or a specific irradiation position. The target material absorbs neutrons, and through nuclear reactions, it is transformed into a radioactive isotope of the same element or a different element.
+
+Example: Production of Technetium-99m (Tc-99m)
+Tc-99m is one of the most widely used radiopharmaceuticals in nuclear medicine for diagnostic imaging. It is produced by irradiating a target of highly enriched Molybdenum-98 (Mo-98) in a nuclear reactor. The nuclear reaction is as follows:
+
+Mo-98 + n (neutron) → Mo-99 → Tc-99m (via beta decay)
+
+After irradiation, the Mo-99 decays into Tc-99m, which is then chemically extracted and used for various imaging procedures, such as bone scans, cardiac scans, and tumor imaging.
+
+
+2. Cyclotron Production:
+
+A cyclotron is a type of particle accelerator that accelerates charged particles (such as protons or deuterons) to high energies. These accelerated particles are then directed towards a target material, inducing nuclear reactions and producing radionuclides.
+
+The target material is carefully chosen based on the desired radionuclide and the type of particle beam used in the cyclotron. The nuclear reactions involved can be proton-induced, deuteron-induced, or other particle-induced reactions.
+
+Example: Production of Fluorine-18 (F-18)
+F-18 is a positron-emitting radionuclide widely used in positron emission tomography (PET) imaging, particularly for diagnosing and staging various types of cancer, as well as studying brain function and metabolism.
+
+F-18 is commonly produced in a cyclotron by bombarding a target of enriched Oxygen-18 (O-18) with a beam of high-energy protons. The nuclear reaction is as follows:
+
+O-18 + p (proton) → F-18 + n (neutron)
+
+After the irradiation process, the F-18 is chemically extracted and incorporated into radiopharmaceutical compounds, such as fluorodeoxyglucose (FDG), which is used for PET imaging.
+
+\item Distinguish between the following Radiation units:
+i) Roentgen (2 Marks)
+ii) Rad (2 Marks)
+iii) Rem (2 Marks)
+
+Ofcourse  better notes are in **notes**
+Roentgen (R) measures the ionization of air caused by radiation.
+Rad measures the absorbed dose of radiation in any material, including human tissue.
+Rem measures the equivalent biological dose of radiation received by humans, taking into account the type of radiation and its biological effectiveness.
+\item Explain what is meant by Relative Biological Effectiveness (RBE) and its importance in Nuclear Medicine ( 6 Marks)
+
+
+**notes**
+Different Radiation, Different Damage:  X-rays, gamma rays, alpha particles, and neutrons all fall under ionizing radiation, but they interact with tissues differently. RBE helps account for this variation. For example, alpha particles, with their high energy deposition (high LET), are much more effective at damaging cells compared to X-rays (low LET).
+
+Optimizing Treatment Doses:  In nuclear medicine, radioisotopes are used for both diagnostic imaging and targeted therapy. By understanding the RBE of the radiation emitted by a radioisotope, doctors can calculate a more precise dose needed to achieve the desired effect (destroying cancer cells in therapy or obtaining a clear image in diagnostics) while minimizing damage to healthy tissues.
+
+Risk Assessment:  RBE helps estimate the potential side effects and long-term risks associated with radiation exposure. This is especially important in targeted radioisotope therapy, where the therapeutic radioisotope might selectively target cancer cells but could also have some effect on surrounding healthy tissue.
+\item using (c) above, explain the difference between RBE and the Quality factor Q (4 marks)
+
+\item What is meant by radiation dose 
+
+the amount of energy from radiation that is actually absorbed by the body. 
+\item Compare and contrast the three main methods of determining radiation dose:
+
+Absorbed dose -  amount of energy deposited by ionizing radiation per unit mass of tissue. It is measured in  Gray (Gy) and is a measure of the amount of energy absorbed by the tissue, without considering the type of radiation or the effects on the biological system.
+
+Equivalent dose - calculated by multiplying the absorbed dose by a radiation weighting factor (WR), which varies depending on the type of radiation. It takes into account the different types of radiation and their relative biological effectiveness (RBE). It is a measure of the effect of the radiation on the biological system, and is measured in units of Sievert (Sv). 
+
+Effective dose -  measure of the total effect of the radiation on the biological system, and is also measured in units of Sievert (Sv). takes into account the different types of radiation and their RBE, but it also considers the distribution of the radiation dose within the body. Effective dose is calculated by multiplying the equivalent dose by an organ weighting factor (WF), which varies depending on the organ or tissue being irradiated. 
+
+Absorbed dose only considers the amount of energy deposited, while equivalent and effective dose consider both the amount of energy deposited and the biological effects.
+
+Equivalent dose is more specific to the type of radiation, while effective dose takes into account the distribution of the radiation dose within the body.
+
+Effective dose is more relevant to understanding the overall health risks associated with radiation exposure, while absorbed and equivalent dose are more relevant to understanding the physical effects of radiation on tissues.
+\item Know Roentgen derivation of rad and shit (introduction)
+\newpage
+\section*{Question 2}
+\item Explain how radiation absorbed in air differs from that absorbed in tissue
+
+Air is much less dense than tissue. Because of this lower density, radiation travels further in air before being absorbed or scattered.Tissue has a higher density, which means that radiation interacts more frequently with the material, leading to higher absorption and scattering rates within a given distance.
+
+Air is primarily composed of nitrogen (N₂), oxygen (O₂), argon (Ar), and small amounts of other gases. The atomic numbers of these elements are relatively low (N: 7, O: 8, Ar: 18). Thus less attenuation.
+Human tissue is primarily composed of water (H₂O), carbon (C), nitrogen (N), and oxygen (O), along with other elements in smaller amounts. The effective atomic number of tissue is higher than that of air, contributing to greater attenuation of radiation.
+
+The linear attenuation coefficient (fraction of a beam of radiation that is absorbed or scattered per unit thickness of the material) for air is much lower than that for tissue. The linear attenuation coefficient for tissue is higher, indicating more significant absorption and scattering per unit thickness.
+\item Oduor swallows a Radiopharmaceutical which emits photons at a rate of  \begin{equation}
+    \frac{s}{m^2 s}
+\end{equation}The pharmaceutical is uniformly distributed in his body. Consider a small volume \(dV_s\) , at a point
+P surrounded by a source volume V, and a small volume \(dV_T\) , located at the point Q surrounded by a target volume \(V_T\) , . Then;
+
+\subitem a) With the help of a NEATLY labelled sketch, represent the situation described above ( 4marks)
+\subitem b) Write an expression for the y photons arriving at the point Q, and explain all the terms in your expression (4 marks)
+\subitem c) Referring to (a) and (b) above, develop an equation to determine the dose rate H at the site of the target volume (12 marks)
+\paragraph{Notes Bruv .... Notes}
+\newpage
+\section*{Question 3}
+\item 
+An essential component of the Gamma Camera is the collimator. In relation to the collimator, explain the following;
+\subitem a) Spatial resolution (4 marks)
+\paragraph{Notes bruv }
+
+\subitem b) Collimator or Geometric resolution (6 Marks)
+\paragraph{focuses on the physical limitations of the collimator design. It's primarily determined by the hole size and septa thickness in the collimator.
+
+Hole Size: Smaller holes improve collimation, leading to better spatial resolution by limiting the angle at which gamma rays can enter the detector. However, smaller holes also decrease sensitivity as fewer photons pass through.
+Septa Thickness: As mentioned earlier, thicker septa improve collimation but decrease sensitivity and hence, spatial resolution.
+The geometric resolution is calculated using the formula:
+\begin{equation}
+    \(R = (d + t) / a\)
+\end{equation}
+Where:
+R is the geometric resolution
+d is the effective diameter of the collimator hole
+t is the septal thickness of the collimator
+a is the distance between the collimator and the detector surface
+The smaller the hole size (d) and the larger the distance (a), the better the geometric resolution. However, increasing the distance also decreases the sensitivity of the gamma camera.
+Better drawings and description in notes }
+\subitem c) Modulation Transfer Function (5 Marks)
+\paragraph{
+The Modulation Transfer Function (MTF) is a measure of the gamma camera's ability to preserve the contrast and spatial frequencies of an object in the resulting image. The MTF quantifies the system's response to a range of spatial frequencies, from low to high.
+The collimator's design plays a significant role in determining the MTF of the gamma camera. Factors such as hole size, hole shape, septal thickness, and collimator material all contribute to the MTF. The MTF generally decreases as the spatial frequency increases, meaning that the system's ability to resolve fine details and high-frequency components diminishes.}
+\subitem d) A Gamma Camera has an MTF for the detector of 0.7, for the Photo Multiplier Tube 0.4 and 0.6 for the Pulse Height Analyser. Calculate a value for the total MTF of the system.(5 Marks)
+\paragraph{
+To calculate the total modulation transfer function (MTF) of the gamma camera system, we can use the formula for combining MTFs in series. When multiple components are in series, the total MTF is the product of their individual MTFs.
+
+Given:
+- MTF for the detector (MTF_det) = 0.7
+- MTF for the Photo Multiplier Tube (MTF_PMT) = 0.4
+- MTF for the Pulse Height Analyser (MTF_PHA) = 0.6
+
+Total MTF = MTF_det * MTF_PMT * MTF_PHA
+
+Substituting the given values:
+Total MTF = 0.7 * 0.4 * 0.6
+
+Calculating:
+Total MTF = 0.168
+
+}
+\newpage
+\section*{Question 4}
+\item The Geometric efficiency of a Collimator is defined as: \(\epsilon _G\) = (No of photons passing through
+collimator holes/ Activity of Source) (8 Marks)
+\item With the help of neat diagrams, develop a mathematical equation to evaluate the geometric efficiency of a collimator, Explain all the variables in the formula (10 Marks)
+\paragraph{
+\begin{figure}
+    \centering
+    \includegraphics{colo.jpg}
+    \caption{Bwana hii kitu ni moto}
+    \label{fig:enter-label}
+\end{figure}
+}
+\paragraph{
+The solid angle \(\Omega\)  subtended by a single collimator hole at the source is given by:
+}
+\begin{equation}
+    \Omega = 2\pi \left(1 - \cos(\theta)\right)
+\end{equation}
+\paragraph{
+Where \(\theta\) is the half-angle of the cone of acceptance of the collimator hole.
+For a collimator hole of radius r and length L, the tangent of the half-angle \(\theta\) is:
+}
+\begin{equation}
+    \tan(\theta) = \frac{r}{L}
+\end{equation}
+\paragraph{Since \(\theta\) is typically small, we can approximate 
+}
+\begin{equation}
+    \tan(\theta) \approx \sin(\theta) \approx \theta
+\end{equation}
+\begin{equation}
+    \theta \approx \frac{r}{L}
+\end{equation}
+\paragraph{Thus, the solid angle becomes:}
+\begin{equation}
+    \Omega \approx 2\pi \left(1 - \cos\left(\frac{r}{L}\right)\right) \approx 2\pi \left(1 - 1 + \frac{r^2}{2L^2}\right) = \pi \frac{r^2}{L^2}
+\end{equation}
+\paragraph{The geometric efficiency \(\epsilon_G\)
+is:}
+\begin{equation}
+    \epsilon_G = \frac{N_{\text{photons through holes}}}{A_{\text{source}}}
+\end{equation}
+\paragraph{Where \(N_{\text{photons through holes}}\) s the number of photons passing through the collimator holes.
+\(A_{\text{source}}\) s the activity of the source (photons per second).
+Assuming the source emits photons uniformly in all directions, the fraction of the total emitted photons that pass through a single collimator hole is given by the ratio of the solid angle subtended by the hole to the total solid angle (4π steradians):
+}
+\begin{equation}
+    \epsilon_G = \frac{\Omega}{4\pi} = \frac{\pi \frac{r^2}{L^2}}{4\pi} = \frac{r^2}{4L^2}
+\end{equation}
+\paragraph{If the collimator has multiple holes, say N holes, then the total geometric efficiency is:}
+\begin{equation}
+    \epsilon_G = N \cdot \frac{r^2}{4L^2}
+\end{equation}
+\item With the help of a binomial expression in (a) above discuss your results for the cases :
+\subitem \(\frac{a}{d} > 1\) i.e. the hole diameter is bigger than the separation (5 marks)
+\subitem \(\frac{a}{d} < 1\) i.e. the separation is bigger than the diameter (5 marks)
+\paragraph{
+- \(a\) is the diameter of a collimator hole.
+- \(d\) is the separation between the holes or the distance from the source to the collimator.
+
+We will explore the geometric efficiency \(\epsilon_G\) for the cases where \(\frac{a}{d} > 1\) and \(\frac{a}{d} < 1\).
+
+### Geometric Efficiency Revisited
+
+Given:
+\[ \epsilon_G = N \cdot \frac{r^2}{4L^2} \]
+where:
+- \(r = \frac{a}{2}\) (radius is half the diameter),
+- \(L\) is the length of the collimator hole.
+
+Rewriting the expression in terms of \(a\):
+\[ \epsilon_G = N \cdot \frac{(\frac{a}{2})^2}{4L^2} = N \cdot \frac{a^2}{16L^2} \]
+
+### Case 1: \(\frac{a}{d} > 1\)
+
+When \(\frac{a}{d} > 1\), the hole diameter \(a\) is larger than the separation distance \(d\). This implies the collimator holes are large relative to their separation. 
+
+In this case, the collimator holes overlap significantly, and many photons will pass through without much angular restriction. This could result in higher geometric efficiency but at the cost of poorer spatial resolution.
+
+Let's approximate using a binomial expansion where necessary. However, the main insight here is the behavior of the collimator:
+
+- **Higher Geometric Efficiency:** More photons can pass through larger holes, increasing efficiency.
+- **Lower Resolution:** Larger holes mean photons from a broader range of angles are accepted, reducing the system’s ability to distinguish fine details.
+
+Mathematically, this could mean that \(\epsilon_G\) approaches its maximum limit as the \(a\) becomes very large compared to \(d\).
+
+### Case 2: \(\frac{a}{d} < 1\)
+
+When \(\frac{a}{d} < 1\), the separation distance \(d\) is larger than the hole diameter \(a\). This implies the collimator holes are small relative to their separation. 
+
+In this case, the collimator holes do not overlap, and photons are highly angularly restricted, resulting in lower geometric efficiency but higher spatial resolution.
+
+Using the binomial approximation for small \(x\) in \((1+x)^n \approx 1 + nx\) for \(x \ll 1\):
+
+\[ \frac{a}{d} < 1 \]
+
+Since \( \frac{a}{d} \) is small, if we had to include effects like the small angle approximation in geometric considerations, we'd keep higher precision in our mathematical formulation. However, for our current understanding:
+
+- **Lower Geometric Efficiency:** Fewer photons pass through smaller holes.
+- **Higher Resolution:** Smaller holes mean only photons within a narrow range of angles are accepted, improving the system’s ability to distinguish fine details.
+
+### Binomial Expansion Perspective
+
+For a more nuanced approach, we might consider small deviations in geometric considerations. For example:
+
+\[ \epsilon_G = N \cdot \frac{(\frac{a}{2})^2}{4L^2} \]
+
+For \(\frac{a}{d} < 1\):
+
+\[ \epsilon_G \approx N \cdot \left( \frac{(\frac{a}{2})^2}{4L^2} + \frac{a}{2d} \right) \]
+
+Here, the added term \(\frac{a}{2d}\) would be very small and might be omitted in practical calculations, but for completeness, it shows the influence of \(a\) relative to \(d\).
+
+### Summary
+
+- **\(\frac{a}{d} > 1\):** Larger hole diameter relative to separation leads to higher geometric efficiency but lower resolution.
+- **\(\frac{a}{d} < 1\):** Smaller hole diameter relative to separation leads to lower geometric efficiency but higher resolution.
+
+Understanding these trade-offs is crucial in designing collimators to balance the needs for geometric efficiency and spatial resolution based on the application requirements.}
+
+\newpage
+\section*{Question 5}
+\item Medical Physicists in a new hospital decide to buy a Cyclotron for their Radioisotope production unit. The Cyclotron should also produce 5 MeV protons.
+\item Discuss some of the reasons why the hospital would chose a Cyclotron instead of a LINAC (4Marks)
+
+Advantages of a cyclotron over a LINAC:
+
+
+Compact design: Cyclotrons can be relatively compact compared to LINACs, especially for lower energy applications. This can make them more suitable for facilities with limited space.
+
+Lower operating costs: Cyclotrons typically have lower operating costs compared to LINACs, especially for lower energy ranges. Once operational, they require minimal maintenance and consume less power.
+
+High beam intensity: Cyclotrons can produce high-intensity beams of particles, making them suitable for applications requiring a high dose rate, such as certain types of medical radiation therapy.
+
+Production of short-lived isotopes: Cyclotrons can be used to produce short-lived isotopes for medical imaging and diagnostics. This is particularly useful in positron emission tomography (PET) imaging, where short-lived isotopes are required for the radiopharmaceuticals.
+
+Stable beam delivery: Cyclotrons provide stable beam delivery over time, which is beneficial for applications where precise and consistent beam characteristics are required.
+
+Particle Type: Cyclotrons are more suited for accelerating protons and heavier ions, while LINACs can handle a wider range of particles, including electrons efficiently.
+\item With the help o NEAT diagrams, describe and explain the working principle of a Cyclotron (10 Marks)
+\item Calculate the maximum radius of the Cyclotron Ds required to produce 5 MeV protons.
+(Assume q/M for protons is \(9.6 x 10^7\),  \(CKg^-1\) , B=1.5 T) (4 Marks)
+\paragraph{
+To calculate the maximum radius of the cyclotron \(R_{\text{max}}\) required to produce 5 MeV protons, we can use the following formula for the cyclotron radius:
+
+\[ R_{\text{max}} = \frac{mv}{qB} \]
+
+Where:
+- \( m \) is the mass of the particle (proton),
+- \( v \) is the velocity of the particle,
+- \( q \) is the charge of the particle,
+- \( B \) is the magnetic field strength.
+
+Given:
+- Mass of proton, \( m = 1.67 \times 10^{-27} \) kg
+- Velocity of the proton, \( v \) (for a cyclotron, protons are accelerated to a velocity such that their kinetic energy equals the desired energy, so we'll calculate \( v \) from the kinetic energy)
+- Charge-to-mass ratio for protons, \( \frac{q}{m} = 9.6 \times 10^7 \) C/kg
+- Magnetic field strength, \( B = 1.5 \) T
+- Desired kinetic energy of protons, \( E = 5 \) MeV
+
+First, we need to convert the kinetic energy of the protons from MeV to joules:
+
+\[ E = 5 \times 10^6 \times 1.6 \times 10^{-19} \]
+\[ E = 8 \times 10^{-13} \] J
+
+Now, we can use the formula for kinetic energy to find the velocity of the protons:
+
+\[ E = \frac{1}{2}mv^2 \]
+
+Solving for \( v \):
+
+\[ v = \sqrt{\frac{2E}{m}} \]
+
+\[ v = \sqrt{\frac{2 \times 8 \times 10^{-13}}{1.67 \times 10^{-27}}} \]
+
+\[ v \approx 1.5 \times 10^7 \] m/s
+
+Now, we can use the formula for the cyclotron radius:
+
+\[ R_{\text{max}} = \frac{mv}{qB} \]
+
+\[ R_{\text{max}} = \frac{(1.67 \times 10^{-27})(1.5 \times 10^7)}{(9.6 \times 10^7)(1.5)} \]
+
+\[ R_{\text{max}} = \frac{2.505 \times 10^{-20}}{14.4} \]
+
+\[ R_{\text{max}} \approx 1.74 \times 10^{-21} \] m
+
+So, the maximum radius of the cyclotron required to produce 5 MeV protons is approximately \(1.74 \times 10^{-21}\) meters.
+}
+\item Determine the frequency of the Cyclotron (2 Marks)
+
+\paragraph{
+The frequency of a cyclotron can be calculated using the formula:
+
+\[ f = \frac{qB}{2\pi m} \]
+
+Where:
+- \( f \) is the frequency of the cyclotron,
+- \( q \) is the charge of the particle,
+- \( B \) is the magnetic field strength, and
+- \( m \) is the mass of the particle.
+
+For a cyclotron, the frequency is independent of the kinetic energy of the particle. 
+
+Given:
+- Charge of the proton, \( q = 1.6 \times 10^{-19} \) C
+- Mass of the proton, \( m = 1.67 \times 10^{-27} \) kg
+- Magnetic field strength, \( B = 1.5 \) T
+
+\[ f = \frac{(1.6 \times 10^{-19})(1.5)}{2\pi(1.67 \times 10^{-27})} \]
+
+\[ f = \frac{2.4 \times 10^{-19}}{3.34 \times 10^{-27}} \]
+
+\[ f \approx 7.18 \times 10^7 Hz\]
+
+So, the frequency of the cyclotron is approximately \(7.18 \times 10^7\) Hz.}
+
+
+
+\newpage
+
+\item Cohjhjfnsidere uma esfera lisa, de diâmetro D, imersa um fluido movendo-se com velocidade $V$. A força de arrasto sobre um balão meteorológico com $3 m$ de diâmetro, movendo-se no ar a $1,5 m/s$, deve ser calculada partindo de dados de teste. O teste deve ser realizado na água usando um modelo com $50 mm$ de diâmetro. Sob condições de semelhança dinâmica, a força de arrasto sobre o modelo é medida como $3,78 N$. Avalie a velocidade de teste do modelo e a força de arrasto esperada sobre o balão em escala natural. [ \scriptsize{$V = 6,05 m/s$ e $F_{D} = 1,01 N$ \normalsize ]} \normalsize  
+\item O diâmetro, $d$, dos pontos impressos por uma impressora a jato de tinta depende da viscosidade $\mu$, massa específica, $\rho$, e tensão superficial, $\sigma$, da tinta, da distância, $L$, do bocal à superfície do papel, do diâmetro do bocal, $D$, bem como da velocidade do jato, $V$. Use a análise dimensional para encontrar os parâmetros $\Pi$ que caracterizam o comportamento do jato de tinta.[ \scriptsize{$\Pi_1 = \frac{d}{D}$ ; $\Pi_2 = \frac{1}{Re}$ ; $\Pi_3 = \frac{L}{D}$ e $\Pi_4 = \frac{\sigma}{\rho V^2 D}$ \normalsize ]} \normalsize 
+\item Em velocidades muito baixas, a força de arrasto sobre um objeto é independente da massa específica do fluido. Deste modo, a força, $F$, sobre uma pequena esfera, é uma função somente da velocidade, $V$, da viscosidade do fluido, $\mu$, e do diâmetro da esfera, $D$. Use a análise dimensional para determinar como a força de arrasto $F$ depende da velocidade $V$. [\scriptsize{$\Pi = \frac{F}{\mu V D}$ \normalsize ]} \normalsize 
+\item Em velocidades muito altas, o arrasto sobre um objeto é independente da viscosidade do fluído. Deste modo, a força de arrasto aerodinâmico, $F$, sobre um automóvel é uma função somente da velocidade, $V$, da massa específica do ar, $\rho$, e do tamanho do veículo, caracterizado por sua área frontal, $A$. Use a análise dimensional para determinar como a força de arrasto $F$ depende da velocidade $V$. [ \scriptsize{$\Pi =  \frac{F A}{v^2 \rho}$ \normalsize ]} \normalsize 
+\item Um navio deve ser movido por um cilindro circular rotativo. Testes de modelo são planejados para estimar a potência requerida para testar o cilindro-protótipo. Uma análise dimensional é necessária para transportar por escala os resultados dos testes do modelo para o protótipo. Liste os parâmetros que deveriam ser incluídos na análise dimensional. Faça uma análise dimensional para identificar os grupo adimensionais importantes.[ \scriptsize{$\Pi_1 =  \frac{P}{\rho \omega^3 D^5}$ ; $\Pi_2 =  \frac{V}{\omega D}$ ; $\Pi_3 =  \frac{H}{D}$ e $\Pi_4 =  \frac{\mu}{\rho \omega D^2}$ \normalsize ]} \normalsize 
+\item Quando uma válvula é subitamente fechada num tubo em que escoa água, uma onda de pressão se desenvolve (martelo hidráulico ou golpe de aríete). As elevadas pressões geradas por essas ondas podem danificar o tubo. A pressão máxima, $P_{max}$, gerada pelo martelo hidráulico é uma função da massa específica do liquido , $\rho$, da velocidade inicial do escoamento, $u_0$, e do módulo de compressibilidade do líquido, $E_v$. Quantos grupos adimensionais são necessários para caracterizar o martelo hidráulico? Determine a relação funcional entre as variáveis em termos dos grupos $\Pi$ necessários.
+[ \scriptsize{$\Pi_1 =  \frac{P}{\rho u_0}$ ; $\Pi_2 =  \frac{E_V}{\rho u_0}$ \normalsize ]} \normalsize 
+\item Um automóvel deve trafegar a $100 \frac{km}{h}$ em ar padrão. Para determinar a distribuição de pressão, um modelo em escala $\frac{1}{5}$ deve ser testado em água. Que fatores devem ser considerados de modo a assegurar semelhança cimnemática nos testes? Determine a velocidade da água que deve ser empregada. Qual a razão correspondente de forças de arrasto entre os escoamentos sobre o protótipo e sobre o modelo? [ \scriptsize{$V = 9,51 \frac{m}{s}$ e $\frac{F_{d,p}}{F_{D,m}}=0,62$ \normalsize ]} \normalsize 
+\item Uma aeronave deve operar a $20  \frac{m}{s}$ no ar na condição padrão. Um modelo é construído em escala $\frac{1}{20}$ e testado em um túnel de vento, com ar na temperatura padrão, para determinar o arrasto. Que critério deve ser considerado para se obter semelhança dinâmica? Se o modelo testado a $75 \frac{m}{s}$, que pressão deve ser usada no túnel de vento? Se a força de arrasto sobre o modelo for $250 N$, qual será a força sobre o protótipo? [ \scriptsize{$P = 5,38.10^5 Pa$ e $F_D = 1334,17 N$ \normalsize ]} \normalsize 
+\item Um modelo de torpedo em escala $\frac{1}{5}$ é testado em um túnel de vento para determinar a força de arrasto. O protótipo opera em água, tem $533 mm$ de diâmetro e $6,7 m$ de comprimento. A velocidade de operação desejada é de $28 m/s$. Para evitar efeitos de compressibilidade no túnel de vento a velocidade máxima é limitada em $110 \frac{m}{s}$. Entretanto a pressão no túnel de vento pode variar enquanto a temperatura é mantida em $20^{\circ}C$ (Buscar propriedades para esta temperatura). Em que pressão mínima deverá operar para se obter um teste dinamicamente semelhante? Em condição de teste semelhante, a força de arrasto medida sobre o modelo foi de $618 N$. Avalie a força de arrasto sobre o torpedo em escala natural. [ \scriptsize{$P = 1,93 MPa$ e $F_D = 43,4 kN$ \normalsize ]} \normalsize
+
+\end{enumerate}
+
+\end{document}

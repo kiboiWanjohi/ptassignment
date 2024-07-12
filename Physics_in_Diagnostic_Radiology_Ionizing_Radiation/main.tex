@@ -1,0 +1,750 @@
+% Plantilla simple para tareas de la Licenciatura en Física
+% Fer Flores - Universidad de Guadalajara - Noviembre 2023
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-PREÁMBULO-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Paqueterías
+
+\documentclass{assignment}
+\usepackage[pdftex]{graphicx} % FIGURAS
+\usepackage{xcolor}
+\definecolor{LightGray}{gray}{0.95}
+\usepackage{fancyvrb, minted} % CÓDIGO
+\usepackage[letterpaper, margin = 2.5cm]{geometry} % TAMAÑO DE PÁGINA Y MÁRGENES
+\usepackage[T1]{fontenc} % Importante para acentos automáticos y símbolos de escritura
+\usepackage[spanish, mexico]{babel} % Importante para Español
+\usepackage{amsmath, amsfonts, amssymb} % Ecuaciones, caracteres y símbolos especiales
+\usepackage{hyperref, url}  % Links y Hyperlinks en el documento
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+%-----------------------------------------ETIQUETAS--------------------------------------------
+
+\student{Tu nombre}                             % NOMBRE
+\semester{2024A}                                % SEMESTRE (202X A/B)
+\date{\today}                                   % Fecha (Modifica a DD/MM/AAAA)
+
+\courselabel{I6123 Nombre de la clase}          % CLAVE Y MATERIA
+\exercisesheet{Physics in Diagnostic Radiology}{Ionizing Radiation}     % NÚMERO Y TÍTULO DE LA TAREA
+
+\school{Physics and Earth Sciences}          % CARERA (Física, la mejor carrera)
+\university{Technical University of Kenya}         % LA PODEROSÍSIMA
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-DOCUMENTO-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%-----------------------------------------------------------------------------------------------
+\begin{problem}
+
+\section{QUESTION 1 }
+
+\subsection{Explain the following terms with respect to X-Ray Tubes a) Thermionic emission b) Line focus principle c) Heel Effect}
+\subsection*{Solution }
+\paragraph{Thermionic emission refers to the process by which electrons are emitted from a heated metal surface. 
+In an X-ray tube, a cathode (a heated metal filament) is used to produce electrons through thermionic emission. When the cathode is heated, it releases electrons into the vacuum inside the tube. 
+
+The line focus principle is a design concept used in X-ray tubes to produce a focused beam of X-rays. In a typical X-ray tube, the electron beam is not focused to a single point, but rather to a narrow line. This is because the electron beam is produced by a cathode that is typically several millimeters long.
+As the electron beam travels through the tube, it is focused by magnetic fields to create a narrow line of X-rays. The resulting beam is called a "line focus" because it has a narrow width and a long length.
+The line focus principle is important in X-ray tubes because it allows for a high degree of collimation and reduces the amount of scattered radiation. This results in sharper X-ray images and better contrast between different tissues.
+
+The Heel Effect is a phenomenon that occurs in X-ray tubes where the X-ray intensity decreases as the angle of incidence increases. In other words, the X-ray beam becomes weaker as it hits the detector at an angle rather than directly.
+The Heel Effect is caused by two factors: (1) absorption of radiation by the detector and (2) scatter of radiation by the detector and surrounding materials.The Heel Effect is important in X-ray tubes because it affects the quality of the images produced. To minimize the effect, X-ray tubes are designed to produce a beam with a small angle of incidence, which reduces the impact of the Heel Effect.}
+\subsection{The figure below shows an emission spectrum for an X-Ray tube. Explain }
+\subsubsection{What is the operating voltage of the tube}
+\subsubsection*{Solution}
+\subsubsection{What is the anode material}
+\subsubsection*{Solution}
+\subsubsection{Explain which features of the curve correspond to Bremsstrahlung and which correspond to Characteristic X-rays}
+\subsubsection*{Solution}
+\subsubsection{How would the curve be changed quantintatiely if the operating tube of the tube were halved}
+\subsubsection*{Solution}
+
+\subsection{Briefly describe techniques that are used to reduce scatter in diagnostic radiology. [4 marks]}
+\paragraph{
+1. Collimation:
+   - Collimators are used to limit the size and shape of the primary X-ray beam, reducing the amount of radiation that interacts with tissues outside the area of interest.
+   - This helps to minimize the generation of scattered radiation within the patient.
+
+2. Air Gaps:
+   - Increasing the distance between the patient and the image receptor (film or digital detector) can help to reduce the amount of scattered radiation reaching the detector.
+   - The air gap allows for some of the scattered radiation to be absorbed or deflected before reaching the image receptor.
+
+3. Anti-scatter Grids:
+   - Anti-scatter grids are positioned between the patient and the image receptor, consisting of alternating layers of lead or other high-atomic number materials and low-atomic number materials.
+   - These grids selectively absorb the scattered radiation while allowing the primary X-ray beam to pass through, improving image contrast.
+
+4. Automatic Exposure Control (AEC):
+   - AEC systems monitor the intensity of the X-ray beam and adjust the exposure parameters (such as tube current and voltage) to maintain a consistent image quality, even in the presence of scattered radiation.
+   - This helps to compensate for the degradation in image quality caused by scattered radiation.
+
+5. Beam Filtration:
+   - Filters made of materials like aluminum or copper can be placed in the X-ray beam to selectively absorb lower-energy scattered photons, while allowing the higher-energy primary X-rays to pass through.
+   - This helps to improve image contrast by reducing the contribution of scattered radiation.
+
+6. Patient Positioning:
+   - Careful positioning of the patient can minimize the amount of scattered radiation generated, for example, by aligning the primary beam to avoid unnecessary interaction with bony structures.
+}
+\subsection{Discuss the ways in which the electron interacts with the target. You can use a diagram to help in your explanation. [4 marks]}
+\paragraph{
+1. Bremsstrahlung Interaction:
+   - When the high-energy electrons from the electron beam interact with the target material, they can undergo deceleration (braking) due to the electric field of the target atoms.
+   - This deceleration causes the electrons to emit electromagnetic radiation in the form of X-rays, known as Bremsstrahlung (German for "braking radiation") X-rays.
+   - The energy of the Bremsstrahlung X-rays can range from the energy of the incident electron up to the maximum energy of the electron beam.
+
+
+2. Characteristic X-ray Emission:
+   - When the high-energy electrons from the beam interact with the inner shell electrons of the target atoms, they can knock these electrons out of their orbits, leaving the atoms in an excited state.
+   - To return to their ground state, the atoms emit X-ray photons with specific energies (wavelengths) that are characteristic of the target material.
+   - The energy of the characteristic X-rays is determined by the difference in energy levels between the electron shells involved in the transition.
+
+
+3. Scattering Interactions:
+   - The high-energy electrons in the beam can also undergo elastic and inelastic scattering interactions with the target atoms.
+   - Elastic scattering occurs when the electron changes direction without losing a significant amount of energy, while inelastic scattering involves the electron losing a portion of its energy.
+   - These scattering interactions can contribute to the overall X-ray spectrum, but they are generally less efficient in generating X-rays compared to the Bremsstrahlung and characteristic X-ray emission processes.
+}
+\subsection{Sketch a diagram of a mammographic system and explain how it differs from a general radiographic unit. [6 marks]
+}
+\paragraph{
+A mammographic system is a specialized radiographic unit designed to produce high-resolution images of the breast for the early detection and diagnosis of breast diseases in women[1][3]. The key components of a mammographic system include an x-ray tube, a compression device, an anti-scatter grid, and a digital detector[1][4].
+
+The x-ray tube in a mammographic system is designed to produce a high-energy, low-dose x-ray beam that can penetrate the breast tissue and create a clear image of the internal structures[1][3]. The x-ray tube is typically angled at 30 degrees to the horizontal plane, with the cathode (filament) positioned over the chest wall and the anode (target) positioned over the anterior of the breast[1][4]. This configuration allows for the exploitation of the anode heel effect, which results in higher energy radiation being emitted at the thickest part of the breast, where it is most needed[1][4].
+
+The compression device in a mammographic system is used to flatten the breast tissue and reduce its thickness, which improves the image quality and reduces the radiation dose required to produce a diagnostic image[1][3][4]. The compression force typically ranges from 100 to 150 N, and is applied using a clear plastic paddle that moves between the x-ray tube and the breast[1][4].
+
+The anti-scatter grid in a mammographic system is used to reduce the amount of scatter radiation that can degrade the image quality[1][4]. The grid is typically made of lead or tungsten and is placed between the breast and the detector[1][4].
+
+The digital detector in a mammographic system is used to capture the x-ray image and convert it into a digital signal that can be displayed on a computer screen and stored for future reference[1][3]. The detector is typically a flat panel detector that is designed to provide high spatial resolution and low noise[1][3].
+
+A general radiographic unit, on the other hand, is a more versatile x-ray system that can be used to produce images of various body parts, including the chest, abdomen, and extremities[1][3]. The key components of a general radiographic unit include an x-ray tube, a collimator, an exposure switch, and an image receptor[1][3].
+
+The x-ray tube in a general radiographic unit is designed to produce a broad beam of x-rays that can be collimated to produce a focused beam that is directed at the body part being imaged[1][3]. The collimator is used to shape the x-ray beam and limit its size to match the area of interest[1][3].
+
+The exposure switch in a general radiographic unit is used to control the duration and intensity of the x-ray beam, which is adjusted based on the body part being imaged and the desired image quality[1][3].
+
+The image receptor in a general radiographic unit is used to capture the x-ray image and convert it into a visible image that can be displayed on a light box or a computer screen[1][3]. The image receptor can be a film-screen system, a digital detector, or a computed radiography system[1][3].
+}
+\subsection{What is the function of intensifying screens in a cassette? Name two types of rare earth phosphor used in intensifying screen. [2 marks]}
+\paragraph{The function of intensifying screens in a radiographic cassette is to enhance the efficiency and image quality of the radiographic imaging process.
+
+The main function of intensifying screens in a cassette is:
+
+1. Conversion of X-rays to visible light:
+   - The intensifying screens are coated with a phosphor material that can absorb the incident X-rays and convert them into visible light photons.
+   - This conversion process increases the amount of light energy that reaches the photographic film or digital detector, making the imaging process more efficient.
+
+2. Amplification of the image signal:
+   - The visible light photons emitted by the phosphor screen have a much higher energy than the original X-ray photons.
+   - This amplification of the signal helps to reduce the overall radiation dose required to obtain a diagnostic-quality image.
+
+Two common types of rare earth phosphors used in intensifying screens are:
+
+1. Calcium Tungstate (CaWO4):
+   - Calcium tungstate is a classic phosphor material used in intensifying screens, particularly in older radiographic systems.
+   - It is effective at converting X-rays into visible light, but has a relatively low light output compared to newer rare earth phosphors.
+
+2. Gadolinium Oxysulfide (Gd2O2S):
+   - Gadolinium oxysulfide, also known as gadolinium oxysulfide, is a more modern rare earth phosphor used in many contemporary intensifying screens.
+   - It has a higher light output and conversion efficiency compared to calcium tungstate, making it more effective in reducing patient radiation exposure.
+}
+\subsection{The Jung field of a chest radiograph Gansmits only 0.2 percent of incident tight as determined with a densitometer. What is the Optical Density (OD)? [3 marks]}
+\paragraph{To find the optical density (OD) of a radiographic image, we can use the following formula:
+
+OD = -log10(I/I0)
+
+Where:
+- OD is the optical density
+- I is the intensity of the transmitted light (in this case, 0.2% of the incident light)
+- I0 is the intensity of the incident light
+
+Given information:
+- The lung field of the chest radiograph transmits only 0.2% of the incident light.
+
+To calculate the optical density, we first need to convert the percentage of transmitted light to a decimal fraction.
+
+0.2% = 0.2/100 = 0.002
+
+Now, we can substitute the values into the formula:
+
+OD = -log10(0.002)
+OD = -(-2.699)
+OD = 2.699
+
+Therefore, the optical density of the lung field in the chest radiograph, which transmits only 0.2% of the incident light, is 2.699.
+
+The optical density is a measure of the opacity or the degree of attenuation of the radiographic image. Higher optical densities correspond to more opaque or attenuating regions in the image, while lower optical densities represent more transparent or less attenuating regions.
+
+In this case, an optical density of 2.699 indicates a relatively high level of attenuation, which is expected for the lung field in a chest radiograph due to the presence of air and soft tissue structures.}
+\subsection{Discuss the following CTT artifacts, including methods implemented to minimize them:
+(a) motion artifacts (b) ring artifacts (c) aliasing artifacts [3 marks]}
+\paragraph{CT artifacts are unwanted features or distortions that can appear in CT images, leading to potential misinterpretation or reduced diagnostic accuracy. Here's a discussion of the mentioned CT artifacts and methods implemented to minimize them:
+
+(a) Motion Artifacts:
+Motion artifacts are caused by the movement of the patient or internal organs during the CT scan acquisition. This movement can result in blurring, streaking, or ghosting of the anatomical structures in the image.
+
+Methods to minimize motion artifacts:
+1. Patient instructions: Providing clear instructions to the patient to remain as still as possible during the scan.
+2. Breath-holding techniques: Asking the patient to hold their breath during the scan acquisition for specific body regions (e.g., chest, abdomen).
+3. Immobilization devices: Using restraints or immobilization devices to limit patient motion, especially for pediatric patients or those with difficulty remaining still.
+4. Faster scan times: Utilizing faster CT scanners with shorter gantry rotation times, which reduces the likelihood of motion during the scan acquisition.
+5. Prospective gating: For cardiac imaging, prospective gating techniques can synchronize the CT data acquisition with the patient's electrocardiogram (ECG) signal, capturing images during specific phases of the cardiac cycle.
+
+(b) Ring Artifacts:
+Ring artifacts appear as concentric rings or circular patterns superimposed on the CT image. They are typically caused by defective or miscalibrated detector elements in the CT detector array.
+
+Methods to minimize ring artifacts:
+1. Detector calibration: Regular calibration and quality control procedures to identify and correct for defective or underperforming detector elements.
+2. Detector replacement: Replacing malfunctioning or damaged detector elements in the CT detector array.
+3. Software correction algorithms: Implementing software algorithms that can detect and correct for ring artifacts in the reconstructed CT images.
+
+(c) Aliasing Artifacts:
+Aliasing artifacts, also known as undersampling artifacts, occur when the spatial sampling rate of the CT system is insufficient to accurately represent the high-frequency details in the imaged object. This can result in the appearance of aliasing patterns or moiré patterns in the CT image.
+
+Methods to minimize aliasing artifacts:
+1. Appropriate selection of reconstruction parameters: Adjusting the reconstruction parameters, such as the field of view (FOV) and matrix size, to ensure adequate spatial sampling and avoid undersampling.
+2. Anti-aliasing filters: Applying anti-aliasing filters during the image reconstruction process to suppress high-frequency components that can lead to aliasing artifacts.
+3. Oversampling techniques: Using oversampling techniques, where the CT data is acquired at a higher sampling rate than the desired final resolution, and then downsampled to the desired resolution during reconstruction.
+}
+\newpage
+\section{Question 2}
+\subsection{Draw a schematic diagram of a typical x-ray tube, clearly identifying the component elements.
+ [7 marks]}
+ \subsection{Explain the working principle of the x-ray tube. [7 marks]}
+ \paragraph{Notes bruv Notes}
+\subsection{Briefly define or explain with respect to x-rays. [3 marks]
+(a) Filtration (b) Focussing cup (c) the Focal spot}
+\paragraph{
+a) Filtration:
+Filtration refers to the process of selectively removing or attenuating certain energies or wavelengths of X-rays from the X-ray beam. This is done by placing a filter material, typically made of metals like aluminum, copper, or other high-atomic-number elements, in the path of the X-ray beam.
+
+
+b) Focussing Cup:
+The focussing cup, also known as the anode cup or the target track, is a component of the X-ray tube that serves to focus and direct the electron beam towards the target material (anode).
+The focussing cup is a cup-shaped structure made of a material with a high atomic number, such as tungsten or rhenium, and is positioned around the target material. It is designed with a specific angle and curvature to control the trajectory of the electron beam and focus it onto a small area on the target, known as the focal spot.
+
+c) Focal Spot:
+The focal spot is the area on the target material (anode) of an X-ray tube where the electron beam strikes and interacts to produce X-rays.The size of the focal spot is an important factor that influences the spatial resolution and sharpness of the X-ray image. A smaller focal spot size generally results in better spatial resolution and sharper images, as it reduces the geometric blurring caused by the divergence of the X-ray beam.
+}
+\subsection{Briefly discuss the characteristics of x-ray film. [3 marks]}
+\paragraph{
+1. Photographic Emulsion:
+   - X-ray film consists of a photographic emulsion layer, typically made of silver halide crystals suspended in gelatin, coated on a flexible plastic or paper base.
+   - When exposed to X-rays, the silver halide crystals undergo a chemical reaction, resulting in the formation of a latent image.
+
+2. Sensitivity:
+   - X-ray film is designed to be highly sensitive to X-rays, allowing it to capture detailed images with relatively low radiation doses.
+   - The sensitivity of the film is determined by the size and distribution of the silver halide crystals, as well as the film's chemical composition.
+
+3. Contrast:
+   - X-ray film exhibits inherent contrast, meaning that differences in X-ray attenuation within the imaged tissues are translated into variations in image density.
+   - The contrast of the film is influenced by factors such as the film's sensitivity, the energy of the X-rays, and the thickness and composition of the tissues being imaged.
+
+4. Spatial Resolution:
+   - X-ray film can provide high spatial resolution, allowing for the visualization of fine anatomical details and structures.
+   - The resolution is determined by the size and distribution of the silver halide crystals, as well as the film's thickness and processing conditions.
+
+5. Archiving and Storage:
+   - X-ray films can be easily archived and stored for long periods, providing a permanent record of the patient's radiographic images.
+   - The films can be retrieved and viewed as needed, facilitating medical diagnosis and referencing.
+
+6. Processing:
+   - X-ray films require chemical processing, including development, fixation, and washing, to transform the latent image into a visible, permanent image.
+   - The processing conditions, such as temperature and time, can affect the final image quality and characteristics.
+}
+\subsection{Briefly discuss any three properties of x-rays. [3 marks]
+}
+\paragraph{
+1. Electromagnetic Radiation:
+   - X-rays are a form of high-energy electromagnetic radiation, with wavelengths typically ranging from 0.01 to 10 nanometers (nm).
+   - They have higher energy and shorter wavelengths compared to visible light.
+
+2. Penetration Ability:
+   - X-rays can penetrate through various materials, including human tissues, to a certain extent.
+   - The ability of X-rays to penetrate depends on the energy of the X-rays and the density/composition of the material.
+   - Denser materials, like bone, absorb more X-rays, while less dense materials, like soft tissues, allow more X-rays to pass through.
+
+3. Ionizing Radiation:
+   - X-rays are a type of ionizing radiation, meaning they have sufficient energy to remove electrons from atoms, creating positively charged ions.
+   - This ionizing property can lead to potential biological damage if exposure is excessive, making radiation safety an important consideration in medical imaging.
+
+4. Interaction with Matter:
+   - When X-rays interact with matter, they can undergo processes like absorption, scattering, and transmission, which are the basis for image formation in radiography.
+   - The different ways X-rays interact with different tissues allow for the creation of contrast in radiographic images.
+
+5. Generation of X-rays:
+   - X-rays are typically generated in an X-ray tube, where high-energy electrons are accelerated and collide with a metal target, causing the emission of X-rays.
+   - The energy and characteristics of the generated X-rays can be controlled by adjusting the tube voltage and current.
+
+6. Directional Properties:
+   - X-rays are emitted in a directional manner from the X-ray tube, forming a beam that can be collimated and directed towards the patient or object being imaged.
+   - The directionality of the X-ray beam is essential for producing focused and targeted images in radiography.
+}
+\subsection{Describe how breast compression improves image quality. [4 marks]}
+\paragraph{
+1. Tissue Stabilization:
+   - Compression flattens and stabilizes the breast tissue, reducing the thickness of the breast and minimizing tissue overlap.
+   - This helps to minimize the effects of patient motion and breast movement during the imaging process, reducing blurring and improving sharpness of the image.
+
+2. Reduced Breast Thickness:
+   - Compression reduces the overall thickness of the breast, which decreases the amount of tissue that the X-rays need to pass through.
+   - Thinner breast tissue results in less X-ray attenuation, leading to improved image contrast and signal-to-noise ratio.
+
+3. Uniform Breast Thickness:
+   - Compression helps to create a more uniform breast thickness, reducing the variations in tissue density and composition across the breast.
+   - This uniform thickness allows for more consistent X-ray exposure and better image quality throughout the breast.
+
+4. Reduced Scattered Radiation:
+   - Compression helps to reduce the amount of scattered radiation within the breast, which can degrade image quality by reducing contrast and increasing noise.
+   - The flattening of the breast tissue decreases the volume of tissue that can scatter the X-rays, leading to a reduction in scattered radiation reaching the detector.
+
+5. Improved Visualization of Subtle Structures:
+   - The compression and flattening of the breast tissue can help to reveal subtle structures, such as microcalcifications and small masses, which may be obscured by overlying tissue in an uncompressed breast.
+
+6. Dose Optimization:
+   - Compression allows for a lower radiation dose to be used while maintaining adequate image quality, as the reduced breast thickness requires less radiation to penetrate the tissue.
+}
+\newpage
+\section{Question 3}
+
+\subsection{Sketch a block diagram showing the major components of the image chain in a fluoroscopy system and briefly describe the function of each. [6 marks]}
+\begin{figure}
+    \centering
+    \includegraphics{fluoroscopy.gif}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics{ModernSystemsFigure01.jpg}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+\paragraph{In a fluoroscopy system, the image chain consists of several major components that work together to produce real-time images of the patient's internal structures. The major components of the image chain in a fluoroscopy system are as follows:
+
+1. X-ray tube: The X-ray tube generates the X-ray beam that passes through the patient's body. It consists of a cathode that emits electrons and an anode (target) where the electrons strike, producing X-rays.
+
+2. Image Intensifier (II): The image intensifier is a vacuum tube that converts the X-ray pattern emerging from the patient's body into a visible light image. It consists of the following components:
+   a. Input phosphor: This is a thin layer of phosphor material that converts the X-rays into visible light photons.
+   b. Photocathode: The photocathode converts the visible light photons into electrons through the photoelectric effect.
+   c. Electron optics: This system of electrodes and focusing rings accelerates and focuses the electron beam onto the output phosphor.
+   d. Output phosphor: The accelerated electron beam strikes the output phosphor, producing a bright visible light image.
+
+3. Camera System: The camera system captures the visible light image produced by the output phosphor of the image intensifier. It typically consists of a lens system and a camera sensor, such as a charge-coupled device (CCD) or complementary metal-oxide-semiconductor (CMOS) sensor.
+
+4. Image Processing Unit: The image processing unit receives the electronic signals from the camera system and processes them to enhance the image quality, adjust contrast and brightness, and prepare the images for display.
+
+5. Display Monitors: The processed images are displayed on one or more high-resolution monitors, allowing the radiologist or physician to observe the patient's internal structures in real-time during the fluoroscopic procedure.
+
+6. Control Console: The control console is the interface where the operator can adjust various parameters, such as the X-ray exposure settings, image processing settings, and patient positioning.
+
+7. Patient Support and Positioning System: This component includes the patient table or support structure, which can be moved and positioned to align the patient with the X-ray beam and achieve the desired imaging views.
+
+The image chain in a fluoroscopy system is designed to provide real-time, continuous imaging capabilities, enabling physicians to visualize and guide interventional procedures or monitor dynamic processes within the body. The efficient and synchronized operation of these components is essential for obtaining high-quality fluoroscopic images.
+
+
+A schematic of an image-intensified fluoroscopy system is shown in Figure 1. The key components include an X-ray tube, spectral shaping filters, a field restriction device (aka collimator), an anti-scatter grid, an image receptor, an image processing computer and a display device. Ancillary but necessary components include a high-voltage generator, a patient-support device (table or couch) and hardware to allow positioning of the X-ray source assembly and the image receptor assembly relative to the patient.
+
+Figure 1. Schematic Diagram of a fluoroscopic system using an X-ray image intensifier (XRII) and video camera
+
+
+Reprinted from RadioGraphics;20(4), Schueler BA, The AAPM/RSNA physics tutorial for residents general overview of fluoroscopic imaging – Fig 2, p1117, 2000, with permission from RSNA. 
+
+X-ray Source
+The high-voltage generator and X-ray tube used in most fluoroscopy systems is similar in design and construction to tubes used for general radiographic applications. For special purpose rooms such as those used for cardiovascular imaging, extra heat capacity is needed to allow angiographic “runs,” sequences of higher-dose radiographic images acquired in rapid succession to visualize opacified vessels. These runs are often interspersed with fluoroscopic imaging in a diagnostic or interventional procedure, and the combination can result in a high demand on the X-ray tube. Special X-ray tubes are generally found in such systems.
+
+Focal spot sizes in fluoroscopic tubes can be as small as 0.3 mm (when high spatial resolution is required but low radiation output can be tolerated) and as large as 1.0 or 1.2 mm when higher power is needed. The radiation output can be either continuous or pulsed, with pulsed being more common in modern systems. Automatic exposure rate control maintains the radiation dose per frame at a predetermined level, adapting to the attenuation characteristics of the patient’s anatomy and maintaining a consistent level of image quality throughout the examination.
+
+Beam Filtration
+It is common for fluoroscopic imaging systems to be equipped with beam hardening filters between the X-ray tube exit port and the collimator. Added aluminum and/or copper filtration can reduce skin dose at the patient’s entrance surface, while a low kVp produces a spectral shape that is well-matched to the barium or iodine k-edge for high contrast in the anatomy of interest.
+
+Insertion of this added filtration in the beam path may be user-selectable, providing the operator with the flexibility to switch between low dose and higher dose modes as conditions dictate during a fluoroscopic procedure. In other systems the added filtration is automatic, based on beam attenuation conditions, to achieve a desired level of image quality and dose savings.
+
+In addition to beam shaping filters, many fluoroscopy systems have “wedge” filters that are partially transparent to the X-ray beam. These moveable filters attenuate the beam in regions selected by the operator to reduce entrance dose and excessive image brightness.
+
+Collimation
+Shutters that limit the geometric extent of the X-ray field are present in all X-ray equipment. In fluoroscopy, the collimation may be circular or rectangular in shape, matching the shape of the image receptor.
+
+When the operator selects a field of view, the collimator blade positions automatically move under motor control to be just a bit larger than the visible field. When the source-to-image distance (SID) changes, the collimator blades adjust to maintain the field of view and minimize “spillover” radiation outside of the visible area. This automatic collimation exists in both circular and rectangular field of view systems.
+
+Patient Table and Pad 
+Patient tables must provide strength to support patients and are rated by the manufacturer for a particular weight limit. It is important that the table not absorb much radiation to avoid shadows, loss of signal and loss of contrast in the image.
+
+Carbon fiber technology offers a good combination of high strength and minimal radiation absorption, making it an ideal table material. Foam pads are often placed between the patient and the table for added comfort, yet with minimal radiation absorption.
+
+Anti-Scatter Grid
+Anti-scatter grids are standard components in fluoroscopic systems, since a large percentage of fluoroscopic examinations are performed in high-scatter conditions, such as in the abdominal region. Typical grid ratios range from 6:1 to 10:1. Grids may be circular (XRII systems) or rectangular (FPD systems) and are often removable by the operator.
+
+Image Receptor — X-ray Image Intensifier (XRII)
+The X-ray image intensifier (Figure 2) is an electronic device that converts the X-ray beam intensity pattern (aka, the “remnant beam”) into a visible image suitable for capture by a video camera and displayed on a video display monitor. The key components of an XRII are an input phosphor layer, a photocathode, electron optics and an output phosphor.
+
+The cesium iodide (CsI) input phosphor coverts the X-ray image into a visible light image, much like the original fluoroscope. The photocathode is placed in close proximity to the input phosphor, and it releases electrons in direct proportion to the visible light from the input phosphor that is incident on its surface. The electrons are steered, accelerated and multiplied in number by the electron optic components, and finally impinge upon a surface coated with a phosphor material that glows visibly when struck by high-energy electrons. This is the output phosphor of the XRII.
+
+In principle, one could directly observe the intensified image on the small (1” diameter) output phosphor, but in practice a video camera is optically coupled to this phosphor screen through an adjustable aperture and lens. The video signal is then displayed directly (or digitized), post-processed in a computer and rendered for display.
+
+Figure 2. Components of an X-ray image intensifier
+
+
+Reprinted from RadioGraphics;20(4), Schueler BA, The AAPM/RSNA physics tutorial for residents general overview of fluoroscopic imaging – Fig 5, p1120, 2000, with permission from RSNA.
+
+
+The XRII achieves orders of magnitude more light per X-ray photon than a simple fluorescent screen. This occurs through electronic gain (amplification by the electron optics) and minification gain (concentrating the information from a large input surface area to a small output phosphor area) as shown in Figure 2. This allows relatively high image quality (signal-to-noise ratio) at modest dose levels compared with non-intensified fluoroscopy.
+
+The use of video technology added an important convenience factor — it allows several people to observe the image simultaneously and offers the ability to record and post-process fluoroscopic image sequences.
+
+Image intensifiers are available in a variety of input diameters, ranging from about 10–15 cm up to 40 cm. The input surface is always circular and curved, a design characteristic of the vacuum tube technology from which it is constructed.
+
+The video cameras used in XRII systems were originally vidicon or plumbicon analog devices borrowed from the broadcast television industry. In later systems, digital cameras based on charge-coupled device (CCD) image sensors or complementary metal oxide semiconductor (CMOS) technology came into common use.
+
+Image Receptor — Flat Panel Detector (FPD)
+In recent years we have seen the introduction of fluoroscopic systems in which the XRII and video camera components are replaced by a “flat panel detector” (FPD) assembly. When flat panel X-ray detectors first appeared in radiography, they offered the advantages of a “digital camera” compared with existing technologies.
+
+In fluoroscopic applications, the challenge for FPDs has been the requirement of low dose per image frame, meaning that the inherent electronic noise of the detector must be extremely low, and the required dynamic range is high. It has proven to be quite difficult to manufacture FPDs with electronic noise characteristics low enough to achieve good signal-to-noise ratio (SNR) under low exposure conditions, yet such devices do now exist.
+
+Flat panel detectors are more physically compact than XRII/video systems, allowing more flexibility in movement and patient positioning. However, the most important benefit of the FPD is that it does not suffer from the many inherent limitations of the XRII, including geometric “pin-cushion” distortion, “S” distortion, veiling glare (glare extending from very bright areas) and vignetting (loss of brightness at periphery). These phenomena simply do not occur in FPDs. FPDs often have wider dynamic range than some XRII/video systems.
+
+Another advantage of FPDs is that the image receptor’s spatial resolution is defined primarily by the detector element size, and unlike the XRII/video, is independent of the field of view. In XRII systems, the minification gain requires the entrance dose to vary inversely with field-of-view to maintain a constant brightness at the output phosphor. No such constraint exists for FPDs; the entrance detector dose is independent of the field of view.
+
+Flat panel detectors consist of an array of individual detector elements. The elements are square, 140–200 microns per side and are fabricated using amorphous silicon thin-film technology onto glass substrates.
+
+Detector arrays used for fluoroscopy range from about 20 x 20 cm up to 40 x 30 cm. A single detector may contain as many as 5 million individual detector elements. A cesium iodide (CsI) scintillation layer is coated onto the amorphous silicon, with thin-film photodiodes and transistors capturing the visible light signal from the scintillator to form the digital image, which is then transferred to a computer at a frame rate selected by the user (Figure 3). Frame rates can be as high as 30 frames per second.
+
+Figure 3. Cross-section of flat panel detector for fluoroscopic imaging
+
+
+Reprinted from Radiology; 234(2), Pisano ED, Yaffe MJ, State of the Art: Digital Mammography – Fig 1, p355, 2005, with permission from RSNA.
+
+Image Display
+Fluoroscopy requires high-quality video displays that allow users to appreciate fine details and subtle contrast differences in the anatomy of interest. Medical image display technology has been fortunate to “ride on the coattails” of the television industry over the last several years.
+
+Modern systems feature high resolution flat-panel LCDs with high maximum luminance and high-contrast ratios. These displays should be calibrated to a standard luminance response function (such as the DICOM part 14 Grayscale Standard Display Function) to ensure that the widest range of gray levels are visible.
+
+The newest interventional/angiographic systems feature 60” diagonal high-definition displays supporting up to 24 different video input sources that can be arranged in various ways on the single large display monitor. Display layouts can be uniquely customized and saved for individual physician preference.
+
+System Configurations
+Fluoroscopic systems are manufactured in a variety of configurations to optimize usability for the clinical task(s) for which they are intended. “Conventional” radiography/fluoroscopy systems consist of a patient table that often tilts all the way to vertical position permitting fluoroscopy while the patient stands upright. These systems have the X-ray tube positioned under the table-top, with the image receptor above the table, and are most often used for gastrointestinal imaging (upper and lower GI barium enhanced studies).
+
+The tilting capability of the patient table allows the operator to utilize gravity to assist the movement of the barium contrast material through the esophagus, stomach and bowel. Older systems may contain a “spot film” device that allows placement of a radiographic cassette in front of the fluoroscopic image receptor, facilitating the acquisition of radiographs using the fluoroscopic X-ray source. In modern systems, static images are routinely acquired using the same digital image receptor that is used for fluoroscopy, so the spot film is going away.
+
+A variation on this conventional R/F configuration is the remote controlled system, in which the X-ray tube and image receptor positions are reversed with the tube above the patient table and the image receptor below. These systems can be fully controlled, including table movements, at an operator’s console featuring a joystick-type controller in a shielded control booth. This protects the staff from secondary radiation exposure.
+
+Angiographic systems employ a “C-arm” geometry to enable easy patient access as fluoroscopy guides selective arterial and venous catheter placement. These systems include advanced features like digital subtraction and road mapping.
+
+The newest systems have 3D imaging capability, achieved by spinning the C-arm around the patient and performing a tomographic reconstruction to produce a volumetric image data set. This is sometimes referred to as cone beam CT (CBCT), while in angiographic mode it is known as 3D rotational angiography. Systems designed for vascular/interventional radiology and cardiology/electrophysiology have sophisticated fluoroscopic capabilities, including variable frame rate, automatic beam filtration and advanced image post-processing. Finally, the mobile C-arm configuration is popular in the surgical suite and for office-based procedures in musculoskeletal radiology, orthopedics, urology, gastroenterology and pain management among others. Mobile C-arms are often small inexpensive systems, but some are available with higher-power X-ray sources that have the ability to produce substantial radiation output levels.
+((summarize the last paragraph))
+}
+\subsection{Explain what is meant by subject contrast in radiography. What factors affect subject contrast? Give examples of contrast agents that are used to improve subject contrast. [6 marks]}
+\paragraph{
+Subject contrast in radiography refers to the difference in X-ray attenuation between different tissues or structures within the patient's body, which results in variations in the recorded image intensity.
+
+Factors that affect subject contrast:
+
+1. Tissue Composition:
+   - Tissues with different densities and chemical compositions (e.g., bone, soft tissue, air) have different X-ray attenuation properties, leading to variations in the recorded image intensity.
+   - Denser tissues, such as bone, absorb more X-rays, resulting in lower image intensity, while less dense tissues, such as soft tissue or air, allow more X-rays to pass through, resulting in higher image intensity.
+
+2. Tissue Thickness:
+   - The thickness of the tissue being imaged can also affect subject contrast. Thicker tissues will attenuate more X-rays, leading to greater differences in image intensity compared to thinner tissues.
+
+3. X-ray Energy:
+   - The energy of the X-ray beam can influence subject contrast. Higher-energy X-rays are less affected by tissue composition, while lower-energy X-rays are more sensitive to differences in tissue density and composition.
+
+4. Projection Angle:
+   - The angle at which the X-ray beam passes through the patient can affect the perceived subject contrast. Different projection angles can highlight or obscure certain anatomical structures.
+
+To improve subject contrast in radiography, healthcare professionals may use contrast agents, which are substances that are introduced into the body to enhance the visibility of specific structures or organs.
+
+Examples of contrast agents used in radiography:
+
+1. Iodine-based Contrast Agents:
+   - Iodine-based contrast agents, such as sodium or meglumine iodinated compounds, are commonly used to enhance the visibility of blood vessels, the urinary system, and certain organs.
+   - These agents temporarily increase the X-ray attenuation of the target structures, improving their visibility on the radiographic image.
+
+2. Barium-based Contrast Agents:
+   - Barium-based contrast agents, such as barium sulfate, are used to enhance the visibility of the gastrointestinal tract, including the esophagus, stomach, and intestines.
+   - Barium attenuates X-rays more than the surrounding soft tissues, allowing for better visualization of the GI tract.
+
+3. Air or Gas Contrast Agents:
+   - Air or gas can be introduced into body cavities, such as the joints or the gastrointestinal tract, to improve the visibility of these structures and their surrounding tissues.
+   - The air or gas creates a contrast between the target structure and the surrounding tissues, enhancing subject contrast.
+
+The use of contrast agents in radiography can significantly improve the diagnostic information obtained from the radiographic images, allowing for the detection and evaluation of various pathological conditions or anatomical structures that may not be readily visible without the use of contrast agents.}
+\subsection{Sketch and compare the dynamic range (latitude) of screen film (SF) systems and computed radiography (CR) systems. Explain the curves. [4 marks]
+}
+\paragraph{Look into notes bruvv}
+\subsection{Describe the general advantages of digital radiography compared to film/screen radiography.[4 marks]
+}
+\paragraph{
+
+1. Image Quality:
+   - Digital radiography can provide higher image quality with improved contrast and detail resolution, leading to better diagnostic accuracy.
+   - Digital images can be post-processed and enhanced using various image processing techniques to further improve image quality.
+
+2. Reduced Radiation Dose:
+   - Digital radiography systems often require a lower radiation dose to acquire an image compared to film-based systems, reducing the patient's exposure to ionizing radiation.
+   - This is achieved through the higher sensitivity and efficiency of digital detectors compared to film-screen combinations.
+
+3. Immediate Image Availability:
+   - In digital radiography, the image is immediately available for viewing and interpretation, without the need for film development.
+   - This allows for faster diagnosis and treatment planning, as well as the ability to quickly share the images with other healthcare professionals.
+
+4. Image Storage and Retrieval:
+   - Digital radiographic images can be easily stored, archived, and retrieved electronically, eliminating the need for physical film storage and management.
+   - Digital image storage also allows for easy transfer and sharing of images between healthcare facilities, enabling remote consultation and telemedicine applications.
+
+5. Image Processing and Enhancement:
+   - Digital images can be manipulated and enhanced using various image processing techniques, such as adjusting contrast, brightness, and color, without compromising the original image data.
+   - This allows for better visualization of anatomical structures and can aid in diagnosis and treatment planning.
+
+6. Reduced Costs:
+   - Over the long term, digital radiography can lead to cost savings by eliminating the need for film, chemicals, and film processing equipment.
+   - The reduced radiation dose and improved workflow efficiency can also contribute to cost savings for healthcare providers.
+
+7. Environmental Benefits:
+   - Digital radiography eliminates the need for chemical-based film processing, reducing the environmental impact and disposal of hazardous waste associated with traditional film-based systems.
+}
+\newpage
+\section{Question 4}
+\subsection{Explain the operation of a CT scanner, using drawings to describe how a CT scan is generated.[7 marks]
+}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Schematic of CT machine.jpeg}
+    \caption{CT}
+    \label{fig:enter-label}
+\end{figure}
+\paragraph{Here's an explanation of the operation of a CT scanner using an image:
+
+**Step 1: Patient Positioning**
+
+The patient is positioned on the CT scanner table, and the table is moved into the scanner. The patient is then aligned with the scanner's gantry (the rotating ring).
+
+[Image: Patient positioned on the CT scanner table]
+
+**Step 2: Gantry Rotation**
+
+The gantry rotates around the patient, taking 360-degree X-ray images in a spiral or helical pattern. The X-ray tube and detector are mounted on the gantry, and they move in tandem as the gantry rotates.
+
+[Image: Gantry rotation around the patient]
+
+**Step 3: X-ray Emission**
+
+The X-ray tube emits X-rays as the gantry rotates. The X-rays are directed at the patient and pass through the body.
+
+[Image: X-ray emission from the tube]
+
+**Step 4: X-ray Detection**
+
+The X-rays that pass through the body are detected by the detector array. The detector array is made up of many individual detectors that measure the intensity of the X-rays.
+
+[Image: X-ray detection by detector array]
+
+**Step 5: Data Reconstruction**
+
+The detected X-ray data is reconstructed into a 3D image using sophisticated algorithms. The reconstructed image shows the internal structure of the body in high resolution.
+
+[Image: Reconstructed 3D image]
+
+**Step 6: Image Display**
+
+The reconstructed image is displayed on a monitor for interpretation by a radiologist or other healthcare professional.
+
+[Image: Image display on monitor]
+
+Here's a summary of the process:
+
+1. Patient positioning
+2. Gantry rotation
+3. X-ray emission
+4. X-ray detection
+5. Data reconstruction
+6. Image display
+
+CT scanners use a combination of X-ray emission, detection, and reconstruction to create detailed images of the body's internal structures.}
+\paragraph{
+
+1. X-Ray Tube and Detector Array:
+   - The CT scanner contains an X-ray tube that rotates around the patient, who is positioned on a motorized table.
+   - Surrounding the patient is a circular array of X-ray detectors, which are positioned opposite the X-ray tube.
+
+   
+2. X-Ray Beam Projection:
+   - As the X-ray tube rotates around the patient, it emits a narrow, fan-shaped X-ray beam that passes through the patient's body.
+   - The X-ray detectors on the opposite side of the patient's body measure the intensity of the X-rays that have passed through the patient.
+
+   
+3. Attenuation of X-Rays:
+   - Different tissues in the body have different densities and compositions, which affect the attenuation (absorption and scattering) of the X-rays as they pass through the patient.
+   - Denser tissues, such as bone, absorb more X-rays, resulting in lower detected intensities, while softer tissues, such as muscle, allow more X-rays to pass through.
+
+   
+4. Data Acquisition and Reconstruction:
+   - As the X-ray tube rotates around the patient, the detectors collect a series of X-ray intensity measurements, known as projections.
+   - These projections are then processed by a computer using a mathematical algorithm, such as the Filtered Back-Projection (FBP) or Iterative Reconstruction (IR) algorithms, to reconstruct a three-dimensional (3D) image of the patient's internal structures.
+
+   
+5. Multiplanar Reconstruction:
+   - The reconstructed 3D image can be displayed in multiple planes, such as axial (cross-sectional), sagittal (side), and coronal (front) views, allowing for a detailed examination of the patient's anatomy.
+
+   
+
+The operation of a CT scanner involves the coordinated movement of the X-ray tube and the patient table, as well as the acquisition and processing of the X-ray intensity data to create a high-resolution, three-dimensional image of the patient's internal structures, which can be used for diagnosis and treatment planning.}
+\subsection{Describe and illustrate the general range of CT numbers for tissue and materials in a human body. [6 marks]
+}
+\paragraph{Hounsfield units (HU) are a dimensionless unit universally used in computed tomography (CT) scanning to express CT numbers in a standardized and convenient form. Hounsfield units are obtained from a linear transformation of the measured attenuation coefficients 1. This transformation (figure 1) is based on the arbitrarily-assigned radiodensities of air and pure water:
+
+radiodensity of distilled water at standard temperature and pressure (STP) equals 0 HU
+
+radiodensity of air at STP equals –1000 HU
+
+Note: STP is defined as temperature of 0 °C and pressure of 105 pascals (i.e. sea-level).
+
+This results in a scale running from –1000 HU for air, between –100 HU and 100 HU for most tissues, around 2000 HU for very dense bone (cochlea) and over 3000 HU for metals 7. How these values are displayed is determined by the application of specific window and level values. See figure 2 for typical values encountered in a CT scan.
+
+CT images traditionally stored data at 12-bit depth, allowing for 212 = 4096 different values. These were usually mapped to represent radiodensities between –1024 HU and 3071 HU 7. This range adequately covers all tissues in a human body.
+
+CT images from newer scanners store data at 16-bit depth, allowing for 216 = 65 536 different values 8. How these are mapped and what HU range is covered differs between manufacturers. The extended HU range has several applications:
+
+high noise (low dose, sharp kernel) scans of lungs can produce values far below –1000 HU, clipping these values at –1024 HU (as in 12-bit images) could disrupt image analysis
+
+metals in implants have HU values in the order of tens of thousands, exact representation of these values (as opposed to clipping at 3071 HU in 12-bit images) allows for more accurate radiotherapy planning in patients with such implants 8,9
+
+The software of all CT scanners and PACSs has the ability to measure the density of a region of interest (ROI) electronically overlaid the image.
+
+Hounsfield units are measured and reported in a variety of clinical applications. One well-known use is the evaluation of the fat content of the liver, with fatty liver diagnosed by the presence of a liver-to-spleen ratio <1.0 or 0.8 2. Other less common uses include assessing bone mineral density (BMD) 3, predicting the presence of anemia 4, and guiding the management of kidney stones 5.
+
+No equivalent to Hounsfield units exists in any other form of structural imaging.
+
+Air (-1000 HU): Air has very low attenuation and appears as black or dark regions in CT images.
+Lung (-700 to -900 HU): The low-density lung tissue has negative CT numbers due to the presence of air in the alveoli.
+Fat (-100 to -50 HU): Fatty tissues have lower attenuation than water and appear as dark gray regions.
+Water and Soft Tissue (0 HU): Water and most soft tissues, such as muscle, have a CT number close to 0 HU.
+Blood (30 to 45 HU): Blood has a slightly higher attenuation than water due to its composition.
+Muscle (10 to 40 HU): Muscle tissues have a slightly higher attenuation than water.
+Bone (400 to 1000 HU): Compact bone has a much higher attenuation than soft tissues and appears as bright white regions.
+Dense Bone (>1000 HU): Very dense bone, such as the skull or vertebrae, can have CT numbers higher than 1000 HU.
+Metal (>3000 HU): Metallic implants or foreign objects have extremely high attenuation and appear as bright white regions with potential streak artifacts.}
+\subsection{Absorption coefficients of a body slice are given in the form of matrices. Perform the back projection and calculate the background (bg) and the normalization number (n) for this case.
+[7 marks]
+}
+\begin{center}
+\begin{tabular}{ c | c  }
+ 1 & 3   \\ 
+ 2 & 1   \\       
+\end{tabular}
+\end{center}
+\newpage
+\section{Question 5}
+\subsection{
+The figure below shows the readout mechanics of a Computed Radiography (CR) system. Supply the names of the components labelled (a) to (d) and briefly describe the image formation process. [8 marks]
+}
+\begin{figure}
+    \centering
+    \includegraphics{ct-shit.jpg}
+    \caption{ct-image}
+    \label{fig:ct-scanner}
+\end{figure}
+\subsection{Explain the process of photostimulable luminescence in computed radiography. [6 marks]}
+\paragraph{
+
+In a computed radiography system, the X-ray image is captured on a photostimulable phosphor (PSP) storage phosphor plate, which is made of a crystalline material such as barium fluorohalide (BaFX:Eu, where X = Cl, Br, or I).
+
+The process of photostimulable luminescence in computed radiography works as follows:
+
+1. X-ray exposure:
+   - When the PSP plate is exposed to X-rays, the X-ray photons interact with the phosphor material, exciting electrons within the atoms to higher energy levels.
+   - These excited electrons become "trapped" in metastable energy states within the phosphor crystal structure.
+
+2. Photostimulation:
+   - After the X-ray exposure, the PSP plate is placed into a CR scanner or reader.
+   - The scanner uses a laser beam to scan across the surface of the PSP plate, providing the necessary energy to stimulate the trapped electrons.
+   - When the laser beam strikes the phosphor material, the trapped electrons are released from their metastable states, returning to their ground state.
+
+3. Luminescence:
+   - As the electrons return to their ground state, they emit visible light photons, a process known as photostimulable luminescence.
+   - The amount of light emitted is proportional to the number of trapped electrons, which in turn is proportional to the original X-ray exposure.
+
+4. Photon detection:
+   - The emitted light photons are detected by a photomultiplier tube (PMT) or a photodiode array in the CR scanner.
+   - The detected light intensity is then converted into electrical signals, which are digitized and processed to create a digital X-ray image.
+
+The digital image data can then be displayed on a computer monitor, stored, or transmitted for further analysis or diagnostic purposes.
+}
+\subsection{Describe the differences between direct and indirect flat panel detectors (FPD) in terms of their detection mechanism. [6 marks] }
+\paragraph{
+
+
+Direct FPDs:
+
+- Direct FPDs use a photoconductor material, such as amorphous selenium (a-Se), to directly convert the incident X-ray photons into electrical charges.
+
+- When X-rays interact with the photoconductor layer, electron-hole pairs are generated, and these charges are collected and read out by an array of thin-film transistors (TFTs).
+
+- The advantage of direct FPDs is their higher Detective Quantum Efficiency (DQE), which translates to better image quality, as the X-ray energy is directly converted into electrical signals without an intermediate step.
+
+- Direct FPDs generally have a simpler design and can achieve a higher spatial resolution compared to indirect FPDs.
+
+
+
+Indirect FPDs:
+
+- Indirect FPDs use a scintillator material, such as cesium iodide (CsI), to first convert the X-ray photons into visible light photons.
+
+- The visible light photons are then detected by a photodiode array, which converts them into electrical signals that can be read out by the TFT array.
+
+- In this indirect approach, the X-ray energy is first converted into visible light, which is then detected by the photodiodes.
+
+- Indirect FPDs generally have a lower DQE compared to direct FPDs, as the conversion process from X-rays to visible light and then to electrical signals can result in some information loss.
+
+- However, indirect FPDs can be more cost-effective and can be designed with a larger area compared to direct FPDs.
+}
+\newpage
+
+
+
+
+\noindent Muchas veces en nuestras tareas incorporamos imágenes como a la que hacemos referencia aquí (Figura \ref{fig:yo_en_la_vida}):
+\begin{figure}[ht] % Especificamos ubicacion (h = aquí mero)
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figuras/Cotorros.jpg} % Ancho especificado
+    \caption{Esquema de las relaciones entre los componentes del núcleo atómico}
+    \label{fig:yo_en_la_vida}
+\end{figure}
+
+\noindent Finalmente, recuerda utilizar el método \texttt{minted} para escribir el código que incluyas en tu tarea, y \texttt{verbatim} para el \textit{pseudo}-código\footnote{Muchas veces es mejor incluír \textit{ambos} para darte a entender con tu profesor}:
+
+\begin{minted}[frame=lines, linenos, bgcolor=LightGray]{python}
+    def funcion(argumento1, argumento2):
+        """
+        Explico que hace la funcón
+        """
+        if condicion == True:
+            alumno = graduado
+        else:
+            alumno = baja
+\end{minted}
+
+\end{problem}
+%---------------------------------------------------------------------------------------------
+% \begin{problem}
+
+% \section{Segundo Problema}
+
+% \noindent
+    
+% \end{problem}
+%---------------------------------------------------------------------------------------------
+
+
+
+%--------------------------------------BIBLIOGRAFIA-------------------------------------------
+
+\newpage
+
+\nocite{*} % Agrega las referencias aunque no las hayas citado directamente
+
+\bibliographystyle{unsrt}    % ESTILO DE BIBLIOGRAFÍA (Recomendados: abbrv, ieeetr, apalike, unsrt)
+\bibliography{refs}     % REFERENCIAS EN ARCHIVO SEPARADO
+
+
+\end{document}
+
